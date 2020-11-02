@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+- file: welcome
+
+- part: Introduction
+  chapters:
+    - file: getting_started
+    - file: primer
+    
+- part: Week 01
+  chapters:
+    - file: week_01/01_Lesson_Conservation_of_momentum
+    - file: week_01/02_Exercises_Simple_cloud_effects

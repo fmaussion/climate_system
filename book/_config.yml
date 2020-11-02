@@ -1,0 +1,42 @@
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# See the documentation for help and more options: 
+# https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title: Physics of the Climate System  # The title of the book. Will be placed in the left navbar.
+author: Fabien Maussion  # The author of the book
+copyright: "2018-2020"  # Copyright year to be placed in the footer
+logo: img/logo.png  # A path to the book logo
+parse:
+  myst_extended_syntax: true
+repository:
+  url: https://github.com/fmaussion/climate_system
+  path_to_book: book 
+  branch: master
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  binderhub_url: "https://mybinder.org"
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  google_analytics_id: UA-88391345-1
+  extra_footer: |
+    <p>
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+      <img align="right" class="margin" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" width="88px">
+    </a>
+    These lecture notes and exercises are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0) license</a>.
+    <br>
+    &copy; Copyright 2018-2020.
+    </p>
+sphinx:
+  config:
+    html_show_copyright: false
+  extra_extensions:
+    - sphinx_exercise
+execute:
+  execute_notebooks: auto
+  allow_errors: true
