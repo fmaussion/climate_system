@@ -1,13 +1,13 @@
 .. -*- rst -*- -*- restructuredtext -*-
 .. This file should be written using restructured text conventions
 
-======================
-Scientific Programming
-======================
+=============================
+Physics of the Climate System
+=============================
 
-Lectures notes of the scientific programming course at the University of Innsbruck.
+Practicals of the Physics of the Climate System class at the University of Innsbruck.
 
-Website: http://fabienmaussion.info/scientific_programming
+Website: http://fabienmaussion.info/climate_system
 
 License
 -------
