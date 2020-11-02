@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting started with Jupyter Notebooks &#8212; Physics of the Climate System</title>
+    
+  <link rel="stylesheet" href="_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.30270b6e4c972e43c488.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="A Python and Jupyter Notebook primer" href="primer.html" />
+    <link rel="prev" title="Welcome" href="welcome.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Physics of the Climate System</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="welcome.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Getting started with Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="primer.html">
+   A Python and Jupyter Notebook primer
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 01
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_01/01_Lesson_Conservation_of_momentum.html">
+   Lesson: Conservation of angular momentum and Hadley circulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_01/02_Exercises_Simple_cloud_effects.html">
+   Exercises: A simple model for the effect of clouds on the planetary energy balance
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/getting_started.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fmaussion/climate_system"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fgetting_started.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/getting_started.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/getting_started.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-notebooks">
+   Running Notebooks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#testing-notebooks-online">
+     Testing notebooks online
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-jupyter-on-your-computer">
+     Installing Jupyter on your computer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plan-b">
+     Plan B
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#launching-the-classic-notebook-interface">
+     Launching the classic Notebook interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
+     Launching the Jupyterlab interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-and-run-a-notebook">
+     Download and run a notebook
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-s-next">
+   What’s next
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="getting-started-with-jupyter-notebooks">
+<h1>Getting started with Jupyter Notebooks<a class="headerlink" href="#getting-started-with-jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>Jupyter Notebooks are a relatively recent addition to the scientific python ecosystem. They were previously called “ipython notebooks” (you might find them under this name in old forums or websites sometimes). The advantage of jupyter notebooks over traditional code scripts in text files is that they can include text, code, and plots in the same document. Notebooks are a fantastic tool to explore data or models and to communicate about science.</p>
+<p>Notebooks are an ideal playground for learning python and write your homework, without having to jump between several documents!
+We will use notebooks for the entire class. <strong>In fact, this webpage (and all others in this book) are written in Jupyter Notebooks.</strong></p>
+<div class="section" id="running-notebooks">
+<h2>Running Notebooks<a class="headerlink" href="#running-notebooks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="testing-notebooks-online">
+<h3>Testing notebooks online<a class="headerlink" href="#testing-notebooks-online" title="Permalink to this headline">¶</a></h3>
+<p>The simplest way to try using a notebook is to use the “Launch Binder” button on the top of each page. This will open an interactive session in your browser.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Interactive sessions on MyBinder are <strong>temporary</strong>. After 10 mins of inactivity or after closing the tab, you won’t be able to recover your changes.</p>
+<p>For today’s tutorial, this is perfect. For the exercises I rather recommend to your own laptop.</p>
+</div>
+</div>
+<div class="section" id="installing-jupyter-on-your-computer">
+<h3>Installing Jupyter on your computer<a class="headerlink" href="#installing-jupyter-on-your-computer" title="Permalink to this headline">¶</a></h3>
+<p>If you are not following my programming class, <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/02-Installation.html#installing-python-on-your-pc">follow these instructions to install python</a> first. Once you have a working python environment in conda, install <code class="docutils literal notranslate"><span class="pre">jupyter-notebook</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyter-notebook jupyterlab
+</pre></div>
+</div>
+<p>In addition to Jupyter, you will also need the following python packages for the exercises:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install numpy scipy matplotlib dask xarray cartopy netcdf4
+</pre></div>
+</div>
+</div>
+<div class="section" id="plan-b">
+<h3>Plan B<a class="headerlink" href="#plan-b" title="Permalink to this headline">¶</a></h3>
+<p>If you are not able to run the notebooks on your laptop, I will give you access to an online platform that you can use for the rest of the semester.</p>
+</div>
+<div class="section" id="launching-the-classic-notebook-interface">
+<h3>Launching the classic Notebook interface<a class="headerlink" href="#launching-the-classic-notebook-interface" title="Permalink to this headline">¶</a></h3>
+<p>To start the <strong>classic notebook</strong> interface, type the following command in a terminal window:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ jupyter-notebook
+</pre></div>
+</div>
+<p>A new tab in your default web browser will be opened. This is the <strong>“notebook explorer”</strong>. From this window you can navigate through your folders, open existing notebooks like this one or create new ones (“New” button on the upper right panel). The root directory in the explorer will always be the folder from which you started the interface.</p>
+<p>After creating a new notebook you will be presented with several things: the <strong>notebook name</strong> appears right next to the jupyter sign at the very top of the page. The new notebook will be named “untitled”, but you can change this at any time by clicking on the name. Below the toolbar, you can see a <strong>code cell</strong>. This is the default type of cell in a jupyter-notbook and you can write and execute python code with it. There is another cell type called <strong>markdown</strong>, in which you can write simple text like the one you actually read right now.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not close the terminal from which you started the notebook. This is where python is “actually” running: the browser only sends commands to this running instance of python in your terminal.</p>
+</div>
+</div>
+<div class="section" id="launching-the-jupyterlab-interface">
+<h3>Launching the Jupyterlab interface<a class="headerlink" href="#launching-the-jupyterlab-interface" title="Permalink to this headline">¶</a></h3>
+<p>Jupyterlab is the most recent interface to write and run Jupyter Notebooks. It is more modern than the classic interface, has more options and is slightly more complicated at first. I do not mind which interface you use, both are fine.</p>
+<p>To start the <strong>jupyterlab</strong> interface, type the following command in a terminal window:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    $ jupyter-lab
+</pre></div>
+</div>
+<p>Like for the classic interface, jupyterlab runs in your browser. You can open a new notebook with the “launcher” button. You can explore files with the file explorer on the left.</p>
+</div>
+<div class="section" id="download-and-run-a-notebook">
+<h3>Download and run a notebook<a class="headerlink" href="#download-and-run-a-notebook" title="Permalink to this headline">¶</a></h3>
+<p>To run a notebook, you can:</p>
+<ul class="simple">
+<li><p>click on the “download” button on the top right of each page and copy it in your working directory.</p></li>
+<li><p>visit the book’s <a class="reference external" href="https://github.com/fmaussion/climate_system">repository</a> and download the files from there.</p></li>
+</ul>
+<p>Then open the file either from notebook classic or jupyterlab.</p>
+</div>
+</div>
+<div class="section" id="what-s-next">
+<h2>What’s next<a class="headerlink" href="#what-s-next" title="Permalink to this headline">¶</a></h2>
+<p>You are now ready for the practicals! Head to the first notebook for your first steps.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="welcome.html" title="previous page">Welcome</a>
+    <a class='right-next' id="next-link" href="primer.html" title="next page">A Python and Jupyter Notebook primer</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Fabien Maussion<br/>
+        
+          <div class="extra_footer">
+            <p>
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+  <img align="right" class="margin" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" width="88px">
+</a>
+These lecture notes and exercises are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0) license</a>.
+<br>
+&copy; Copyright 2018-2020.
+</p>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.30270b6e4c972e43c488.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-88391345-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
