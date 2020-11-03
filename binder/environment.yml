@@ -1,0 +1,12 @@
+name: scipro
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - matplotlib
+  - xarray
+  - dask
+  - netcdf4
+  - cartopy
+
