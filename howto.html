@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting started with Jupyter Notebooks &#8212; Physics of the Climate System</title>
+    <title>How to use this website and prepare for each week &#8212; Physics of the Climate System</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -58,8 +58,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Python and Jupyter: a primer" href="primer.html" />
-    <link rel="prev" title="Welcome" href="welcome.html" />
+    <link rel="next" title="Lesson: Conservation of angular momentum and Hadley circulation" href="week_01/01_Lesson_Conservation_of_momentum.html" />
+    <link rel="prev" title="Downloading the data" href="download.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -102,8 +102,8 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="getting_started.html">
    Getting started with Jupyter Notebooks
   </a>
  </li>
@@ -117,8 +117,8 @@
    Downloading the data
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="howto.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    How to use this website and prepare for each week
   </a>
  </li>
@@ -201,7 +201,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/getting_started.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/howto.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -221,10 +221,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fgetting_started.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fhowto.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/getting_started.ipynb"><button
+        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/howto.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -244,7 +244,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/getting_started.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/howto.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -267,45 +267,18 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-notebooks">
-   Running Notebooks
+  <a class="reference internal nav-link" href="#organizing-your-notebooks">
+   Organizing your notebooks
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#testing-notebooks-online">
-     Testing notebooks online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installing-jupyter-on-your-computer">
-     Installing Jupyter on your computer
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plan-b">
-     Plan B
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-the-classic-notebook-interface">
-     Launching the classic Notebook interface
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
-     Launching the Jupyterlab interface
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#download-and-run-a-notebook">
-     Download and run a notebook
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-s-next">
-   What’s next
+  <a class="reference internal nav-link" href="#preparing-for-each-week">
+   Preparing for each week
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tips-for-the-presenting-group">
+   Tips for the presenting group
   </a>
  </li>
 </ul>
@@ -319,76 +292,39 @@
         
               <div>
                 
-  <div class="section" id="getting-started-with-jupyter-notebooks">
-<h1>Getting started with Jupyter Notebooks<a class="headerlink" href="#getting-started-with-jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
-<p>Jupyter Notebooks are a relatively recent addition to the scientific python ecosystem. They were previously called “ipython notebooks” (you might find them under this name in old forums or websites sometimes). The advantage of jupyter notebooks over traditional code scripts in text files is that they can include text, code, and plots in the same document. Notebooks are a fantastic tool to explore data or models and to communicate about science.</p>
-<p>Notebooks are an ideal playground for learning python and write your homework, without having to jump between several documents!
-We will use notebooks for the entire class. <strong>In fact, this webpage (and all others in this book) are written in Jupyter Notebooks.</strong></p>
-<div class="section" id="running-notebooks">
-<h2>Running Notebooks<a class="headerlink" href="#running-notebooks" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="testing-notebooks-online">
-<h3>Testing notebooks online<a class="headerlink" href="#testing-notebooks-online" title="Permalink to this headline">¶</a></h3>
-<p>The simplest way to try using a notebook is to use the “Launch Binder” button on the top of each page. This will open an interactive session in your browser.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Interactive sessions on MyBinder are <strong>temporary</strong>. After 10 mins of inactivity or after closing the tab, you won’t be able to recover your changes.</p>
-<p>For today’s tutorial, this is perfect. For the exercises which rely on external data, I’d rather recommend to use your own laptop.</p>
-</div>
-<div class="margin figure align-default" id="markdown-fig">
-<img alt="launch-button" class="margin" src="_images/launch_binder.png" />
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Binder button</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="installing-jupyter-on-your-computer">
-<h3>Installing Jupyter on your computer<a class="headerlink" href="#installing-jupyter-on-your-computer" title="Permalink to this headline">¶</a></h3>
-<p>If you are not following my programming class, <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/02-Installation.html#installing-python-on-your-pc">follow these instructions to install python</a> first. Once you have a working python environment in conda, install <code class="docutils literal notranslate"><span class="pre">jupyter-notebook</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyter-notebook jupyterlab
+  <div class="section" id="how-to-use-this-website-and-prepare-for-each-week">
+<h1>How to use this website and prepare for each week<a class="headerlink" href="#how-to-use-this-website-and-prepare-for-each-week" title="Permalink to this headline">¶</a></h1>
+<p>Before going further, make sure that you have read the <a class="reference internal" href="getting_started.html"><span class="doc std std-doc">Getting Started</span></a> instructions.</p>
+<div class="section" id="organizing-your-notebooks">
+<h2>Organizing your notebooks<a class="headerlink" href="#organizing-your-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>The notebooks are central to this lecture. We won’t use anything else then notebooks to write code (+ text!) and you will have to return notebooks as final project report.</p>
+<p>With the exception of Week 01 (for which I recommend to use MyBinder), <strong>all notebooks should be downloaded and run on your machine</strong>. You will also be asked to download data files (<a class="reference internal" href="download.html"><span class="doc std std-doc">instructions</span></a>). I recommend to organize your code and data so that you can have easy access to both. For example, my notebooks are organized in a weekly folder, and alongside my weekly folders there is a <code class="docutils literal notranslate"><span class="pre">data</span></code> folder where my data is stored. This way, all my paths in notebooks look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../data/CERES_EBAF-TOA_Ed4.1_Clim-2005-2015.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>In addition to Jupyter, you will also need the following python packages for the exercises:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install numpy scipy matplotlib dask xarray cartopy netcdf4
-</pre></div>
+<p>The <code class="docutils literal notranslate"><span class="pre">../</span></code> is to navigate to the parent folder, and from there I can find the data file.</p>
 </div>
-</div>
-<div class="section" id="plan-b">
-<h3>Plan B<a class="headerlink" href="#plan-b" title="Permalink to this headline">¶</a></h3>
-<p>If you are not able to run the notebooks on your laptop, I will give you access to an online platform that you can use for the rest of the semester.</p>
-</div>
-<div class="section" id="launching-the-classic-notebook-interface">
-<h3>Launching the classic Notebook interface<a class="headerlink" href="#launching-the-classic-notebook-interface" title="Permalink to this headline">¶</a></h3>
-<p>To start the <strong>classic notebook</strong> interface, type the following command in a terminal window:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ jupyter-notebook
-</pre></div>
-</div>
-<p>A new tab in your default web browser will be opened. This is the <strong>“notebook explorer”</strong>. From this window you can navigate through your folders, open existing notebooks like this one or create new ones (“New” button on the upper right panel). The root directory in the explorer will always be the folder from which you started the interface.</p>
-<p>After creating a new notebook you will be presented with several things: the <strong>notebook name</strong> appears right next to the jupyter sign at the very top of the page. The new notebook will be named “untitled”, but you can change this at any time by clicking on the name. Below the toolbar, you can see a <strong>code cell</strong>. This is the default type of cell in a jupyter-notbook and you can write and execute python code with it. There is another cell type called <strong>markdown</strong>, in which you can write simple text like the one you actually read right now.</p>
+<div class="section" id="preparing-for-each-week">
+<h2>Preparing for each week<a class="headerlink" href="#preparing-for-each-week" title="Permalink to this headline">¶</a></h2>
+<p>Each week is organized around two notebooks:</p>
+<ul class="simple">
+<li><p>a “lesson”, where you will learn new tools and which is mostly “click through” code that I wrote (and that you’ll re-use later) with some understanding questions in between.</p></li>
+<li><p>an “assignment”, where you’ll apply the tools you’ve learned before.</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Do not close the terminal from which you started the notebook. This is where python is “actually” running: the browser only sends commands to this running instance of python in your terminal.</p>
+<p>The <strong>main objective of the practicals is to learn about the climate system from the plots and analyses</strong>. Learning to use the notebooks and xarray is important as well, but only secondary!</p>
 </div>
 </div>
-<div class="section" id="launching-the-jupyterlab-interface">
-<h3>Launching the Jupyterlab interface<a class="headerlink" href="#launching-the-jupyterlab-interface" title="Permalink to this headline">¶</a></h3>
-<p>Jupyterlab is the most recent interface to write and run Jupyter Notebooks. It is more modern than the classic interface, has more options and is slightly more complicated at first. I do not mind which interface you use, both are fine.</p>
-<p>To start the <strong>jupyterlab</strong> interface, type the following command in a terminal window:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    $ jupyter-lab
-</pre></div>
-</div>
-<p>Like for the classic interface, jupyterlab runs in your browser. You can open a new notebook with the “launcher” button. You can explore files with the file explorer on the left.</p>
-</div>
-<div class="section" id="download-and-run-a-notebook">
-<h3>Download and run a notebook<a class="headerlink" href="#download-and-run-a-notebook" title="Permalink to this headline">¶</a></h3>
-<p>To run a notebook, you can:</p>
+<div class="section" id="tips-for-the-presenting-group">
+<h2>Tips for the presenting group<a class="headerlink" href="#tips-for-the-presenting-group" title="Permalink to this headline">¶</a></h2>
+<p>Each week, a volunteer group will present their results to the rest of the class. This part is not graded and will have no negative effect whatsoever on the rest of the class. The main objective of the group presentations is for me to focus on what is <em>really</em> creating problems for students (as opposed to me <em>assuming</em> what will).</p>
+<p><strong>Here are a few suggestions to prepare your contributions</strong>:</p>
 <ul class="simple">
-<li><p>click on the “download” button on the top right of each page and copy it in your working directory.</p></li>
-<li><p>visit the book’s <a class="reference external" href="https://github.com/fmaussion/climate_system">repository</a> and download the files from there.</p></li>
+<li><p>Make sure that you have managed to do parts of the requested analyses. It doesn’t have to be all of them or being 100% perfect (nothing is!), but if you have substantial problems with one exercise please contact me beforehand.</p></li>
+<li><p>In your presentations, focus on the “assignment” notebook. If one of the points or questions in the “lesson” notebook was unclear for you, feel free to discuss as well!</p></li>
+<li><p>Focus on the main plots / analyses and what you didn’t understand well: there are no stupid questions or comments! If you don’t understand something, feel free to address this in your presentation: it is very likely that all of us have the same issues.</p></li>
 </ul>
-<p>Then open the file either from notebook classic or jupyterlab.</p>
-</div>
-</div>
-<div class="section" id="what-s-next">
-<h2>What’s next<a class="headerlink" href="#what-s-next" title="Permalink to this headline">¶</a></h2>
-<p>You are now ready for the practicals! Head to the first notebook for your first steps.</p>
 </div>
 </div>
 
@@ -417,8 +353,8 @@ We will use notebooks for the entire class. <strong>In fact, this webpage (and a
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="welcome.html" title="previous page">Welcome</a>
-    <a class='right-next' id="next-link" href="primer.html" title="next page">Python and Jupyter: a primer</a>
+    <a class='left-prev' id="prev-link" href="download.html" title="previous page">Downloading the data</a>
+    <a class='right-next' id="next-link" href="week_01/01_Lesson_Conservation_of_momentum.html" title="next page">Lesson: Conservation of angular momentum and Hadley circulation</a>
 
         </div>
         

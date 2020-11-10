@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Python and Jupyter Notebook primer &#8212; Physics of the Climate System</title>
+    <title>Python and Jupyter: a primer &#8212; Physics of the Climate System</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.97663d53efca608227ee057f134e8bb0.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -58,7 +58,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lesson: Conservation of angular momentum and Hadley circulation" href="week_01/01_Lesson_Conservation_of_momentum.html" />
+    <link rel="next" title="Downloading the data" href="download.html" />
     <link rel="prev" title="Getting started with Jupyter Notebooks" href="getting_started.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -109,7 +109,17 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   A Python and Jupyter Notebook primer
+   Python and Jupyter: a primer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="download.html">
+   Downloading the data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="howto.html">
+   How to use this website and prepare for each week
   </a>
  </li>
 </ul>
@@ -309,6 +319,11 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-objects">
+   Python objects
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#getting-help-about-python-variables-and-functions">
    Getting help about python variables and functions
   </a>
@@ -351,8 +366,8 @@
         
               <div>
                 
-  <div class="section" id="a-python-and-jupyter-notebook-primer">
-<h1>A Python and Jupyter Notebook primer<a class="headerlink" href="#a-python-and-jupyter-notebook-primer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="python-and-jupyter-a-primer">
+<h1>Python and Jupyter: a primer<a class="headerlink" href="#python-and-jupyter-a-primer" title="Permalink to this headline">¶</a></h1>
 <p>Download and open this notebook on your laptop, or open it with MyBinder. Feel free to mess around with it, there is always a fresh copy for you to download!</p>
 <div class="section" id="first-steps">
 <h2>First steps<a class="headerlink" href="#first-steps" title="Permalink to this headline">¶</a></h2>
@@ -874,6 +889,73 @@ Blue
 </div>
 </div>
 </div>
+<div class="section" id="python-objects">
+<h2>Python objects<a class="headerlink" href="#python-objects" title="Permalink to this headline">¶</a></h2>
+<p>In python, all variables are also “things”. In the programming jargon, these “things” are called <em>objects</em>. Without going into details that you won’t need for this lecture, objects have so-called “attributes” and “methods” (what you may know under the name “functions”). Attributes are information stored about the object.</p>
+<p>For example, even simple integers are also “things with attributes”:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s define an interger</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1"># Get its attributes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The real part of a is&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">real</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The imaginary part of a is&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The real part of a is 1
+The imaginary part of a is 0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Attributes are read with a <em>dot</em>. They are very much like variables. In fact, they are variables:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ra</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">real</span>
+<span class="n">ra</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<p>Importantly, objects can also have functions that apply to them. For example, strings have a function called <code class="docutils literal notranslate"><span class="pre">split()</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This:is:a:splitted:example&#39;</span>
+<span class="n">s_splitted</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s_splitted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;splitted&#39;, &#39;example&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>One difference between attributes and functions is that the functions are called with parentheses, and sometimes they require arguments (the <code class="docutils literal notranslate"><span class="pre">':'</span></code> in this case). Another difference between functions and variables is that the function is almost always returning you something back (yes, some functions return nothing, but they are rare).</p>
+<p>Strings also have a <code class="docutils literal notranslate"><span class="pre">join()</span></code> method by the way:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">s_splitted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;This is a splitted example&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>It is not necessary to know the details about object oriented programming to use python (in fact, most of the time you don’t need to implement these concepts yourselves). But it is important to know that you can have access to attributes and methods on almost <em>everything</em> in python.</p>
+<p>As you will see, we are going to use various attributes and methods available on <a class="reference external" href="http://xarray.pydata.org">xarray</a> objects starting from Week 02.</p>
+</div>
 <div class="section" id="getting-help-about-python-variables-and-functions">
 <h2>Getting help about python variables and functions<a class="headerlink" href="#getting-help-about-python-variables-and-functions" title="Permalink to this headline">¶</a></h2>
 <p>The standard way to get information about python things is to use the built-in function help(). I am not a big fan of it because its output is quite long, but at least it’s complete:</p>
@@ -1191,7 +1273,7 @@ class int(object)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/primer_101_0.png" src="_images/primer_101_0.png" />
+<img alt="_images/primer_111_0.png" src="_images/primer_111_0.png" />
 </div>
 </div>
 <p>It is possible to save the figure to a file by adding for example <code class="docutils literal notranslate"><span class="pre">plt.savefig('test.png')</span></code> <em>at the end of the cell</em>. This will create an image file in the same directory as the notebook.</p>
@@ -1208,7 +1290,7 @@ class int(object)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/primer_104_0.png" src="_images/primer_104_0.png" />
+<img alt="_images/primer_114_0.png" src="_images/primer_114_0.png" />
 </div>
 </div>
 </div>
@@ -1295,15 +1377,15 @@ Now you can</p>
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="getting_started.html" title="previous page">Getting started with Jupyter Notebooks</a>
-    <a class='right-next' id="next-link" href="week_01/01_Lesson_Conservation_of_momentum.html" title="next page">Lesson: Conservation of angular momentum and Hadley circulation</a>
+    <a class='right-next' id="next-link" href="download.html" title="next page">Downloading the data</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
