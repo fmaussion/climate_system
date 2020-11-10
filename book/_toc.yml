@@ -7,6 +7,8 @@
   chapters:
     - file: getting_started
     - file: primer
+    - file: download
+    - file: howto
     
 - part: Week 01
   chapters:
