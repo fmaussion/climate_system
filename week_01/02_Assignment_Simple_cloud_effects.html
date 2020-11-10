@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercises: A simple model for the effect of clouds on the planetary energy balance &#8212; Physics of the Climate System</title>
+    <title>Assignment: effect of clouds on the planetary energy balance &#8212; Physics of the Climate System</title>
     
-  <link rel="stylesheet" href="../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.30270b6e4c972e43c488.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -46,7 +46,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -58,6 +58,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Solution: effect of clouds on the planetary energy balance" href="03_Solution_Simple_cloud_effects.html" />
     <link rel="prev" title="Lesson: Conservation of angular momentum and Hadley circulation" href="01_Lesson_Conservation_of_momentum.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -83,22 +84,19 @@
   <h1 class="site-logo" id="site-title">Physics of the Climate System</h1>
   
 </a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
-
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../welcome.html">
    Welcome
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Introduction
  </span>
@@ -115,7 +113,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Week 01
  </span>
@@ -128,14 +126,34 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Exercises: A simple model for the effect of clouds on the planetary energy balance
+   Assignment: effect of clouds on the planetary energy balance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_Solution_Simple_cloud_effects.html">
+   Solution: effect of clouds on the planetary energy balance
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Week 02
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">
+   Lesson: working with netCDF data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">
+   Assignment: CERES data
   </a>
  </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
   Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
@@ -164,24 +182,24 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        <div class="dropdown-buttons-trigger">
+        
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_01/02_Exercises_Simple_cloud_effects.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_01/02_Assignment_Simple_cloud_effects.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
+
         <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -193,10 +211,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_01/02_Exercises_Simple_cloud_effects.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_01/02_Assignment_Simple_cloud_effects.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/week_01/02_Exercises_Simple_cloud_effects.ipynb"><button
+        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/week_01/02_Assignment_Simple_cloud_effects.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -216,7 +234,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_01/02_Exercises_Simple_cloud_effects.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_01/02_Assignment_Simple_cloud_effects.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -264,8 +282,8 @@
         
               <div>
                 
-  <div class="section" id="exercises-a-simple-model-for-the-effect-of-clouds-on-the-planetary-energy-balance">
-<h1>Exercises: A simple model for the effect of clouds on the planetary energy balance<a class="headerlink" href="#exercises-a-simple-model-for-the-effect-of-clouds-on-the-planetary-energy-balance" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="assignment-effect-of-clouds-on-the-planetary-energy-balance">
+<h1>Assignment: effect of clouds on the planetary energy balance<a class="headerlink" href="#assignment-effect-of-clouds-on-the-planetary-energy-balance" title="Permalink to this headline">¶</a></h1>
 <p>In this exercise you are going to compute the effect of clouds on the planetary energy balance, with the help of a simple 1-column model of the atmosphere.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -302,7 +320,7 @@
 </div>
 </div>
 <p>Now assume that the cloud absorbs all the IR radiation emited by the surface (a reasonable approximation), while emmitting IR directly back to space according to its own temperature. So the total energy change of the climate system in the longwave (LW) spectrum would be:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{LW} = \sigma T_{Surf}^4 - \sigma T_{Cloud}^4\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Delta E_{LW} = \sigma T_{Surface}^4 - \sigma T_{Cloud}^4\)</span></p>
 <p><strong>Q: compute the effect of a low cloud on the LW energy balance of the climate system. Is the cloud a LW energy loss or an energy gain for the system?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -311,7 +329,7 @@
 </div>
 </div>
 </div>
-<p>Now consider the shortwave effects of the cloud if it has an albedo of 0.5. The net difference for the climate system is simply the increased loss in solar energy because of an increased reflection:</p>
+<p>Now consider the shortwave effect of the cloud if it has an albedo of 0.5. The net difference for the climate system is simply the increased loss in solar energy because of an increased reflection:</p>
 <p><span class="math notranslate nohighlight">\(\Delta E_{SW} = - S_0 / 4 \cdot (\alpha _{Cloud} - \alpha _{Earth} ) \)</span></p>
 <p><strong>Q: compute the effect of a low cloud on the shortwave (SW) energy balance of the climate system. Is the cloud a SW energy loss or an energy gain for the system?</strong></p>
 <div class="cell docutils container">
@@ -353,7 +371,7 @@
 </div>
 </div>
 </div>
-<p><strong>Q: repeat the calculations above, for three values of the cloud albedo: 0.3, 0.5, 0.7. Plot the three curves on the same plot and add a legend to the plots (see the “Getting started” notebook for guidance).</strong></p>
+<p><strong>Q: repeat the calculations above, for three values of the cloud albedo: 0.3, 0.5, 0.7. Plot the three curves on the same plot and add a legend to the plots (see the <a class="reference external" href="https://fabienmaussion.info/climate_system/primer.html">Python Primer</a> notebook for guidance).</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
@@ -363,7 +381,7 @@
 </div>
 <p><strong>Q: discuss the features of the plot, and the conditions necessary for a cloud to be an energy gain or an energy loss for the climate system. Now search for typical values of cloud albedos depending on their type, and come back to your plot for comparison.</strong></p>
 <p>If you complicate things a bit by noticing that high clouds have a low albedo and low clouds a high albedo while thick clouds have a high albedo but also a high cloud top you can imagine that the system becomes extremely sensitive.</p>
-<p><strong>The processes governing cloud albedo are complex. The uncertainty about changes in the clouds frequency, altitude, and albedo are one of the highest uncertainty in the climate models.</strong></p>
+<p><strong>The processes governing cloud albedo are complex. The uncertainty about changes in the clouds frequency, altitude, and albedo are one of the highest uncertainties in the climate models.</strong></p>
 <p>More info: http://www.skepticalscience.com/clouds-negative-feedback-basic.htm (basic and intermediate)</p>
 </div>
 </div>
@@ -397,6 +415,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="01_Lesson_Conservation_of_momentum.html" title="previous page">Lesson: Conservation of angular momentum and Hadley circulation</a>
+    <a class='right-next' id="next-link" href="03_Solution_Simple_cloud_effects.html" title="next page">Solution: effect of clouds on the planetary energy balance</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -426,7 +445,7 @@ These lecture notes and exercises are licensed under a <a href="https://creative
     </div>
 
     
-  <script src="../_static/js/index.30270b6e4c972e43c488.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
