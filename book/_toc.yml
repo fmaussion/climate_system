@@ -20,3 +20,8 @@
   chapters:
     - file: week_02/01_Lesson_NetCDF_Data
     - file: week_02/02_Assignment_CERES_data
+    
+- part: Week 03
+  chapters:
+    - file: week_03/01_Lesson_MoreDataCrunching
+    - file: week_03/02_Assignment_TemperaturePrecipitation
