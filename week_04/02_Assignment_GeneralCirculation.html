@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment: effect of clouds on the planetary energy balance &#8212; Physics of the Climate System</title>
+    <title>Assignment: major features of the atmospheric circulation &#8212; Physics of the Climate System</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -58,8 +58,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Solution: effect of clouds on the planetary energy balance" href="03_Solution_Simple_cloud_effects.html" />
-    <link rel="prev" title="Lesson: Conservation of angular momentum and Hadley circulation" href="01_Lesson_Conservation_of_momentum.html" />
+    <link rel="prev" title="Lesson: wind flow, 4D data, numerical integrals" href="01_Lesson_Wind-Derivatives-Integrals.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -128,19 +127,19 @@
   Week 01
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Lesson_Conservation_of_momentum.html">
+  <a class="reference internal" href="../week_01/01_Lesson_Conservation_of_momentum.html">
    Lesson: Conservation of angular momentum and Hadley circulation
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_01/02_Assignment_Simple_cloud_effects.html">
    Assignment: effect of clouds on the planetary energy balance
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="03_Solution_Simple_cloud_effects.html">
+  <a class="reference internal" href="../week_01/03_Solution_Simple_cloud_effects.html">
    Solution: effect of clouds on the planetary energy balance
   </a>
  </li>
@@ -194,14 +193,14 @@
   Week 04
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
+  <a class="reference internal" href="01_Lesson_Wind-Derivatives-Integrals.html">
    Lesson: wind flow, 4D data, numerical integrals
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Assignment: major features of the atmospheric circulation
   </a>
  </li>
@@ -245,7 +244,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_01/02_Assignment_Simple_cloud_effects.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_04/02_Assignment_GeneralCirculation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -265,10 +264,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_01/02_Assignment_Simple_cloud_effects.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_04/02_Assignment_GeneralCirculation.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/week_01/02_Assignment_Simple_cloud_effects.ipynb"><button
+        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/week_04/02_Assignment_GeneralCirculation.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -288,7 +287,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_01/02_Assignment_Simple_cloud_effects.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_04/02_Assignment_GeneralCirculation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -311,19 +310,31 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effect-of-low-clouds-on-the-eb">
-   Effect of low clouds on the EB
+  <a class="reference internal nav-link" href="#sea-level-pressure-and-surface-winds">
+   Sea-level pressure and surface winds
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effect-of-high-clouds-on-the-eb">
-   Effect of high clouds on the EB
+  <a class="reference internal nav-link" href="#general-circulation-of-the-upper-atmopshere">
+   General circulation of the upper atmopshere
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#and-now-automate-things-a-little-bit">
-   And now automate things a little bit
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geopotential-and-zonal-winds">
+     Geopotential and zonal winds
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#meridional-overturning-circulation">
+     Meridional overturning circulation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#optional-stationary-waves-in-the-mid-and-upper-troposphere">
+     Optional: stationary waves in the mid- and upper troposphere
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -337,107 +348,139 @@
         
               <div>
                 
-  <div class="section" id="assignment-effect-of-clouds-on-the-planetary-energy-balance">
-<h1>Assignment: effect of clouds on the planetary energy balance<a class="headerlink" href="#assignment-effect-of-clouds-on-the-planetary-energy-balance" title="Permalink to this headline">¶</a></h1>
-<p>In this exercise you are going to compute the effect of clouds on the planetary energy balance, with the help of a simple 1-column model of the atmosphere.</p>
+  <div class="section" id="assignment-major-features-of-the-atmospheric-circulation">
+<h1>Assignment: major features of the atmospheric circulation<a class="headerlink" href="#assignment-major-features-of-the-atmospheric-circulation" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># These are the modules we need</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  <span class="c1"># plotting library</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># numerical library</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>  <span class="c1"># netCDF library</span>
+<span class="kn">import</span> <span class="nn">cartopy</span>  <span class="c1"># Map projections libary</span>
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>  <span class="c1"># Projections list</span>
+<span class="c1"># Some defaults:</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Default plot size</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>We define some constants:</p>
+<div class="section" id="sea-level-pressure-and-surface-winds">
+<h2>Sea-level pressure and surface winds<a class="headerlink" href="#sea-level-pressure-and-surface-winds" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s_0</span> <span class="o">=</span> <span class="mi">1367</span>  <span class="c1"># Solar constant (W m-2)</span>
-<span class="n">sigma</span> <span class="o">=</span> <span class="mf">5.670e-8</span>  <span class="c1"># Stefan–Boltzmann constant</span>
-<span class="n">t_s</span> <span class="o">=</span> <span class="mi">288</span>  <span class="c1"># Average temperature of the Earth&#39;s surface (K)</span>
-<span class="n">gamma</span> <span class="o">=</span> <span class="o">-</span><span class="mf">6.5</span>  <span class="c1"># Lapse-rate in the atmoshpere (K km-1)</span>
-<span class="n">surface_albedo</span> <span class="o">=</span> <span class="mf">0.12</span>  <span class="c1"># Albedo of the surface of the Earth</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_uvslp.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="effect-of-low-clouds-on-the-eb">
-<h2>Effect of low clouds on the EB<a class="headerlink" href="#effect-of-low-clouds-on-the-eb" title="Permalink to this headline">¶</a></h2>
-<p>To isolate the effect of clouds, we assume a very simple representation of the atmosphere as a simple column, free of other greenhouse gases and other clouds. The Temperature of the cloud would then be:</p>
-<p><span class="math notranslate nohighlight">\(T_{Cloud} = T_{Surface} + \gamma \, z \)</span>,</p>
-<p>with <span class="math notranslate nohighlight">\(z\)</span> the cloud altitude (km) and <span class="math notranslate nohighlight">\(\gamma\)</span> the lapse-rate.</p>
-<p><strong>Q: compute the temperature (K) of a cloud at z = 2km, assuming a constant lapse rate and an average surface temperature of 288K:</strong></p>
+<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{SLP} \right]\)</span> (in hPa), and plot it. With the help of <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axhline">plt.axhline</a>, add the <a class="reference external" href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Standard_atmospheric">standard atmosphere pressure</a> line to the plot to emphasize high and low pressure regions.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Now assume that the cloud absorbs all the IR radiation emited by the surface (a reasonable approximation), while emmitting IR directly back to space according to its own temperature. So the total energy change of the climate system in the longwave (LW) spectrum would be:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{LW} = \sigma T_{Surface}^4 - \sigma T_{Cloud}^4\)</span></p>
-<p><strong>Q: compute the effect of a low cloud on the LW energy balance of the climate system. Is the cloud a LW energy loss or an energy gain for the system?</strong></p>
+<p><strong>Repeat with <span class="math notranslate nohighlight">\(\left[ \overline{u_{10}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{v_{10}} \right]\)</span> (in hPa) and the 0. horizontal line to the plot (to detect surface westerlies from easterlies for example). Analyse the three plots alltogether. How do they fit to the circulation we discussed in the lecture?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Now consider the shortwave effect of the cloud if it has an albedo of 0.5. The net difference for the climate system is simply the increased loss in solar energy because of an increased reflection:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{SW} = - S_0 / 4 \cdot (\alpha _{Cloud} - \alpha _{Earth} ) \)</span></p>
-<p><strong>Q: compute the effect of a low cloud on the shortwave (SW) energy balance of the climate system. Is the cloud a SW energy loss or an energy gain for the system?</strong></p>
+<p><strong>Plot the annual <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> on a map. Choose adequate levels and colormap, so that low pressure and high pressure systems are visible. These are called “semi-permanent highs and lows”. Can you name most of them?</strong></p>
+<ul class="simple">
+<li><p>Icelandic Low</p></li>
+<li><p>Aleutian Low</p></li>
+<li><p>Subtropical highs: Bermuda High, South/North Pacific High…</p></li>
+<li><p>Siberian High</p></li>
+<li><p>Monsoon Low (or through)</p></li>
+<li><p>…</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Finally, the net energy difference for the climate system is:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{TOT} = \Delta E_{SW} + \Delta E_{LW}\)</span></p>
-<p><strong>Q: compute the effect of a low cloud on the total (SW + LW) energy balance of the climate system. Is the low cloud a total energy loss or an energy gain for the system?</strong></p>
+<p><strong>Now use the same colors and levels as above, and plot <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> for the months of January and July. Compare the evolution of the major systems. When are they strongest? Weakest? Which systems disappear entirely?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="effect-of-high-clouds-on-the-eb">
-<h2>Effect of high clouds on the EB<a class="headerlink" href="#effect-of-high-clouds-on-the-eb" title="Permalink to this headline">¶</a></h2>
-<p><strong>Q: repeat the calculations above to compute the effect of a high cloud (z = 10km, albedo unchanged) on the total energy balance of the climate system. Is the high cloud a total energy loss or an energy gain for the system?</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="section" id="and-now-automate-things-a-little-bit">
-<h2>And now automate things a little bit<a class="headerlink" href="#and-now-automate-things-a-little-bit" title="Permalink to this headline">¶</a></h2>
-<p><strong>Q: repeat the calculations above for the whole range of altitudes between 2 and 10 km (see the previous lesson for how to do this). Plot the curve.</strong></p>
+<div class="section" id="general-circulation-of-the-upper-atmopshere">
+<h2>General circulation of the upper atmopshere<a class="headerlink" href="#general-circulation-of-the-upper-atmopshere" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_4D_zuvw.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Q: repeat the calculations above, for three values of the cloud albedo: 0.3, 0.5, 0.7. Plot the three curves on the same plot and add a legend to the plots (see the <a class="reference external" href="https://fabienmaussion.info/climate_system/primer.html">Python Primer</a> notebook for guidance).</strong></p>
+<div class="section" id="geopotential-and-zonal-winds">
+<h3>Geopotential and zonal winds<a class="headerlink" href="#geopotential-and-zonal-winds" title="Permalink to this headline">¶</a></h3>
+<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span>, where <span class="math notranslate nohighlight">\(z_h\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Geopotential_height">geopotential height</a> (unit: m). Plot it (you can use <code class="docutils literal notranslate"><span class="pre">.plot.contourf(levels=18,</span> <span class="pre">center=False)</span></code> for example). Don’t forget to put the y-axis in the right direction!</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Q: discuss the features of the plot, and the conditions necessary for a cloud to be an energy gain or an energy loss for the climate system. Now search for typical values of cloud albedos depending on their type, and come back to your plot for comparison.</strong></p>
-<p>If you complicate things a bit by noticing that high clouds have a low albedo and low clouds a high albedo while thick clouds have a high albedo but also a high cloud top you can imagine that the system becomes extremely sensitive.</p>
-<p><strong>The processes governing cloud albedo are complex. The uncertainty about changes in the clouds frequency, altitude, and albedo are one of the highest uncertainties in the climate models.</strong></p>
-<p>More info: http://www.skepticalscience.com/clouds-negative-feedback-basic.htm (basic and intermediate)</p>
+<p><strong>What is the approximate average height of the 200hPa level at the poles? At the tropics? Not that easy to see, right? Instead, you can try to compute the anomaly of <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span> with respect to <span class="math notranslate nohighlight">\(\left\{ \left[ \overline{z_h} \right] \right\}\)</span>, where <span class="math notranslate nohighlight">\(\left\{ \right\}\)</span> would represent the meridional average. Plot it (this time without the <code class="docutils literal notranslate"><span class="pre">center</span></code> keyword) and analyse the plot: what altitude difference is there at the 500hPa level between the equator and the poles? And at the 200hPa level? How does that fit into the thermal wind concept we discussed in the lecture?</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Repeat the operation with the month of January and July. Analyse the differences.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Now plot the zonal temporal average of the zonal wind <span class="math notranslate nohighlight">\(\left[ \overline{u} \right]\)</span>, for the annual average and the months of January and July. Analyse the plot: when and where is the zonal wind speed highest? Where is the zonal wind negative?</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="meridional-overturning-circulation">
+<h3>Meridional overturning circulation<a class="headerlink" href="#meridional-overturning-circulation" title="Permalink to this headline">¶</a></h3>
+<p><strong>Compute the stram function of the meridional overturning circulation of the atmosphere fot the annual average and the months of January, April, July, and October. Plot all five with the same colors and levels for comparison. Analyse what you see.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="optional-stationary-waves-in-the-mid-and-upper-troposphere">
+<h3>Optional: stationary waves in the mid- and upper troposphere<a class="headerlink" href="#optional-stationary-waves-in-the-mid-and-upper-troposphere" title="Permalink to this headline">¶</a></h3>
+<p>“Stationary waves” or “stationary eddies” are circulations which are absent from the zonal mean, but visible in the temporal average of the wind field (see lecture). A nice way to visualize stationary waves is simply to plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> (with <span class="math notranslate nohighlight">\(z\)</span> the geopotential). Remember what this is? We computed this anomaly in the “temperature and precipitation data” assignment last week.</p>
+<p><strong>Select data in one hemisphere (NH or SH), for one pressure level and for one month, and plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> on a map. Nice, huh?</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -454,7 +497,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_01"
+            path: "./week_04"
         },
         predefinedOutput: true
     }
@@ -466,8 +509,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="01_Lesson_Conservation_of_momentum.html" title="previous page">Lesson: Conservation of angular momentum and Hadley circulation</a>
-    <a class='right-next' id="next-link" href="03_Solution_Simple_cloud_effects.html" title="next page">Solution: effect of clouds on the planetary energy balance</a>
+    <a class='left-prev' id="prev-link" href="01_Lesson_Wind-Derivatives-Integrals.html" title="previous page">Lesson: wind flow, 4D data, numerical integrals</a>
 
         </div>
         

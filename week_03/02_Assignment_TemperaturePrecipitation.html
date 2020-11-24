@@ -58,6 +58,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Solution: temperature and precipitation data" href="03_Solution_TemperaturePrecipitation.html" />
     <link rel="prev" title="Lesson: more tools for statistical and climatological analysis" href="01_Lesson_MoreDataCrunching.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -180,6 +181,28 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Assignment: temperature and precipitation data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_Solution_TemperaturePrecipitation.html">
+   Solution: temperature and precipitation data
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Week 04
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
+   Lesson: wind flow, 4D data, numerical integrals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
+   Assignment: major features of the atmospheric circulation
   </a>
  </li>
 </ul>
@@ -746,11 +769,11 @@ Coordinates:
   * time       (time) datetime64[ns] 1979-01-01 1979-02-01 ... 2018-12-01
 Attributes:
     units:      m
-    long_name:  Total precipitation</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'tp'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li><li><span class='xr-has-index'>longitude</span>: 480</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-721fb6c8-6988-43e3-9385-2e5407b2cf5f' class='xr-array-in' type='checkbox' checked><label for='section-721fb6c8-6988-43e3-9385-2e5407b2cf5f' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[55526400 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-86f7263f-3205-4c44-b6e7-af6be9a0e896' class='xr-section-summary-in' type='checkbox'  checked><label for='section-86f7263f-3205-4c44-b6e7-af6be9a0e896' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.625 -178.875 ... 179.625</div><input id='attrs-a24286b9-6223-4782-9057-aa0f6cdaf29d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a24286b9-6223-4782-9057-aa0f6cdaf29d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-706f26fb-6546-498f-a31b-a344aa90169d' class='xr-var-data-in' type='checkbox'><label for='data-706f26fb-6546-498f-a31b-a344aa90169d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
-      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-60a989b8-24a9-48c1-a7d0-6b35e1962569' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-60a989b8-24a9-48c1-a7d0-6b35e1962569' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-544350a7-22b4-4b79-a72c-d37d0c9cfce9' class='xr-var-data-in' type='checkbox'><label for='data-544350a7-22b4-4b79-a72c-d37d0c9cfce9' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1979-01-01 ... 2018-12-01</div><input id='attrs-a30f7c07-3c43-478d-b869-b68cd2735a6b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a30f7c07-3c43-478d-b869-b68cd2735a6b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-cb328c65-92c6-4736-960b-6d99e7e966b6' class='xr-var-data-in' type='checkbox'><label for='data-cb328c65-92c6-4736-960b-6d99e7e966b6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1979-01-01T00:00:00.000000000&#x27;, &#x27;1979-02-01T00:00:00.000000000&#x27;,
+    long_name:  Total precipitation</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'tp'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li><li><span class='xr-has-index'>longitude</span>: 480</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-9e53621b-6170-4fea-9f22-c9aeffbbb77d' class='xr-array-in' type='checkbox' checked><label for='section-9e53621b-6170-4fea-9f22-c9aeffbbb77d' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[55526400 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-e9bb44ca-1367-4cd8-8468-ea1aac3702f7' class='xr-section-summary-in' type='checkbox'  checked><label for='section-e9bb44ca-1367-4cd8-8468-ea1aac3702f7' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.625 -178.875 ... 179.625</div><input id='attrs-cec09175-cc9f-433b-b612-bac2bba950f8' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-cec09175-cc9f-433b-b612-bac2bba950f8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1acd6ea9-d19c-4438-a9cf-93dc3decb600' class='xr-var-data-in' type='checkbox'><label for='data-1acd6ea9-d19c-4438-a9cf-93dc3decb600' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
+      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-43be2966-ae6e-430c-a354-136240696326' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-43be2966-ae6e-430c-a354-136240696326' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e53e189a-f4aa-4fac-a6ba-72006d43c930' class='xr-var-data-in' type='checkbox'><label for='data-e53e189a-f4aa-4fac-a6ba-72006d43c930' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1979-01-01 ... 2018-12-01</div><input id='attrs-95827db1-dfa4-4bcc-b2e7-65208a396962' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-95827db1-dfa4-4bcc-b2e7-65208a396962' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-88a9b21f-9a94-4944-83a2-1cdc93869c2c' class='xr-var-data-in' type='checkbox'><label for='data-88a9b21f-9a94-4944-83a2-1cdc93869c2c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1979-01-01T00:00:00.000000000&#x27;, &#x27;1979-02-01T00:00:00.000000000&#x27;,
        &#x27;1979-03-01T00:00:00.000000000&#x27;, ..., &#x27;2018-10-01T00:00:00.000000000&#x27;,
        &#x27;2018-11-01T00:00:00.000000000&#x27;, &#x27;2018-12-01T00:00:00.000000000&#x27;],
-      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-407077af-6a0c-461a-b6cd-d2d2dcc09d70' class='xr-section-summary-in' type='checkbox'  checked><label for='section-407077af-6a0c-461a-b6cd-d2d2dcc09d70' class='xr-section-summary' >Attributes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>long_name :</span></dt><dd>Total precipitation</dd></dl></div></li></ul></div></div></div></div>
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-d8463f66-f70d-44b5-bd85-2d5bae4ac024' class='xr-section-summary-in' type='checkbox'  checked><label for='section-d8463f66-f70d-44b5-bd85-2d5bae4ac024' class='xr-section-summary' >Attributes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>long_name :</span></dt><dd>Total precipitation</dd></dl></div></li></ul></div></div></div></div>
 </div>
 <p><strong>Compute the average total annual precipitation (average precipitation over a year, in mm yr<span class="math notranslate nohighlight">\(^{-1}\)</span>) and store it in a variable called “annual_prcp”. Plot it.</strong></p>
 <div class="cell docutils container">
@@ -764,10 +787,10 @@ Attributes:
 <p><strong>Using your knowledge from the lecture which didn’t take place yet ;-), try to answer questions such as:</strong></p>
 <ul class="simple">
 <li><p>why are the oceans (mostly) dryer than land in the subtropics?</p></li>
-<li><p>this was not covered in the lecture, but why is there only one large desert (in Africa) while other continents at the same latitute are rather wet?</p></li>
-<li><p>why are the eastern subtropical oceans dryer than in their western part? Do all three oceans have similar patterns for precipitation?</p></li>
-<li><p>where does it fall more than 3000 mm precipitation a year? Less than 50 mm precipitation a year?</p></li>
-<li><p>Note that it could be easy to use the “.where()” function to highlight these areas easily. Optional: can you come up with a plot showing them on the map?</p></li>
+<li><p>this was not covered in the lecture, but why is there only one large desert (in Africa) while other continents at the same latitude are rather wet?</p></li>
+<li><p>why are the eastern subtropical oceans dryer than their western parts? Do all three oceans have similar precipitation patterns?</p></li>
+<li><p>where does more than 3000 mm (less than 50 mm) precipitation a year occur?</p></li>
+<li><p>Note that it is easy to use the “.where()” function to highlight these areas. Optional: can you come up with a plot showing them on the map?</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -813,6 +836,7 @@ Attributes:
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="01_Lesson_MoreDataCrunching.html" title="previous page">Lesson: more tools for statistical and climatological analysis</a>
+    <a class='right-next' id="next-link" href="03_Solution_TemperaturePrecipitation.html" title="next page">Solution: temperature and precipitation data</a>
 
         </div>
         

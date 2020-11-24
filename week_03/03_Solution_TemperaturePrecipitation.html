@@ -58,6 +58,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lesson: wind flow, 4D data, numerical integrals" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html" />
+    <link rel="prev" title="Assignment: temperature and precipitation data" href="02_Assignment_TemperaturePrecipitation.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -170,7 +172,7 @@
   Week 03
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="01_Lesson_MoreDataCrunching.html">
    Lesson: more tools for statistical and climatological analysis
@@ -179,6 +181,28 @@
  <li class="toctree-l1">
   <a class="reference internal" href="02_Assignment_TemperaturePrecipitation.html">
    Assignment: temperature and precipitation data
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Solution: temperature and precipitation data
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Week 04
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
+   Lesson: wind flow, 4D data, numerical integrals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
+   Assignment: major features of the atmospheric circulation
   </a>
  </li>
 </ul>
@@ -793,11 +817,11 @@ Coordinates:
   * time       (time) datetime64[ns] 1979-01-01 1979-02-01 ... 2018-12-01
 Attributes:
     units:      m
-    long_name:  Total precipitation</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'tp'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li><li><span class='xr-has-index'>longitude</span>: 480</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-29d943b3-8658-4ffd-a6c7-f0183477b91a' class='xr-array-in' type='checkbox' checked><label for='section-29d943b3-8658-4ffd-a6c7-f0183477b91a' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[55526400 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-c8ff57ad-b259-4a91-93dc-d002177d6a3c' class='xr-section-summary-in' type='checkbox'  checked><label for='section-c8ff57ad-b259-4a91-93dc-d002177d6a3c' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.625 -178.875 ... 179.625</div><input id='attrs-aa967f09-6e37-428b-9605-81f6918f4774' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-aa967f09-6e37-428b-9605-81f6918f4774' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-13605b74-231c-4a85-893f-5e99d271404d' class='xr-var-data-in' type='checkbox'><label for='data-13605b74-231c-4a85-893f-5e99d271404d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
-      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-8a909eea-8d5e-45cb-9ad9-167d2b188b39' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-8a909eea-8d5e-45cb-9ad9-167d2b188b39' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-188649bf-20d4-48ef-b6bc-850dfc47d983' class='xr-var-data-in' type='checkbox'><label for='data-188649bf-20d4-48ef-b6bc-850dfc47d983' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1979-01-01 ... 2018-12-01</div><input id='attrs-66587a8c-e893-4e1f-8d4b-6075cecfd3f2' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-66587a8c-e893-4e1f-8d4b-6075cecfd3f2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e2bd1c3c-f7c4-4944-80a0-dd079a15ebb0' class='xr-var-data-in' type='checkbox'><label for='data-e2bd1c3c-f7c4-4944-80a0-dd079a15ebb0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1979-01-01T00:00:00.000000000&#x27;, &#x27;1979-02-01T00:00:00.000000000&#x27;,
+    long_name:  Total precipitation</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'tp'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li><li><span class='xr-has-index'>longitude</span>: 480</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-bb65adcd-4caf-404c-8d7d-3ee6d5f0c596' class='xr-array-in' type='checkbox' checked><label for='section-bb65adcd-4caf-404c-8d7d-3ee6d5f0c596' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[55526400 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-b28c9d1b-7479-47af-86a8-cb0f3c98d10e' class='xr-section-summary-in' type='checkbox'  checked><label for='section-b28c9d1b-7479-47af-86a8-cb0f3c98d10e' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.625 -178.875 ... 179.625</div><input id='attrs-50429e2d-3b4b-4332-a1f8-dbac7b45e394' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-50429e2d-3b4b-4332-a1f8-dbac7b45e394' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-cc8619cd-fd97-44eb-8b0a-70c52d0bd185' class='xr-var-data-in' type='checkbox'><label for='data-cc8619cd-fd97-44eb-8b0a-70c52d0bd185' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
+      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-189c428b-0d7f-44de-a78f-f3340e6f379e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-189c428b-0d7f-44de-a78f-f3340e6f379e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9453fc22-b963-408f-94b2-8aecbe759bbf' class='xr-var-data-in' type='checkbox'><label for='data-9453fc22-b963-408f-94b2-8aecbe759bbf' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1979-01-01 ... 2018-12-01</div><input id='attrs-b611f533-88c0-4ed1-b8bf-ad134aee5a9d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b611f533-88c0-4ed1-b8bf-ad134aee5a9d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d07cb8c3-1fff-4982-9778-fb60d2c77dd3' class='xr-var-data-in' type='checkbox'><label for='data-d07cb8c3-1fff-4982-9778-fb60d2c77dd3' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1979-01-01T00:00:00.000000000&#x27;, &#x27;1979-02-01T00:00:00.000000000&#x27;,
        &#x27;1979-03-01T00:00:00.000000000&#x27;, ..., &#x27;2018-10-01T00:00:00.000000000&#x27;,
        &#x27;2018-11-01T00:00:00.000000000&#x27;, &#x27;2018-12-01T00:00:00.000000000&#x27;],
-      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-7d5cf6fe-632e-4755-b6a7-996a320313a7' class='xr-section-summary-in' type='checkbox'  checked><label for='section-7d5cf6fe-632e-4755-b6a7-996a320313a7' class='xr-section-summary' >Attributes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>long_name :</span></dt><dd>Total precipitation</dd></dl></div></li></ul></div></div></div></div>
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-a8a0ddd5-5595-42db-ac48-da5924246b61' class='xr-section-summary-in' type='checkbox'  checked><label for='section-a8a0ddd5-5595-42db-ac48-da5924246b61' class='xr-section-summary' >Attributes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>long_name :</span></dt><dd>Total precipitation</dd></dl></div></li></ul></div></div></div></div>
 </div>
 <p><strong>Compute the average total annual precipitation (average precipitation over a year, in mm yr<span class="math notranslate nohighlight">\(^{-1}\)</span>) and store it in a variable called “annual_prcp”. Plot it.</strong></p>
 <div class="cell docutils container">
@@ -919,6 +943,8 @@ Attributes:
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="02_Assignment_TemperaturePrecipitation.html" title="previous page">Assignment: temperature and precipitation data</a>
+    <a class='right-next' id="next-link" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html" title="next page">Lesson: wind flow, 4D data, numerical integrals</a>
 
         </div>
         
