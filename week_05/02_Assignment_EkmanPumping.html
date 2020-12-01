@@ -370,7 +370,7 @@
                 
   <div class="section" id="assignment-ekman-pumping">
 <h1>02: Assignment: Ekman Pumping<a class="headerlink" href="#assignment-ekman-pumping" title="Permalink to this headline">¶</a></h1>
-<p>In this exercise will apply the lesson learned about derivatives in Python to compute the Ekman transport in the ocean, and then compute the associated up- and downwelling.</p>
+<p>In this exercise we will apply the lesson learned about derivatives in Python to compute the Ekman transport in the ocean, and then compute the associated up- and downwelling.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
@@ -387,7 +387,7 @@
 </div>
 <div class="section" id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
-<p>We are going to work again with the <code class="docutils literal notranslate"><span class="pre">ERA5_LowRes_MonthlyAvg_uvslp.nc</span></code> and the <code class="docutils literal notranslate"><span class="pre">ERA5_LowRes_Invariant.nc</span></code> files that you already downloaded from a previous unit:</p>
+<p>We are going to work again with the <code class="docutils literal notranslate"><span class="pre">ERA5_LowRes_MonthlyAvg_uvslp.nc</span></code> and the <code class="docutils literal notranslate"><span class="pre">ERA5_LowRes_Invariant.nc</span></code> files that you already downloaded for a previous unit:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_uvslp.nc&#39;</span><span class="p">)</span>
@@ -402,7 +402,7 @@
 <p>If you remember the lesson (<em>Oceans</em>), the stress exerted by surface winds on the ocean can be reasonably well approximated by the bulk formula (Marshall and Plumb, p198):</p>
 <div class="math notranslate nohighlight">
 \[(\tau_{wind_x}, \tau_{wind_y}) = \rho_{air} c_D ws_{10} (u_{10}, v_{10})\]</div>
-<p>Where <span class="math notranslate nohighlight">\(c_D\)</span> is a bulk transfert coefficient for momentum (here we use <span class="math notranslate nohighlight">\(c_D\)</span> = 1.5<span class="math notranslate nohighlight">\(\times\)</span>10<span class="math notranslate nohighlight">\(^{-3}\)</span>), <span class="math notranslate nohighlight">\(\rho_{air}\)</span> is the denisty of air at the surface (here we use <span class="math notranslate nohighlight">\(\rho_{air}\)</span> = 1.225 kg m<span class="math notranslate nohighlight">\(^3\)</span>), <span class="math notranslate nohighlight">\(ws\)</span> is the wind speed at 10 m, and <span class="math notranslate nohighlight">\(u_{10}\)</span> , <span class="math notranslate nohighlight">\(v_{10}\)</span> are the components of the wind vector at 10 m height.</p>
+<p>Where <span class="math notranslate nohighlight">\(c_D\)</span> is a bulk transfer coefficient for momentum (here we use <span class="math notranslate nohighlight">\(c_D\)</span> = 1.5<span class="math notranslate nohighlight">\(\times\)</span>10<span class="math notranslate nohighlight">\(^{-3}\)</span>), <span class="math notranslate nohighlight">\(\rho_{air}\)</span> is the denisty of air at the surface (here we use <span class="math notranslate nohighlight">\(\rho_{air}\)</span> = 1.225 kg m<span class="math notranslate nohighlight">\(^3\)</span>), <span class="math notranslate nohighlight">\(ws\)</span> is the wind speed at 10 m, and <span class="math notranslate nohighlight">\(u_{10}\)</span> , <span class="math notranslate nohighlight">\(v_{10}\)</span> are the components of the wind vector at 10 m height.</p>
 <p><strong>Q: <span class="math notranslate nohighlight">\(\tau\)</span> is expressed in N m<span class="math notranslate nohighlight">\(^{-2}\)</span>. verify that <span class="math notranslate nohighlight">\(c_D\)</span> is a dimensionless quantity.</strong></p>
 <p><strong>E: compute <span class="math notranslate nohighlight">\(\overline{\tau_x}\)</span> and <span class="math notranslate nohighlight">\(\overline{\tau_y}\)</span>. This quantity only makes sense over the oceans. Read the invariant data and keep only the values of <span class="math notranslate nohighlight">\(\overline{\tau_x}\)</span> and <span class="math notranslate nohighlight">\(\overline{\tau_y}\)</span> over the oceans.</strong></p>
 <div class="cell docutils container">
