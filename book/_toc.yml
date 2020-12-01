@@ -32,4 +32,9 @@
   chapters:
     - file: week_04/01_Lesson_Wind-Derivatives-Integrals
     - file: week_04/02_Assignment_GeneralCirculation
-
+    - file: week_04/03_Solution_GeneralCirculation
+    
+- part: Week 05
+  chapters:
+    - file: week_05/01_GuidedExercise_EnergyTransport
+    - file: week_05/02_Assignment_EkmanPumping
