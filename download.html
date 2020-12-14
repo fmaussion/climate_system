@@ -25,7 +25,7 @@
     href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/sphinx-book-theme.c2503ba76ccc0c9da7bd1e10de722da9.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.da26317cf37e5c4af2fa3e6253912353.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -219,12 +219,51 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="week_05/01_GuidedExercise_EnergyTransport.html">
-   01 - Guided exercise: Energy Transport
+   Guided exercise: Energy Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="week_05/02_Assignment_EkmanPumping.html">
-   02: Assignment: Ekman Pumping
+   Assignment: Ekman Pumping
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Week 06
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_06/01_GuidedExercise_Composites.html">
+   Guided exercise: indices, composites, correlation maps
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Final Projects
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="projects/01_FinalProjects.html">
+   Final group projects: instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="projects/02_Getting_started_RegionalPlots.html">
+   Regional PlateCarree projection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="projects/03_Getting_started_NorthAmerica.html">
+   Lambert conformal projection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="projects/04_Getting_started_Antarctica.html">
+   Polar stereographic projection
   </a>
  </li>
 </ul>
@@ -341,6 +380,23 @@
   <a class="reference internal nav-link" href="#era5-data">
    ERA5 data
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ready-to-use-low-resolution-netcdf-files">
+     Ready to use, low resolution NetCDF files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-era5-data-from-the-cds-servers-optional">
+     Additional ERA5 data from the CDS servers (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cmip5-and-cmip6-data">
+   CMIP5 and CMIP6 data
+  </a>
  </li>
 </ul>
 
@@ -356,7 +412,7 @@
                 
   <div class="section" id="downloading-the-data">
 <h1>Downloading the data<a class="headerlink" href="#downloading-the-data" title="Permalink to this headline">¶</a></h1>
-<p>The data files used in the lecture are available on <a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/">this webserver</a> (will be updated as the lecture advances).</p>
+<p>All data files used in the lecture are available on <a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/">this webserver</a>.</p>
 <div class="section" id="ceres-data">
 <h2>CERES Data<a class="headerlink" href="#ceres-data" title="Permalink to this headline">¶</a></h2>
 <p>For Week 02, we will use climatological data from the <a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/ceres-ebaf-clouds-and-earths-radiant-energy-systems-ceres-energy-balanced-and-filled">CERES</a> (Clouds and the Earth’s Radiant Energy System) mission. We are going to use the EBAF-TOA and the EBAF-Surface data products (both freely available <a class="reference external" href="https://ceres.larc.nasa.gov/data/">on this webpage</a>) as climatologies (i.e. monthly averages 2005-2015).</p>
@@ -369,15 +425,41 @@
 </div>
 <div class="section" id="era5-data">
 <h2>ERA5 data<a class="headerlink" href="#era5-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ready-to-use-low-resolution-netcdf-files">
+<h3>Ready to use, low resolution NetCDF files<a class="headerlink" href="#ready-to-use-low-resolution-netcdf-files" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5">ERA5</a> is an atmospheric reanalysis product. We will use it a lot! Note that you can download the data yourself (I will upload some sample scripts here soon), but for a start you can download some files I prepared for you:</p>
-<p><strong>Download:</strong></p>
+<p><strong>Invariant:</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_t2m.nc">ERA5_LowRes_Monthly_t2m.nc</a></p></li>
-<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_tp.nc">ERA5_LowRes_Monthly_tp.nc</a></p></li>
 <li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Invariant.nc">ERA5_LowRes_Invariant.nc</a></p></li>
-<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_MonthlyAvg_uvslp.nc">ERA5_LowRes_MonthlyAvg_uvslp.nc</a></p></li>
-<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_MonthlyAvg_4D_zuvw.nc">ERA5_LowRes_MonthlyAvg_4D_zuvw.nc</a></p></li>
-<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_AnnualAvg_4D_eb.nc">ERA5_LowRes_AnnualAvg_4D_eb.nc</a></p></li>
+</ul>
+<p><strong>Monthly surface (3D) data:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_t2m.nc">ERA5_LowRes_Monthly_t2m.nc</a>: 2m temperature</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_tp.nc">ERA5_LowRes_Monthly_tp.nc</a>: total precipitation</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_evap.nc">ERA5_LowRes_Monthly_evap.nc</a>: evaporation</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_seaice.nc">ERA5_LowRes_Monthly_seaice.nc</a>: sea ice cover</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_clouds.nc">ERA5_LowRes_Monthly_clouds.nc</a>: cloud coverr (several variables)</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_snow.nc">ERA5_LowRes_Monthly_snow.nc</a>: snow cover</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_uvslp.nc">ERA5_LowRes_Monthly_uvslp.nc</a>: <code class="docutils literal notranslate"><span class="pre">u</span></code>, <code class="docutils literal notranslate"><span class="pre">v</span></code>, <code class="docutils literal notranslate"><span class="pre">slp</span></code></p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_sst.nc">ERA5_LowRes_Monthly_sst.nc</a>: sea surface temperatures</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_eb.nc">ERA5_LowRes_Monthly_eb.nc</a>: energy balance terms</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_wvtransport.nc">ERA5_LowRes_Monthly_wvtransport.nc</a>: vertical integral of water vapor transport (<code class="docutils literal notranslate"><span class="pre">u</span></code> and <code class="docutils literal notranslate"><span class="pre">v</span></code>)</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_water_column.nc">ERA5_LowRes_Monthly_water_column.nc</a>: vertical integral of total water column</p></li>
+</ul>
+<p><strong>Monthly pressure-level (4D) data:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_Monthly_4D_all.nc">ERA5_LowRes_Monthly_4D_all.nc</a> <code class="docutils literal notranslate"><span class="pre">u</span></code>, <code class="docutils literal notranslate"><span class="pre">v</span></code>, <code class="docutils literal notranslate"><span class="pre">w</span></code>, <code class="docutils literal notranslate"><span class="pre">geop</span></code>, <code class="docutils literal notranslate"><span class="pre">q</span></code> at pressure levels (file is <strong>12.4Gb large</strong>!)</p></li>
+</ul>
+<p><strong>Monthly averaged (annual cycle) data:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_MonthlyAvg_uvslp.nc">ERA5_LowRes_MonthlyAvg_uvslp.nc</a>: <code class="docutils literal notranslate"><span class="pre">u</span></code>, <code class="docutils literal notranslate"><span class="pre">v</span></code>, <code class="docutils literal notranslate"><span class="pre">slp</span></code> at surface</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_MonthlyAvg_4D_zuvw.nc">ERA5_LowRes_MonthlyAvg_4D_zuvw.nc</a>: <code class="docutils literal notranslate"><span class="pre">u</span></code>, <code class="docutils literal notranslate"><span class="pre">v</span></code>, <code class="docutils literal notranslate"><span class="pre">w</span></code>, <code class="docutils literal notranslate"><span class="pre">geop</span></code> at pressure levels</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_MonthlyAvg_4D_zuvwq.nc">ERA5_LowRes_MonthlyAvg_4D_zuvwq.nc</a>: <code class="docutils literal notranslate"><span class="pre">u</span></code>, <code class="docutils literal notranslate"><span class="pre">v</span></code>, <code class="docutils literal notranslate"><span class="pre">w</span></code>, <code class="docutils literal notranslate"><span class="pre">geop</span></code>, <code class="docutils literal notranslate"><span class="pre">q</span></code> at pressure levels</p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_MonthlyAvg_4D_eb.nc">ERA5_LowRes_MonthlyAvg_4D_eb.nc</a>:  energy balance terms <em>(should be renamed next year, 4D doesn’t make sense)</em></p></li>
+</ul>
+<p><strong>Full average (annual) data:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_AnnualAvg_4D_eb.nc">ERA5_LowRes_AnnualAvg_4D_eb.nc</a>:  energy balance terms <em>(should be renamed next year, 4D doesn’t make sense)</em></p></li>
 </ul>
 <p><strong>File naming conventions</strong>:</p>
 <ul class="simple">
@@ -388,6 +470,38 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">4D</span></code> means that the data is also available on pressure levels</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">t2m</span></code> or <code class="docutils literal notranslate"><span class="pre">tp</span></code> are variable names</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Invariant</span></code> means that this file contains time invariant fields such as topography or land-sea mask.</p></li>
+</ul>
+</div>
+<div class="section" id="additional-era5-data-from-the-cds-servers-optional">
+<h3>Additional ERA5 data from the CDS servers (optional)<a class="headerlink" href="#additional-era5-data-from-the-cds-servers-optional" title="Permalink to this headline">¶</a></h3>
+<p>You may want to download ERA5 data yourself if:</p>
+<ul class="simple">
+<li><p>you’d like additional variables not listed above</p></li>
+<li><p>you’d like to use high resolution data (0.25°) instead of the low resolution (0.75°) that I provided</p></li>
+<li><p>you’d like to download hourly data (daily data are not available unfortunately)</p></li>
+</ul>
+<p>If you want to go this path (<strong>not mandatory at all for the projects</strong>), you’ll need an account at the <a class="reference external" href="https://cds.climate.copernicus.eu">Copernicus Data Store</a></p>
+<p>You may want to use their online platform to analyze/download the data, or you can use a script. To get you started, <a class="reference external" href="https://gist.github.com/fmaussion/16c1119d8658cf4af9d3218dd5b1adf4">here</a> is the script I used to download all data linked below:  is the script I used to download all the data listed above.</p>
+</div>
+</div>
+<div class="section" id="cmip5-and-cmip6-data">
+<h2>CMIP5 and CMIP6 data<a class="headerlink" href="#cmip5-and-cmip6-data" title="Permalink to this headline">¶</a></h2>
+<p>Temperature and Precipitation projections, for a large number of scenarios and GCMs:</p>
+<ul class="simple">
+<li><p>CMIP5</p>
+<ul>
+<li><p>root link: <a class="reference external" href="https://cluster.klima.uni-bremen.de/~oggm/cmip5-ng">https://cluster.klima.uni-bremen.de/~oggm/cmip5-ng</a></p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~oggm/cmip5-ng/all_gcm_table.html">GCM list</a></p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~oggm/cmip5-ng/gcm_table.html">Summary table</a></p></li>
+</ul>
+</li>
+<li><p>CMIP6</p>
+<ul>
+<li><p>root link: <a class="reference external" href="https://cluster.klima.uni-bremen.de/~oggm/cmip6">https://cluster.klima.uni-bremen.de/~oggm/cmip6</a></p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~oggm/cmip6/all_gcm_table.html">GCM list</a></p></li>
+<li><p><a class="reference external" href="https://cluster.klima.uni-bremen.de/~oggm/cmip6/gcm_table.html">Summary table</a></p></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
