@@ -38,3 +38,15 @@
   chapters:
     - file: week_05/01_GuidedExercise_EnergyTransport
     - file: week_05/02_Assignment_EkmanPumping
+    
+- part: Week 06
+  chapters:
+    - file: week_06/01_GuidedExercise_Composites
+    
+    
+- part: Final Projects
+  chapters:
+    - file: projects/01_FinalProjects
+    - file: projects/02_Getting_started_RegionalPlots
+    - file: projects/03_Getting_started_NorthAmerica
+    - file: projects/04_Getting_started_Antarctica
