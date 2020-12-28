@@ -410,7 +410,7 @@
                 
   <div class="section" id="regional-platecarree-projection">
 <h1>Regional PlateCarree projection<a class="headerlink" href="#regional-platecarree-projection" title="Permalink to this headline">¶</a></h1>
-<p>The “Physics of the climate system” final projects ask may bring you to focus on one specific region. In the few lines of code below you find some examples to get you started. These examples are valid for continents or regions not too far from the equator.</p>
+<p>The “Physics of the climate system” final projects may bring you to focus on one specific region. In the few lines of code below you find some examples to get you started. These examples are valid for continents or regions not too far from the equator.</p>
 <p>First, the imports. They are the same as always, but I removed the figure size defaults:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -428,7 +428,7 @@
 </div>
 <div class="section" id="read-and-select-the-regional-data">
 <h2>Read and select the regional data<a class="headerlink" href="#read-and-select-the-regional-data" title="Permalink to this headline">¶</a></h2>
-<p>Reading the data works as allways:</p>
+<p>Reading the data works as always:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_Invariant.nc&#39;</span><span class="p">)</span>
@@ -436,7 +436,7 @@
 </div>
 </div>
 </div>
-<p>To select the data for a specific region, we will use xray’s <code class="docutils literal notranslate"><span class="pre">sel</span></code> function as we learned it in the exercises. I’ve made a pre-selection for you but you are free to make the domain bigger/smaller if you find it useful for your analyses! Just <strong>uncomment the two lines relevant for your case</strong>:</p>
+<p>To select the data for a specific region, we will use xray’s <code class="docutils literal notranslate"><span class="pre">sel</span></code> function as we learned in the exercises. I’ve made a pre-selection for you but you are free to make the domain bigger/smaller if you find it useful for your analyses! Just <strong>uncomment the two lines relevant for your case</strong>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # Africa</span>
@@ -458,7 +458,7 @@
 </div>
 </div>
 </div>
-<p>Note that I set the standard figure size for each region. You can allways change those, and also make plots of any size later on (examples below).</p>
+<p>Note that I set the standard figure size for each region. You can always change those, and also make plots of any size later on (examples below).</p>
 <p>Now we read the variable:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
