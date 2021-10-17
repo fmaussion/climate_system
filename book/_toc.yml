@@ -1,52 +1,15 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
-- file: welcome
-
-- part: Introduction
-  chapters:
+format: jb-book
+root: welcome
+parts:
+  - caption: Introduction
+    chapters:
     - file: getting_started
     - file: primer
-    - file: download
+    # - file: download
     - file: howto
-    
-- part: Week 01
-  chapters:
+
+  - caption: Week 01
+    chapters:
     - file: week_01/01_Lesson_Conservation_of_momentum
     - file: week_01/02_Assignment_Simple_cloud_effects
     - file: week_01/03_Solution_Simple_cloud_effects
-    
-- part: Week 02
-  chapters:
-    - file: week_02/01_Lesson_NetCDF_Data
-    - file: week_02/02_Assignment_CERES_data
-    - file: week_02/03_Solution_CERES_data
-    
-- part: Week 03
-  chapters:
-    - file: week_03/01_Lesson_MoreDataCrunching
-    - file: week_03/02_Assignment_TemperaturePrecipitation
-    - file: week_03/03_Solution_TemperaturePrecipitation
-    
-- part: Week 04
-  chapters:
-    - file: week_04/01_Lesson_Wind-Derivatives-Integrals
-    - file: week_04/02_Assignment_GeneralCirculation
-    - file: week_04/03_Solution_GeneralCirculation
-    
-- part: Week 05
-  chapters:
-    - file: week_05/01_GuidedExercise_EnergyTransport
-    - file: week_05/02_Assignment_EkmanPumping
-    
-- part: Week 06
-  chapters:
-    - file: week_06/01_GuidedExercise_Composites
-    
-    
-- part: Final Projects
-  chapters:
-    - file: projects/01_FinalProjects
-    - file: projects/02_Getting_started_RegionalPlots
-    - file: projects/03_Getting_started_NorthAmerica
-    - file: projects/04_Getting_started_Antarctica
