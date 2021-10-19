@@ -259,11 +259,6 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-the-classic-notebook-interface">
-     Launching the classic Notebook interface
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
      Launching the Jupyterlab interface
     </a>
@@ -310,8 +305,8 @@ We will use notebooks for the entire class. <strong>In fact, this webpage (and a
 <div class="section" id="installing-jupyter-on-your-computer">
 <h3>Installing Jupyter on your computer<a class="headerlink" href="#installing-jupyter-on-your-computer" title="Permalink to this headline">¶</a></h3>
 <p>If you are not following my programming class, <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/02-Installation.html#installing-python-on-your-pc">follow these instructions to install python</a> first. I strongly recommend to create a new environment (e.g. called “climate”) or to <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/02-Installation.html#go-safe-clone-your-working-environments-before-installing-new-packages">clone your working environment</a> to be safe before installing more packages in it.</p>
-<p>Once you have a working python environment in conda (or a clone of it), install <code class="docutils literal notranslate"><span class="pre">jupyter-notebook</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyter-notebook jupyterlab
+<p>Once you have a working python environment in conda (or a clone of it), install <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyterlab
 </pre></div>
 </div>
 <p>In addition to Jupyter, you will also need the following python packages for the exercises:</p>
@@ -323,27 +318,18 @@ We will use notebooks for the entire class. <strong>In fact, this webpage (and a
 <h3>Plan B<a class="headerlink" href="#plan-b" title="Permalink to this headline">¶</a></h3>
 <p>If you are not able to run the notebooks on your laptop, I will give you access to an online platform that you can use for the rest of the semester.</p>
 </div>
-<div class="section" id="launching-the-classic-notebook-interface">
-<h3>Launching the classic Notebook interface<a class="headerlink" href="#launching-the-classic-notebook-interface" title="Permalink to this headline">¶</a></h3>
-<p>To start the <strong>classic notebook</strong> interface, type the following command in a terminal window:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ jupyter-notebook
-</pre></div>
-</div>
-<p>A new tab in your default web browser will be opened. This is the <strong>“notebook explorer”</strong>. From this window you can navigate through your folders, open existing notebooks like this one or create new ones (“New” button on the upper right panel). The root directory in the explorer will always be the folder from which you started the interface.</p>
-<p>After creating a new notebook you will be presented with several things: the <strong>notebook name</strong> appears right next to the jupyter sign at the very top of the page. The new notebook will be named “untitled”, but you can change this at any time by clicking on the name. Below the toolbar, you can see a <strong>code cell</strong>. This is the default type of cell in a jupyter-notbook and you can write and execute python code with it. There is another cell type called <strong>markdown</strong>, in which you can write simple text like the one you actually read right now.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Do not close the terminal from which you started the notebook. This is where python is “actually” running: the browser only sends commands to this running instance of python in your terminal.</p>
-</div>
-</div>
 <div class="section" id="launching-the-jupyterlab-interface">
 <h3>Launching the Jupyterlab interface<a class="headerlink" href="#launching-the-jupyterlab-interface" title="Permalink to this headline">¶</a></h3>
-<p>Jupyterlab is the most recent interface to write and run Jupyter Notebooks. It is more modern than the classic interface, has more options and is slightly more complicated at first. I do not mind which interface you use, both are fine.</p>
+<p>Jupyterlab is the most recent interface to write and run Jupyter Notebooks.</p>
 <p>To start the <strong>jupyterlab</strong> interface, type the following command in a terminal window:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    $ jupyter-lab
 </pre></div>
 </div>
-<p>Like for the classic interface, jupyterlab runs in your browser. You can open a new notebook with the “launcher” button. You can explore files with the file explorer on the left.</p>
+<p>Jupyterlab runs in your browser. You can open a new notebook with the “launcher” button. You can explore files with the file explorer on the left.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not close the terminal from which you started jupyterlab. This is where python is “actually” running: the browser only sends commands to this running instance of python in your terminal.</p>
+</div>
 </div>
 <div class="section" id="download-and-run-a-notebook">
 <h3>Download and run a notebook<a class="headerlink" href="#download-and-run-a-notebook" title="Permalink to this headline">¶</a></h3>
