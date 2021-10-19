@@ -11,3 +11,4 @@ parts:
   - caption: Week 01
     chapters:
     - file: week_01/01_Lesson_Conservation_of_momentum
+    - file: week_01/02_Assignment_Simple_cloud_effects
