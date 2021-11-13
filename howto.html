@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to use this website and prepare for each week &#8212; Physics of the Climate System</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -53,10 +53,23 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Lesson: Conservation of angular momentum and Hadley circulation" href="week_01/01_Lesson_Conservation_of_momentum.html" />
-    <link rel="prev" title="Python and Jupyter: a primer" href="primer.html" />
+    <link rel="prev" title="Downloading the data" href="download.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-88391345-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -94,7 +107,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -110,13 +123,18 @@
    Python and Jupyter: a primer
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="download.html">
+   Downloading the data
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    How to use this website and prepare for each week
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Week 01
  </span>
@@ -130,6 +148,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="week_01/02_Assignment_Simple_cloud_effects.html">
    Assignment: effect of clouds on the planetary energy balance
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 02
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_02/01_Lesson_NetCDF_Data.html">
+   Lesson: working with netCDF data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_02/02_Assignment_CERES_data.html">
+   Assignment: CERES data
   </a>
  </li>
 </ul>
@@ -270,7 +305,7 @@
 <div class="section" id="organizing-your-notebooks">
 <h2>Organizing your notebooks<a class="headerlink" href="#organizing-your-notebooks" title="Permalink to this headline">¶</a></h2>
 <p>The notebooks are central to this lecture. We won’t use anything else then notebooks to write code (+ text!) and you will have to return notebooks as final project report.</p>
-<p>With the exception of Week 01 (for which I recommend to use MyBinder), <strong>all notebooks should be downloaded and run on your machine</strong>. You will also be asked to download data files (<span class="xref myst">instructions to be added</span>). I recommend to organize your code and data so that you can have easy access to both. For example, my notebooks are organized in a weekly folder, and alongside my weekly folders there is a <code class="docutils literal notranslate"><span class="pre">data</span></code> folder where my data is stored. This way, all my paths in notebooks look like:</p>
+<p>With the exception of Week 01 (for which I recommend to use MyBinder), <strong>all notebooks should be downloaded and run on your machine</strong>. You will also be asked to download data files (<a class="reference internal" href="download.html"><span class="doc std std-doc">instructions</span></a>). I recommend to organize your code and data so that you can have easy access to both. For example, my notebooks are organized in a weekly folder, and alongside my weekly folders there is a <code class="docutils literal notranslate"><span class="pre">data</span></code> folder where my data is stored. This way, all my paths in notebooks look like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../data/CERES_EBAF-TOA_Ed4.1_Clim-2005-2015.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -323,31 +358,22 @@
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="primer.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Python and Jupyter: a primer</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="download.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Downloading the data</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="week_01/01_Lesson_Conservation_of_momentum.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lesson: Conservation of angular momentum and Hadley circulation</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="week_01/01_Lesson_Conservation_of_momentum.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Lesson: Conservation of angular momentum and Hadley circulation</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -378,18 +404,7 @@ These lecture notes and exercises are licensed under a <a href="https://creative
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-88391345-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

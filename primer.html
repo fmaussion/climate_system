@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python and Jupyter: a primer &#8212; Physics of the Climate System</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -43,7 +43,7 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
@@ -54,11 +54,24 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How to use this website and prepare for each week" href="howto.html" />
+    <link rel="next" title="Downloading the data" href="download.html" />
     <link rel="prev" title="Getting started with Jupyter Notebooks" href="getting_started.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-88391345-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -96,7 +109,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -113,12 +126,17 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="download.html">
+   Downloading the data
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="howto.html">
    How to use this website and prepare for each week
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Week 01
  </span>
@@ -132,6 +150,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="week_01/02_Assignment_Simple_cloud_effects.html">
    Assignment: effect of clouds on the planetary energy balance
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 02
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_02/01_Lesson_NetCDF_Data.html">
+   Lesson: working with netCDF data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_02/02_Assignment_CERES_data.html">
+   Assignment: CERES data
   </a>
  </li>
 </ul>
@@ -442,7 +477,7 @@ That’s what you get by pressing <code class="docutils literal notranslate"><sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-6-dc84ea9167e1&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_40033/725049606.py&quot;</span><span class="gt">, line </span><span class="mi">2</span>
     <span class="n">var</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># this raises an Error</span>
     <span class="o">^</span>
 <span class="ne">IndentationError</span>: unexpected indent
@@ -643,7 +678,7 @@ Hi!
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">20</span><span class="o">-</span><span class="n">f2ca4b92d3f8</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_40033</span><span class="o">/</span><span class="mf">571324159.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">42</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;The answer is: &#39;</span> <span class="o">+</span> <span class="n">answer</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># this will raise a TypeError</span>
@@ -1311,7 +1346,7 @@ Now you can</p>
 <li><p><strong>Switch your cell between code and markdown</strong>: press <code class="docutils literal notranslate"><span class="pre">[m]</span></code> to markdown and <code class="docutils literal notranslate"><span class="pre">[y]</span></code> to code.</p></li>
 <li><p><strong>Add a cell:</strong> press <code class="docutils literal notranslate"><span class="pre">[b]</span></code> to add a cell below, <code class="docutils literal notranslate"><span class="pre">[a]</span></code> to add one above.</p></li>
 <li><p><strong>Delete a cell:</strong> double-press <code class="docutils literal notranslate"><span class="pre">[d]</span></code>.</p></li>
-<li><p><strong>Move up/down:</strong> <code class="docutils literal notranslate"><span class="pre">[k]</span></code> / <code class="docutils literal notranslate"><span class="pre">[j]</span></code></p></li>
+<li><p><strong>Move up/down:</strong> <code class="docutils literal notranslate"><span class="pre">[k]</span></code> / <code class="docutils literal notranslate"><span class="pre">[j]</span></code> or <code class="docutils literal notranslate"><span class="pre">[arrow</span> <span class="pre">up]</span></code> / <code class="docutils literal notranslate"><span class="pre">[arrow</span> <span class="pre">down]</span></code></p></li>
 <li><p><strong>Cut/Copy/paste cells:</strong> <code class="docutils literal notranslate"><span class="pre">[x]</span></code> /<code class="docutils literal notranslate"><span class="pre">[c]</span></code> / <code class="docutils literal notranslate"><span class="pre">[v]</span></code></p></li>
 <li><p><strong>Select multiple cells (lab only):</strong> <code class="docutils literal notranslate"><span class="pre">shift+up/down</span> <span class="pre">arrows</span></code></p></li>
 <li><p><strong>Interrupt a computation</strong>: double-press <code class="docutils literal notranslate"><span class="pre">[i]</span></code>.</p></li>
@@ -1352,31 +1387,22 @@ Now you can</p>
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="getting_started.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Getting started with Jupyter Notebooks</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="getting_started.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Getting started with Jupyter Notebooks</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="download.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Downloading the data</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="howto.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">How to use this website and prepare for each week</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -1407,18 +1433,7 @@ These lecture notes and exercises are licensed under a <a href="https://creative
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-88391345-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
