@@ -5,10 +5,15 @@ parts:
     chapters:
     - file: getting_started
     - file: primer
-    # - file: download
+    - file: download
     - file: howto
 
   - caption: Week 01
     chapters:
     - file: week_01/01_Lesson_Conservation_of_momentum
     - file: week_01/02_Assignment_Simple_cloud_effects
+
+  - caption: Week 02
+    chapters:
+    - file: week_02/01_Lesson_NetCDF_Data
+    - file: week_02/02_Assignment_CERES_data
