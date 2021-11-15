@@ -9,3 +9,4 @@ dependencies:
   - dask
   - cartopy
   - netcdf4
+  - h5netcdf
