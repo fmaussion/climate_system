@@ -1,0 +1,14 @@
+welcome.ipynb:90002: [redirected permanently] http://fabienmaussion.info/ to https://fabienmaussion.info/
+primer.ipynb:1220002: [redirected with Found] http://edu.oggm.org to https://edu.oggm.org/en/latest/
+primer.ipynb:1090002: [redirected permanently] http://matplotlib.org/ to https://matplotlib.org/
+primer.ipynb:1260004: [redirected permanently] http://swcarpentry.github.io/python-novice-inflammation to https://swcarpentry.github.io/python-novice-inflammation/
+primer.ipynb:1070004: [redirected permanently] http://matplotlib.org/index.html to https://matplotlib.org/index.html
+primer.ipynb:390002: [redirected permanently] http://www.numpy.org/ to https://numpy.org/
+primer.ipynb:390002: [redirected permanently] http://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html to https://numpy.org/doc/stable/reference/generated/numpy.arange.html
+week_03/01_Lesson_MoreDataCrunching.ipynb:250004: [redirected permanently] http://www.matplotlib.org/examples/color/colormaps_reference.html to https://matplotlib.org/examples/color/colormaps_reference.html
+primer.ipynb:1070003: [redirected permanently] http://docs.scipy.org/doc/numpy/reference/ to https://numpy.org/doc/stable/reference/
+primer.ipynb:990004: [redirected with Found] http://xarray.pydata.org to http://xarray.pydata.org/en/stable/
+week_01/02_Assignment_Simple_cloud_effects.ipynb:300006: [redirected permanently] http://www.skepticalscience.com/clouds-negative-feedback-basic.htm to https://skepticalscience.com/clouds-negative-feedback-basic.htm
+week_02/02_Assignment_CERES_data.ipynb:290002: [redirected permanently] http://www.skepticalscience.com/pics/Figure1.png to https://static.skepticalscience.com/pics/Figure1.png
+download.ipynb:40004: [redirected permanently] https://journals.ametsoc.org/doi/pdf/10.1175/JCLI-D-17-0208.1 to https://journals.ametsoc.org:443/view/journals/clim/31/2/jcli-d-17-0208.1.xml
+download.ipynb:40004: [redirected permanently] https://journals.ametsoc.org/doi/pdf/10.1175/JCLI-D-17-0523.1 to https://journals.ametsoc.org:443/view/journals/clim/31/11/jcli-d-17-0523.1.xml
