@@ -8,4 +8,5 @@ dependencies:
   - xarray
   - dask
   - netcdf4
+  - h5netcdf
   - cartopy
