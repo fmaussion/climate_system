@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment: CERES data &#8212; Physics of the Climate System</title>
+    <title>Assignment: major features of the atmospheric circulation &#8212; Physics of the Climate System</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,8 +54,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lesson: more tools for statistical and climatological analysis" href="../week_03/01_Lesson_MoreDataCrunching.html" />
-    <link rel="prev" title="Lesson: working with netCDF data" href="01_Lesson_NetCDF_Data.html" />
+    <link rel="prev" title="Lesson: wind flow, 4D data, numerical integrals" href="01_Lesson_Wind-Derivatives-Integrals.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -158,14 +157,14 @@
   Week 02
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Lesson_NetCDF_Data.html">
+  <a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">
    Lesson: working with netCDF data
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">
    Assignment: CERES data
   </a>
  </li>
@@ -192,14 +191,14 @@
   Week 04
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
+  <a class="reference internal" href="01_Lesson_Wind-Derivatives-Integrals.html">
    Lesson: wind flow, 4D data, numerical integrals
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Assignment: major features of the atmospheric circulation
   </a>
  </li>
@@ -244,7 +243,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_02/02_Assignment_CERES_data.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_04/02_Assignment_GeneralCirculation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -264,10 +263,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_02/02_Assignment_CERES_data.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_04/02_Assignment_GeneralCirculation.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/week_02/02_Assignment_CERES_data.ipynb"><button
+        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/week_04/02_Assignment_GeneralCirculation.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -287,7 +286,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_02/02_Assignment_CERES_data.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_04/02_Assignment_GeneralCirculation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -310,40 +309,28 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-the-modules">
-   Importing the modules
+  <a class="reference internal nav-link" href="#sea-level-pressure-and-surface-winds">
+   Sea-level pressure and surface winds
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#toa-fluxes">
-   TOA fluxes
+  <a class="reference internal nav-link" href="#general-circulation-of-the-upper-atmopshere">
+   General circulation of the upper atmopshere
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#albedo">
-     Albedo
+    <a class="reference internal nav-link" href="#geopotential-and-zonal-winds">
+     Geopotential and zonal winds
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#longwave-outgoing-radiation">
-     Longwave outgoing radiation
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#surface-fluxes">
-   Surface fluxes
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-albedo">
-     Surface albedo
+    <a class="reference internal nav-link" href="#meridional-overturning-circulation">
+     Meridional overturning circulation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-energy-balance">
-     Surface energy balance
+    <a class="reference internal nav-link" href="#optional-stationary-waves-in-the-mid-and-upper-troposphere">
+     Optional: stationary waves in the mid- and upper troposphere
     </a>
    </li>
   </ul>
@@ -359,12 +346,8 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="assignment-ceres-data">
-<h1>Assignment: CERES data<a class="headerlink" href="#assignment-ceres-data" title="Permalink to this headline">¶</a></h1>
-<p>To solve the following exercises you can copy and paste code from the previous notebook. The code modifications required to solve the exercises are minimal (e.g. changing the name of a variable, add a small computation…): don’t think too “complicated”!</p>
-<div class="section" id="importing-the-modules">
-<h2>Importing the modules<a class="headerlink" href="#importing-the-modules" title="Permalink to this headline">¶</a></h2>
-<p>This one is easy. I’ll do it for you:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="assignment-major-features-of-the-atmospheric-circulation">
+<h1>Assignment: major features of the atmospheric circulation<a class="headerlink" href="#assignment-major-features-of-the-atmospheric-circulation" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
@@ -379,10 +362,16 @@
 </div>
 </div>
 </div>
+<div class="section" id="sea-level-pressure-and-surface-winds">
+<h2>Sea-level pressure and surface winds<a class="headerlink" href="#sea-level-pressure-and-surface-winds" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_uvslp.nc&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="toa-fluxes">
-<h2>TOA fluxes<a class="headerlink" href="#toa-fluxes" title="Permalink to this headline">¶</a></h2>
-<p>Read the TOA dataset we used during the lesson. Do you remember all variables it contains?</p>
+</div>
+</div>
+<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{SLP} \right]\)</span> (in hPa), and plot it. With the help of <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axhline">plt.axhline</a>, add the <a class="reference external" href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Standard_atmospheric">standard atmosphere pressure</a> line to the plot to emphasize high and low pressure regions.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -390,9 +379,7 @@
 </div>
 </div>
 </div>
-<div class="section" id="albedo">
-<h3>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">¶</a></h3>
-<p>Compute the climatological mean of clear-sky planetary albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{clr}}}\)</span> and plot it on a map. Analyse the plot.</p>
+<p><strong>Repeat with <span class="math notranslate nohighlight">\(\left[ \overline{u_{10}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{v_{10}} \right]\)</span> (in m/s) add a horizontal line at zero windspeed to the plot (to detect surface westerlies from easterlies for example). Analyse the three plots alltogether. How do they fit to the circulation we discussed in the lecture?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -400,7 +387,15 @@
 </div>
 </div>
 </div>
-<p>Repeat the operation with all-sky planetary albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{all}}}\)</span>. Where are the largest differences? Can you plot the difference between the two on a map, too?</p>
+<p><strong>Plot the annual <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> on a map. Choose adequate levels and colormap, so that low pressure and high pressure systems are visible. These are called “semi-permanent highs and lows”. Can you name most of them?</strong></p>
+<ul class="simple">
+<li><p>Icelandic Low</p></li>
+<li><p>Aleutian Low</p></li>
+<li><p>Subtropical highs: Bermuda High, South/North Pacific High…</p></li>
+<li><p>Siberian High</p></li>
+<li><p>Monsoon Low (or through)</p></li>
+<li><p>…</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -408,56 +403,7 @@
 </div>
 </div>
 </div>
-<p>Now plot the zonal, climatological means <span class="math notranslate nohighlight">\(\left[ \overline{\alpha_{P_{all}}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{\alpha_{P_{clr}}} \right]\)</span> on the same plot. Add a legend to it!</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Compute the global average of <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{all}}}\)</span> and <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{clr}}}\)</span> (remember to weight according to latitude!). Compare the values you obtain with the ones we mentioned in the lecture.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="longwave-outgoing-radiation">
-<h3>Longwave outgoing radiation<a class="headerlink" href="#longwave-outgoing-radiation" title="Permalink to this headline">¶</a></h3>
-<p>Repeat the operations above with <span class="math notranslate nohighlight">\(LW_{all} \)</span> and  <span class="math notranslate nohighlight">\(LW_{clr}\)</span> (i.e.: maps of <span class="math notranslate nohighlight">\(\overline{LW_{all}}\)</span>, <span class="math notranslate nohighlight">\(\overline{LW_{clr}}\)</span>, line plots of <span class="math notranslate nohighlight">\(\left[ \overline{LW_{all}} \right]\)</span>, <span class="math notranslate nohighlight">\(\left[ \overline{LW_{clr}} \right]\)</span>). What is the global effect of clouds on outgoing longwave radiation?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="surface-fluxes">
-<h2>Surface fluxes<a class="headerlink" href="#surface-fluxes" title="Permalink to this headline">¶</a></h2>
-<p>Now open the EBAF-Surface dataset, available for download from the <a class="reference external" href="https://fabienmaussion.info/climate_system/download.html">download page</a>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="surface-albedo">
-<h3>Surface albedo<a class="headerlink" href="#surface-albedo" title="Permalink to this headline">¶</a></h3>
-<p>Compute the all-sky surface albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{S_{all}}}\)</span>. Plot it on a map.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Compute the global average of <span class="math notranslate nohighlight">\(\overline{\alpha_{s}}\)</span>.</p>
+<p><strong>Now use the same colors and levels as above, and plot <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> for the months of January and July. Compare the evolution of the major systems. When are they strongest? Weakest? Which systems disappear entirely?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -466,9 +412,18 @@
 </div>
 </div>
 </div>
-<div class="section" id="surface-energy-balance">
-<h3>Surface energy balance<a class="headerlink" href="#surface-energy-balance" title="Permalink to this headline">¶</a></h3>
-<p>Now compute the net surface energy intake <span class="math notranslate nohighlight">\(\overline{SEB} =  \overline{SW_{in}} - \overline{SW_{out}} + \overline{LW_{in}} - \overline{LW_{out}}\)</span>. Plot it on a map and analyse your results. Where does the surface gain most energy? Is the net radiative energy a gain or a loss for the surface of the globe?</p>
+<div class="section" id="general-circulation-of-the-upper-atmopshere">
+<h2>General circulation of the upper atmopshere<a class="headerlink" href="#general-circulation-of-the-upper-atmopshere" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_4D_zuvw.nc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="geopotential-and-zonal-winds">
+<h3>Geopotential and zonal winds<a class="headerlink" href="#geopotential-and-zonal-winds" title="Permalink to this headline">¶</a></h3>
+<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span>, where <span class="math notranslate nohighlight">\(z_h\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Geopotential_height">geopotential height</a> (unit: m). Plot it (you can use <code class="docutils literal notranslate"><span class="pre">.plot.contourf(levels=18,</span> <span class="pre">center=False)</span></code> for example). Don’t forget to put the y-axis in the right direction!</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -476,8 +431,7 @@
 </div>
 </div>
 </div>
-<p>Compute the global averages of each term and compare them to the values we discussed in the lecture (<a class="reference external" href="https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers/BAMSmarTrenberth.pdf">ref</a>). For reference, here is the figure again:</p>
-<a class="reference internal image-reference" href="http://www.skepticalscience.com/pics/Figure1.png"><img alt="http://www.skepticalscience.com/pics/Figure1.png" src="http://www.skepticalscience.com/pics/Figure1.png" style="width: 50%;" /></a>
+<p><strong>What is the approximate average height of the 200hPa level at the poles? At the tropics? Not that easy to see, right? Instead, you can try to compute the anomaly of <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span> with respect to <span class="math notranslate nohighlight">\(\left\{ \left[ \overline{z_h} \right] \right\}\)</span>, where <span class="math notranslate nohighlight">\(\left\{ \right\}\)</span> would represent the meridional average. Plot it (this time without the <code class="docutils literal notranslate"><span class="pre">center</span></code> keyword) and analyse the plot: what altitude difference is there at the 500hPa level between the equator and the poles? And at the 200hPa level? How does that fit into the thermal wind concept we discussed in the lecture?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -485,7 +439,38 @@
 </div>
 </div>
 </div>
-<p><strong>Discuss the processes that will counterbalance this net radiative energy imbalance, in the oceans and on land! Also discuss the differences between your results and the plot above.</strong> (Careful literature search might lead you to more recent estimates of the budget if you are interested).</p>
+<p><strong>Repeat the operation with the month of January and July. Analyse the differences.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Now plot the zonal temporal average of the zonal wind <span class="math notranslate nohighlight">\(\left[ \overline{u} \right]\)</span>, for the annual average and the months of January and July. Analyse the plot: when and where is the zonal wind speed highest? Where is the zonal wind negative?</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="meridional-overturning-circulation">
+<h3>Meridional overturning circulation<a class="headerlink" href="#meridional-overturning-circulation" title="Permalink to this headline">¶</a></h3>
+<p><strong>Compute the stream function of the meridional overturning circulation of the atmosphere for the annual average and the months of January, April, July, and October. Plot all five with the same colors and levels for comparison. Analyse what you see.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="optional-stationary-waves-in-the-mid-and-upper-troposphere">
+<h3>Optional: stationary waves in the mid- and upper troposphere<a class="headerlink" href="#optional-stationary-waves-in-the-mid-and-upper-troposphere" title="Permalink to this headline">¶</a></h3>
+<p>“Stationary waves” or “stationary eddies” are circulations which are absent from the zonal mean, but visible in the temporal average of the wind field (see lecture). A nice way to visualize stationary waves is simply to plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> (with <span class="math notranslate nohighlight">\(z\)</span> the geopotential). Remember what this is? We computed this anomaly in the “temperature and precipitation data” assignment last week.</p>
+<p><strong>Select data in one hemisphere (NH or SH), for one pressure level and for one month, and plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> on a map. Nice, huh?</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -510,7 +495,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_02"
+            path: "./week_04"
         },
         predefinedOutput: true
     }
@@ -522,19 +507,12 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="01_Lesson_NetCDF_Data.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="01_Lesson_Wind-Derivatives-Integrals.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Lesson: working with netCDF data</p>
+            <p class="prev-next-title">Lesson: wind flow, 4D data, numerical integrals</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_03/01_Lesson_MoreDataCrunching.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lesson: more tools for statistical and climatological analysis</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
         
