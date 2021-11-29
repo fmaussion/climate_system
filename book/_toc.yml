@@ -22,3 +22,8 @@ parts:
     chapters:
     - file: week_03/01_Lesson_MoreDataCrunching
     - file: week_03/02_Assignment_TemperaturePrecipitation
+
+  - caption: Week 04
+    chapters:
+    - file: week_04/01_Lesson_Wind-Derivatives-Integrals
+    - file: week_04/02_Assignment_GeneralCirculation
