@@ -27,3 +27,11 @@ parts:
     chapters:
     - file: week_04/01_Lesson_Wind-Derivatives-Integrals
     - file: week_04/02_Assignment_GeneralCirculation
+
+  - caption: Projects
+    chapters:
+    - file: projects/01_FinalProjects
+    - file: projects/02_GuidedExercise_Composites
+    - file: projects/03_Getting_started_RegionalPlots
+    - file: projects/04_Getting_started_Antarctica
+    - file: projects/05_Getting_started_NorthAmerica
