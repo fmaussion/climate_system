@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Downloading the data &#8212; Physics of the Climate System</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,42 +20,41 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How to use this website and prepare for each week" href="howto.html" />
-    <link rel="prev" title="Python and Jupyter: a primer" href="primer.html" />
+    <link rel="next" title="Lesson 01: Python and Jupyter: a primer" href="week_01/primer.html" />
+    <link rel="prev" title="How to use this website and prepare for each week" href="howto.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -71,7 +72,21 @@
                     </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -80,9 +95,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -100,14 +116,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="welcome.html">
-   Welcome
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -119,18 +136,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="primer.html">
-   Python and Jupyter: a primer
+  <a class="reference internal" href="howto.html">
+   How to use this website and prepare for each week
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Downloading the data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="howto.html">
-   How to use this website and prepare for each week
   </a>
  </li>
 </ul>
@@ -141,204 +153,243 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="week_01/01_Lesson_Conservation_of_momentum.html">
-   Lesson: Conservation of angular momentum and Hadley circulation
+  <a class="reference internal" href="week_01/primer.html">
+   Lesson 01: Python and Jupyter: a primer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week_01/01_Assignment_Planetary_Energy_Balance.html">
+   Assignment 01: planetary energy balance
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="week_01/02_Assignment_Simple_cloud_effects.html">
-   Assignment: effect of clouds on the planetary energy balance
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 02
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="week_02/01_Lesson_NetCDF_Data.html">
-   Lesson: working with netCDF data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week_02/02_Assignment_CERES_data.html">
-   Assignment: CERES data
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 03
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="week_03/01_Lesson_MoreDataCrunching.html">
-   Lesson: more tools for statistical and climatological analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week_03/02_Assignment_TemperaturePrecipitation.html">
-   Assignment: temperature and precipitation data
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 04
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="week_04/01_Lesson_Wind-Derivatives-Integrals.html">
-   Lesson: wind flow, 4D data, numerical integrals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="week_04/02_Assignment_GeneralCirculation.html">
-   Assignment: major features of the atmospheric circulation
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Projects
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="projects/01_FinalProjects.html">
-   Final group projects: instructions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="projects/02_GuidedExercise_Composites.html">
-   Guided exercise: indices, composites, correlation maps
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="projects/03_Getting_started_RegionalPlots.html">
-   Regional PlateCarree projection
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="projects/04_Getting_started_Antarctica.html">
-   Polar stereographic projection
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="projects/05_Getting_started_NorthAmerica.html">
-   Lambert conformal projection
+   Assignment 02: effect of clouds on the planetary energy balance
   </a>
  </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/download.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/fmaussion/climate_system"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fdownload.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/fmaussion/climate_system/edit/master/book/download.ipynb"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/download.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/download.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/fmaussion/climate_system"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fdownload.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/fmaussion/climate_system/edit/master/book/download.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/download.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ceres-data">
    CERES Data
@@ -373,20 +424,70 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Downloading the data</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ceres-data">
+   CERES Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#era5-data">
+   ERA5 data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ready-to-use-low-resolution-netcdf-files">
+     Ready to use, low resolution NetCDF files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-era5-data-from-the-cds-servers-optional">
+     Additional ERA5 data from the CDS servers (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cmip5-and-cmip6-data">
+   CMIP5 and CMIP6 data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-data-from-an-url">
+   Reading data from an url
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="downloading-the-data">
-<h1>Downloading the data<a class="headerlink" href="#downloading-the-data" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="downloading-the-data">
+<h1>Downloading the data<a class="headerlink" href="#downloading-the-data" title="Permalink to this headline">#</a></h1>
 <p>All data files used in the lecture are available on <a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/">this webserver</a>.</p>
-<div class="section" id="ceres-data">
-<h2>CERES Data<a class="headerlink" href="#ceres-data" title="Permalink to this headline">¶</a></h2>
+<section id="ceres-data">
+<h2>CERES Data<a class="headerlink" href="#ceres-data" title="Permalink to this headline">#</a></h2>
 <p>For Week 02, we will use climatological data from the <a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/ceres-ebaf-clouds-and-earths-radiant-energy-systems-ceres-energy-balanced-and-filled">CERES</a> (Clouds and the Earth’s Radiant Energy System) mission. We are going to use the EBAF-TOA and the EBAF-Surface data products (both freely available <a class="reference external" href="https://ceres.larc.nasa.gov/data/">on this webpage</a>) as climatologies (i.e. monthly averages 2005-2015).</p>
 <p>The data quality summary of these data (PDF) can be found <a class="reference external" href="https://ceres.larc.nasa.gov/documents/DQ_summaries/CERES_EBAF_Ed4.1_DQS.pdf">here</a>, and more accessible publications can be found <a class="reference external" href="https://journals.ametsoc.org/doi/pdf/10.1175/JCLI-D-17-0208.1">here for TOA</a> and <a class="reference external" href="https://journals.ametsoc.org/doi/pdf/10.1175/JCLI-D-17-0523.1">here for Surface</a>.</p>
 <p><strong>Download:</strong></p>
@@ -394,11 +495,11 @@
 <li><p>TOA file: <a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/CERES_EBAF-TOA_Ed4.1_Clim-2005-2015.nc">CERES_EBAF-TOA_Ed4.1_Clim-2005-2015.nc</a></p></li>
 <li><p>Surface file: <a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/CERES_EBAF-Surface_Ed4.1_Clim-2005-2015.nc">CERES_EBAF-Surface_Ed4.1_Clim-2005-2015.nc</a></p></li>
 </ul>
-</div>
-<div class="section" id="era5-data">
-<h2>ERA5 data<a class="headerlink" href="#era5-data" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="ready-to-use-low-resolution-netcdf-files">
-<h3>Ready to use, low resolution NetCDF files<a class="headerlink" href="#ready-to-use-low-resolution-netcdf-files" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="era5-data">
+<h2>ERA5 data<a class="headerlink" href="#era5-data" title="Permalink to this headline">#</a></h2>
+<section id="ready-to-use-low-resolution-netcdf-files">
+<h3>Ready to use, low resolution NetCDF files<a class="headerlink" href="#ready-to-use-low-resolution-netcdf-files" title="Permalink to this headline">#</a></h3>
 <p><a class="reference external" href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5">ERA5</a> is an atmospheric reanalysis product. We will use it a lot! Note that you can download the data yourself (I provide some sample scripts below), but for a start you can download some files I prepared for you:</p>
 <p><strong>Invariant:</strong></p>
 <ul class="simple">
@@ -444,9 +545,9 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">t2m</span></code> or <code class="docutils literal notranslate"><span class="pre">tp</span></code> are variable names</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Invariant</span></code> means that this file contains time invariant fields such as topography or land-sea mask.</p></li>
 </ul>
-</div>
-<div class="section" id="additional-era5-data-from-the-cds-servers-optional">
-<h3>Additional ERA5 data from the CDS servers (optional)<a class="headerlink" href="#additional-era5-data-from-the-cds-servers-optional" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="additional-era5-data-from-the-cds-servers-optional">
+<h3>Additional ERA5 data from the CDS servers (optional)<a class="headerlink" href="#additional-era5-data-from-the-cds-servers-optional" title="Permalink to this headline">#</a></h3>
 <p>You may want to download ERA5 data yourself if:</p>
 <ul class="simple">
 <li><p>you’d like additional variables not listed above</p></li>
@@ -455,10 +556,10 @@
 </ul>
 <p>If you want to go this path (<strong>not mandatory at all for the projects</strong>), you’ll need an account at the <a class="reference external" href="https://cds.climate.copernicus.eu">Copernicus Data Store</a></p>
 <p>You may want to use their online platform to analyze/download the data, or you can use a script. To get you started, <a class="reference external" href="https://gist.github.com/fmaussion/16c1119d8658cf4af9d3218dd5b1adf4">here</a> is the script I used to download all the data listed above.</p>
-</div>
-</div>
-<div class="section" id="cmip5-and-cmip6-data">
-<h2>CMIP5 and CMIP6 data<a class="headerlink" href="#cmip5-and-cmip6-data" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="cmip5-and-cmip6-data">
+<h2>CMIP5 and CMIP6 data<a class="headerlink" href="#cmip5-and-cmip6-data" title="Permalink to this headline">#</a></h2>
 <p>Temperature and Precipitation projections, for a large number of scenarios and GCMs:</p>
 <ul class="simple">
 <li><p>CMIP5</p>
@@ -476,9 +577,9 @@
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="reading-data-from-an-url">
-<h2>Reading data from an url<a class="headerlink" href="#reading-data-from-an-url" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="reading-data-from-an-url">
+<h2>Reading data from an url<a class="headerlink" href="#reading-data-from-an-url" title="Permalink to this headline">#</a></h2>
 <p>You can also open files without downloading them locally. This is somehow inefficient (it will download all data in memory each time you run the notebook), but might be useful e.g. on MyBinder where you can’t store files. You will need the <code class="docutils literal notranslate"><span class="pre">h5netcdf</span></code> library to be installed for the following to work:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -859,11 +960,11 @@ Data variables:
     z          (time, latitude, longitude) float32 ...
 Attributes:
     Conventions:  CF-1.6
-    history:      2019-11-18 09:24:36 GMT by grib_to_netcdf-2.14.0: /opt/ecmw...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-7f158628-ca3f-44a0-96ec-b7e822d88908' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7f158628-ca3f-44a0-96ec-b7e822d88908' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>longitude</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li><li><span class='xr-has-index'>time</span>: 1</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-d05d9881-4ac4-454c-8171-4647183108de' class='xr-section-summary-in' type='checkbox'  checked><label for='section-d05d9881-4ac4-454c-8171-4647183108de' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.6 -178.9 ... 178.9 179.6</div><input id='attrs-103c75b7-2591-436b-9fe2-f0eba9d07a2f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-103c75b7-2591-436b-9fe2-f0eba9d07a2f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-77848dcd-edc8-4143-b339-e8bc87f8e3bf' class='xr-var-data-in' type='checkbox'><label for='data-77848dcd-edc8-4143-b339-e8bc87f8e3bf' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
-      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-41c66bfc-bbbf-4b1a-a2f1-74667fd6eef3' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-41c66bfc-bbbf-4b1a-a2f1-74667fd6eef3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e1d6a06c-9752-4eb3-9759-3e2515d85b04' class='xr-var-data-in' type='checkbox'><label for='data-e1d6a06c-9752-4eb3-9759-3e2515d85b04' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1979-01-01</div><input id='attrs-981457f9-90e0-467c-a07d-80e1d0f7d3d4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-981457f9-90e0-467c-a07d-80e1d0f7d3d4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ff1fd377-307f-4214-89ab-fb8e176eb566' class='xr-var-data-in' type='checkbox'><label for='data-ff1fd377-307f-4214-89ab-fb8e176eb566' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1979-01-01T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-03d0313f-6eb1-4e08-bb43-a9c03d479803' class='xr-section-summary-in' type='checkbox'  checked><label for='section-03d0313f-6eb1-4e08-bb43-a9c03d479803' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lsm</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-d1df51b0-99e2-490b-b67e-f607b46216be' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d1df51b0-99e2-490b-b67e-f607b46216be' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7e072ecb-a5c7-43e0-b9ca-d3be958d3aac' class='xr-var-data-in' type='checkbox'><label for='data-7e072ecb-a5c7-43e0-b9ca-d3be958d3aac' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>(0 - 1)</dd><dt><span>long_name :</span></dt><dd>Land-sea mask</dd><dt><span>standard_name :</span></dt><dd>land_binary_mask</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>wmb</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-eb584e1b-4043-4e19-bf79-7e56aad30f22' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-eb584e1b-4043-4e19-bf79-7e56aad30f22' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1f4152bf-5ce7-4a69-953c-4ed6dcba5840' class='xr-var-data-in' type='checkbox'><label for='data-1f4152bf-5ce7-4a69-953c-4ed6dcba5840' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>long_name :</span></dt><dd>Model bathymetry</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>z</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-1a436037-7832-4e2b-8844-50b32aa90378' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1a436037-7832-4e2b-8844-50b32aa90378' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-cbffc82d-43b3-4a34-89d1-a08c357172cc' class='xr-var-data-in' type='checkbox'><label for='data-cbffc82d-43b3-4a34-89d1-a08c357172cc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m**2 s**-2</dd><dt><span>long_name :</span></dt><dd>Geopotential</dd><dt><span>standard_name :</span></dt><dd>geopotential</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-cbd8e019-8a52-41b6-afe2-06090d8c4d37' class='xr-section-summary-in' type='checkbox'  checked><label for='section-cbd8e019-8a52-41b6-afe2-06090d8c4d37' class='xr-section-summary' >Attributes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>CF-1.6</dd><dt><span>history :</span></dt><dd>2019-11-18 09:24:36 GMT by grib_to_netcdf-2.14.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -o /cache/data7/adaptor.mars.internal-1574069068.3461654-30525-1-50125e5a-c7c5-4a85-b6c0-71d1026d7cc4.nc /cache/tmp/50125e5a-c7c5-4a85-b6c0-71d1026d7cc4-adaptor.mars.internal-1574069068.349032-30525-1-tmp.grib</dd></dl></div></li></ul></div></div></div></div>
+    history:      2019-11-18 09:24:36 GMT by grib_to_netcdf-2.14.0: /opt/ecmw...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-f40a76a1-04bd-48f8-acd2-555f02e992ed' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f40a76a1-04bd-48f8-acd2-555f02e992ed' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>longitude</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li><li><span class='xr-has-index'>time</span>: 1</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-1bb709d0-18fb-4a4e-9af6-0eca396a4189' class='xr-section-summary-in' type='checkbox'  checked><label for='section-1bb709d0-18fb-4a4e-9af6-0eca396a4189' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.6 -178.9 ... 178.9 179.6</div><input id='attrs-55ea9c18-c123-49df-a70d-7ed297d5e41b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-55ea9c18-c123-49df-a70d-7ed297d5e41b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1f5822ff-9b14-4335-9654-55e625f5be71' class='xr-var-data-in' type='checkbox'><label for='data-1f5822ff-9b14-4335-9654-55e625f5be71' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
+      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-db05cd82-88e5-4e41-a6f8-ba57a8c063f7' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-db05cd82-88e5-4e41-a6f8-ba57a8c063f7' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-38ce1333-e22e-4f21-9263-c27b6934000c' class='xr-var-data-in' type='checkbox'><label for='data-38ce1333-e22e-4f21-9263-c27b6934000c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1979-01-01</div><input id='attrs-20f92f1a-fe02-4a35-a58b-660f53ec4c0f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-20f92f1a-fe02-4a35-a58b-660f53ec4c0f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f63879f5-e228-4f82-a71a-2bd1e93f648b' class='xr-var-data-in' type='checkbox'><label for='data-f63879f5-e228-4f82-a71a-2bd1e93f648b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1979-01-01T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-5a5b472d-6a73-424b-9525-c0c2fb2758bd' class='xr-section-summary-in' type='checkbox'  checked><label for='section-5a5b472d-6a73-424b-9525-c0c2fb2758bd' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lsm</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-079e2c3c-8c89-4f5d-9c22-feffd9b96de4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-079e2c3c-8c89-4f5d-9c22-feffd9b96de4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-106313a9-4c9d-4890-a38e-265ee903dcd0' class='xr-var-data-in' type='checkbox'><label for='data-106313a9-4c9d-4890-a38e-265ee903dcd0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>(0 - 1)</dd><dt><span>long_name :</span></dt><dd>Land-sea mask</dd><dt><span>standard_name :</span></dt><dd>land_binary_mask</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>wmb</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-aee9b7d0-09e2-4ae4-bc5b-f639d1503468' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-aee9b7d0-09e2-4ae4-bc5b-f639d1503468' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-13c91533-42de-410b-a5fe-a172f3a9d2e8' class='xr-var-data-in' type='checkbox'><label for='data-13c91533-42de-410b-a5fe-a172f3a9d2e8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>long_name :</span></dt><dd>Model bathymetry</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>z</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-44631adb-1059-43a7-ba32-31cbe6e39592' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-44631adb-1059-43a7-ba32-31cbe6e39592' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8240dd47-4780-4a95-901d-86854a048692' class='xr-var-data-in' type='checkbox'><label for='data-8240dd47-4780-4a95-901d-86854a048692' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m**2 s**-2</dd><dt><span>long_name :</span></dt><dd>Geopotential</dd><dt><span>standard_name :</span></dt><dd>geopotential</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-d063ff59-dc8a-445e-8166-3cfa00ab8982' class='xr-section-summary-in' type='checkbox'  checked><label for='section-d063ff59-dc8a-445e-8166-3cfa00ab8982' class='xr-section-summary' >Attributes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>CF-1.6</dd><dt><span>history :</span></dt><dd>2019-11-18 09:24:36 GMT by grib_to_netcdf-2.14.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -o /cache/data7/adaptor.mars.internal-1574069068.3461654-30525-1-50125e5a-c7c5-4a85-b6c0-71d1026d7cc4.nc /cache/tmp/50125e5a-c7c5-4a85-b6c0-71d1026d7cc4-adaptor.mars.internal-1574069068.349032-30525-1-tmp.grib</dd></dl></div></li></ul></div></div></div></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -887,35 +988,36 @@ Attributes:
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="primer.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="howto.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Python and Jupyter: a primer</p>
+            <p class="prev-next-title">How to use this website and prepare for each week</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="howto.html" title="next page">
+    <a class='right-next' id="next-link" href="week_01/primer.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">How to use this website and prepare for each week</p>
+        <p class="prev-next-title">Lesson 01: Python and Jupyter: a primer</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Fabien Maussion<br/>
+  
+    <div class="extra_footer">
       <p>
-        
-          By Fabien Maussion<br/>
-        
-          <div class="extra_footer">
-            <p>
 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
   <img align="right" class="margin" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" width="88px">
 </a>
@@ -924,17 +1026,20 @@ These lecture notes and exercises are licensed under a <a href="https://creative
 &copy; Copyright 2018-2020.
 </p>
 
-          </div>
-      </p>
     </div>
-  </footer>
-</main>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
