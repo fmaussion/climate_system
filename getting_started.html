@@ -391,13 +391,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-notebooks">
-   Running Notebooks
+  <a class="reference internal nav-link" href="#running-notebooks-for-the-climate-class">
+   Running Notebooks for the climate class
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#testing-notebooks-online">
-     Testing notebooks online
+    <a class="reference internal nav-link" href="#testing-the-use-of-jupyter-online">
+     Testing the use of Jupyter online
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -406,21 +406,26 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plan-b">
-     Plan B
+    <a class="reference internal nav-link" href="#installing-jupyter-on-your-account-in-the-computer-room">
+     Installing Jupyter on your account in the computer room
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
-     Launching the Jupyterlab interface
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#download-and-run-a-notebook">
-     Download and run a notebook
+    <a class="reference internal nav-link" href="#plan-c">
+     Plan C
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
+   Launching the Jupyterlab interface
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-and-run-a-notebook">
+   Download and run a notebook
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-s-next">
@@ -447,13 +452,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#running-notebooks">
-   Running Notebooks
+  <a class="reference internal nav-link" href="#running-notebooks-for-the-climate-class">
+   Running Notebooks for the climate class
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#testing-notebooks-online">
-     Testing notebooks online
+    <a class="reference internal nav-link" href="#testing-the-use-of-jupyter-online">
+     Testing the use of Jupyter online
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -462,21 +467,26 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plan-b">
-     Plan B
+    <a class="reference internal nav-link" href="#installing-jupyter-on-your-account-in-the-computer-room">
+     Installing Jupyter on your account in the computer room
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
-     Launching the Jupyterlab interface
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#download-and-run-a-notebook">
-     Download and run a notebook
+    <a class="reference internal nav-link" href="#plan-c">
+     Plan C
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launching-the-jupyterlab-interface">
+   Launching the Jupyterlab interface
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-and-run-a-notebook">
+   Download and run a notebook
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-s-next">
@@ -496,40 +506,49 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-jupyter-notebooks">
 <h1>Getting started with Jupyter Notebooks<a class="headerlink" href="#getting-started-with-jupyter-notebooks" title="Permalink to this headline">#</a></h1>
 <p>Jupyter Notebooks have become a central tool of the scientific python ecosystem. The advantage of jupyter notebooks over traditional code scripts in text files is that they can include text, code, and plots <em>in the same document</em>. Notebooks are a fantastic tool to explore data or models and to communicate about science.</p>
-<p>Notebooks are an ideal playground for learning python and write your homework, without having to jump between several documents!
-We will use notebooks for the entire class. <strong>In fact, this webpage (and all others in this book) are written in Jupyter Notebooks.</strong></p>
-<section id="running-notebooks">
-<h2>Running Notebooks<a class="headerlink" href="#running-notebooks" title="Permalink to this headline">#</a></h2>
-<section id="testing-notebooks-online">
-<h3>Testing notebooks online<a class="headerlink" href="#testing-notebooks-online" title="Permalink to this headline">#</a></h3>
+<p>Notebooks are an ideal playground for learning python and write your homework, without having to jump between several documents! We will use notebooks for the entire class. <strong>In fact, this webpage (and all others in this book) are written in Jupyter Notebooks.</strong></p>
+<section id="running-notebooks-for-the-climate-class">
+<h2>Running Notebooks for the climate class<a class="headerlink" href="#running-notebooks-for-the-climate-class" title="Permalink to this headline">#</a></h2>
+<section id="testing-the-use-of-jupyter-online">
+<h3>Testing the use of Jupyter online<a class="headerlink" href="#testing-the-use-of-jupyter-online" title="Permalink to this headline">#</a></h3>
 <p>The simplest way to try using a notebook is to use the “Launch Binder” button on the top of each page. This will open an interactive session in your browser.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Interactive sessions on MyBinder are <strong>temporary</strong>. After 10 mins of inactivity or after closing the tab, you won’t be able to recover your changes.</p>
-<p>For today’s tutorial, this is perfect. For the exercises which rely on external data, I’d rather recommend to use your own laptop.</p>
+<p>For tutorials, this is perfect. For the exercises, I’d rather recommend to use your own laptop or the computer room.</p>
 </div>
 </section>
 <section id="installing-jupyter-on-your-computer">
 <h3>Installing Jupyter on your computer<a class="headerlink" href="#installing-jupyter-on-your-computer" title="Permalink to this headline">#</a></h3>
-<p>If you are not following my programming class, <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/02-Installation.html#installing-python-on-your-pc">follow these instructions to install python</a> first. I strongly recommend to create a new environment (e.g. called “climate”) or to <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/02-Installation.html#go-safe-clone-your-working-environments-before-installing-new-packages">clone your working environment</a> to be safe before installing more packages in it.</p>
-<p>Once you have a working python environment in conda (or a clone of it), install <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyterlab
+<p>If you did not follow my programming class last semester, <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/01-Installation.html">follow these instructions to install python</a> first. This will provide you with a <code class="docutils literal notranslate"><span class="pre">(base)</span></code> environment with nothing but python installed.</p>
+<p>Then, follow the <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_02/01-install-packages.html">instructions here</a> to create a new environment called <code class="docutils literal notranslate"><span class="pre">(climate)</span></code>. I’ll repeat the steps here:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">climate</span>
 </pre></div>
 </div>
-<p>In addition to Jupyter, you will also need the following python packages for the exercises:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install numpy scipy matplotlib dask xarray cartopy netcdf4
+<p>Which will create a new empty environment. Activate it with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">activate</span> <span class="n">climate</span>
 </pre></div>
 </div>
+<p>Once in this environment, install the packages we will need for this class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="n">jupyterlab</span> <span class="n">numpy</span> <span class="n">scipy</span> <span class="n">matplotlib</span> <span class="n">xarray</span> <span class="n">netcdf4</span> <span class="n">cartopy</span>
+</pre></div>
+</div>
+<p>That’s it!</p>
 </section>
-<section id="plan-b">
-<h3>Plan B<a class="headerlink" href="#plan-b" title="Permalink to this headline">#</a></h3>
-<p>If you are not able to run the notebooks on your laptop, I will give you access to an online platform that you can use for the rest of the semester.</p>
+<section id="installing-jupyter-on-your-account-in-the-computer-room">
+<h3>Installing Jupyter on your account in the computer room<a class="headerlink" href="#installing-jupyter-on-your-account-in-the-computer-room" title="Permalink to this headline">#</a></h3>
+<p>In the computer room, you will first have to <a class="reference external" href="https://orawww.uibk.ac.at/public_prod/owa/uvw%24web%2410.p001">request an account</a> at ZiD. It can take some time (hours or days) to activate. Once you have an account, follow the instructions <a class="reference external" href="https://fabienmaussion.info/scientific_programming/week_01/03-Installation-uni.html">here</a>.</p>
+</section>
+<section id="plan-c">
+<h3>Plan C<a class="headerlink" href="#plan-c" title="Permalink to this headline">#</a></h3>
+<p>If you are not able to run the notebooks on your laptop or on the computer room, I will give you access to an online platform that you can use for the rest of the semester.</p>
+</section>
 </section>
 <section id="launching-the-jupyterlab-interface">
-<h3>Launching the Jupyterlab interface<a class="headerlink" href="#launching-the-jupyterlab-interface" title="Permalink to this headline">#</a></h3>
+<h2>Launching the Jupyterlab interface<a class="headerlink" href="#launching-the-jupyterlab-interface" title="Permalink to this headline">#</a></h2>
 <p>Jupyterlab is the most recent interface to write and run Jupyter Notebooks.</p>
 <p>To start the <strong>jupyterlab</strong> interface, type the following command in a terminal window:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    $ jupyter-lab
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">lab</span>
 </pre></div>
 </div>
 <p>Jupyterlab runs in your browser. You can open a new notebook with the “launcher” button. You can explore files with the file explorer on the left.</p>
@@ -539,14 +558,13 @@ We will use notebooks for the entire class. <strong>In fact, this webpage (and a
 </div>
 </section>
 <section id="download-and-run-a-notebook">
-<h3>Download and run a notebook<a class="headerlink" href="#download-and-run-a-notebook" title="Permalink to this headline">#</a></h3>
+<h2>Download and run a notebook<a class="headerlink" href="#download-and-run-a-notebook" title="Permalink to this headline">#</a></h2>
 <p>To run a notebook, you can:</p>
 <ul class="simple">
 <li><p>click on the “download” button on the top right of each page and copy it in your working directory.</p></li>
-<li><p>visit the book’s <a class="reference external" href="https://github.com/fmaussion/climate_system">repository</a> and download the files from there using git.</p></li>
+<li><p>visit the book’s <a class="reference external" href="https://github.com/fmaussion/climate_practicals_bsc">repository</a> and download the files from there.</p></li>
 </ul>
 <p>Then open the file either from notebook classic or jupyterlab.</p>
-</section>
 </section>
 <section id="what-s-next">
 <h2>What’s next<a class="headerlink" href="#what-s-next" title="Permalink to this headline">#</a></h2>
