@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Assignment 02: effect of clouds on the planetary energy balance &#8212; Physics of the Climate System</title>
+    <title>Assignment: CERES data &#8212; Physics of the Climate System</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lesson: working with netCDF data" href="../week_02/01_Lesson_NetCDF_Data.html" />
-    <link rel="prev" title="Assignment 01: planetary energy balance" href="01_Assignment_Planetary_Energy_Balance.html" />
+    <link rel="prev" title="Lesson: working with netCDF data" href="01_Lesson_NetCDF_Data.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -153,19 +152,19 @@ const thebe_selector_output = ".output, .cell_output"
   Week 01
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="primer.html">
+  <a class="reference internal" href="../week_01/primer.html">
    Lesson 01: Python and Jupyter: a primer
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Assignment_Planetary_Energy_Balance.html">
+  <a class="reference internal" href="../week_01/01_Assignment_Planetary_Energy_Balance.html">
    Assignment 01: planetary energy balance
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_01/02_Assignment_Simple_cloud_effects.html">
    Assignment 02: effect of clouds on the planetary energy balance
   </a>
  </li>
@@ -175,14 +174,14 @@ const thebe_selector_output = ".output, .cell_output"
   Week 02
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">
+  <a class="reference internal" href="01_Lesson_NetCDF_Data.html">
    Lesson: working with netCDF data
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Assignment: CERES data
   </a>
  </li>
@@ -245,7 +244,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_01/02_Assignment_Simple_cloud_effects.ipynb"
+        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_02/02_Assignment_CERES_data.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -305,7 +304,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_01/02_Assignment_Simple_cloud_effects.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_02/02_Assignment_CERES_data.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -322,7 +321,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_system/edit/master/book/week_01/02_Assignment_Simple_cloud_effects.ipynb"
+        <a href="https://github.com/fmaussion/climate_system/edit/master/book/week_02/02_Assignment_CERES_data.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -350,7 +349,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/week_01/02_Assignment_Simple_cloud_effects.ipynb"
+        <a href="../_sources/week_02/02_Assignment_CERES_data.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -410,19 +409,43 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effect-of-low-clouds-on-the-eb">
-   Effect of low clouds on the EB
+  <a class="reference internal nav-link" href="#importing-the-modules">
+   Importing the modules
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effect-of-high-clouds-on-the-eb">
-   Effect of high clouds on the EB
+  <a class="reference internal nav-link" href="#toa-fluxes">
+   TOA fluxes
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#albedo">
+     Albedo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#longwave-outgoing-radiation">
+     Longwave outgoing radiation
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#and-now-automate-things-a-little-bit">
-   And now automate things a little bit
+  <a class="reference internal nav-link" href="#surface-fluxes">
+   Surface fluxes
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#surface-albedo">
+     Surface albedo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#surface-energy-balance">
+     Surface energy balance
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -433,7 +456,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Assignment 02: effect of clouds on the planetary energy balance</h1>
+                <h1>Assignment: CERES data</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -444,19 +467,43 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effect-of-low-clouds-on-the-eb">
-   Effect of low clouds on the EB
+  <a class="reference internal nav-link" href="#importing-the-modules">
+   Importing the modules
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effect-of-high-clouds-on-the-eb">
-   Effect of high clouds on the EB
+  <a class="reference internal nav-link" href="#toa-fluxes">
+   TOA fluxes
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#albedo">
+     Albedo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#longwave-outgoing-radiation">
+     Longwave outgoing radiation
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#and-now-automate-things-a-little-bit">
-   And now automate things a little bit
+  <a class="reference internal nav-link" href="#surface-fluxes">
+   Surface fluxes
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#surface-albedo">
+     Surface albedo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#surface-energy-balance">
+     Surface energy balance
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -468,37 +515,30 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="assignment-02-effect-of-clouds-on-the-planetary-energy-balance">
-<h1>Assignment 02: effect of clouds on the planetary energy balance<a class="headerlink" href="#assignment-02-effect-of-clouds-on-the-planetary-energy-balance" title="Permalink to this headline">#</a></h1>
-<p>In this exercise you are going to compute the effect of clouds on the planetary energy balance, with the help of a simple 1-column model of the atmosphere.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="assignment-ceres-data">
+<h1>Assignment: CERES data<a class="headerlink" href="#assignment-ceres-data" title="Permalink to this headline">#</a></h1>
+<p>To solve the following exercises you can copy and paste code from the previous notebook. The code modifications required to solve the exercises are minimal (e.g. changing the name of a variable, add a small computation…): don’t think too “complicated”!</p>
+<section id="importing-the-modules">
+<h2>Importing the modules<a class="headerlink" href="#importing-the-modules" title="Permalink to this headline">#</a></h2>
+<p>This one is easy. I’ll do it for you:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># These are the modules we need</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  <span class="c1"># plotting library</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># numerical library</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>  <span class="c1"># netCDF library</span>
+<span class="kn">import</span> <span class="nn">cartopy</span>  <span class="c1"># Map projections libary</span>
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>  <span class="c1"># Projections list</span>
+<span class="c1"># Some defaults:</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Default plot size</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>We define some constants:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s_0</span> <span class="o">=</span> <span class="mi">1367</span>  <span class="c1"># Solar constant (W m-2)</span>
-<span class="n">sigma</span> <span class="o">=</span> <span class="mf">5.670e-8</span>  <span class="c1"># Stefan–Boltzmann constant</span>
-<span class="n">t_s</span> <span class="o">=</span> <span class="mi">288</span>  <span class="c1"># Average temperature of the Earth&#39;s surface (K)</span>
-<span class="n">t_clr</span> <span class="o">=</span> <span class="mi">261</span>  <span class="c1"># Radiation temperature of a clear sky atmosphere (K)</span>
-<span class="n">gamma</span> <span class="o">=</span> <span class="o">-</span><span class="mf">6.5</span>  <span class="c1"># Lapse-rate in the atmoshpere (K km-1)</span>
-<span class="n">surface_albedo</span> <span class="o">=</span> <span class="mf">0.12</span>  <span class="c1"># Albedo of the surface of the Earth</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="effect-of-low-clouds-on-the-eb">
-<h2>Effect of low clouds on the EB<a class="headerlink" href="#effect-of-low-clouds-on-the-eb" title="Permalink to this headline">#</a></h2>
-<p>To isolate the effect of clouds, we assume a very simple representation of the atmosphere as a simple column, free of other clouds. The Temperature of the cloud would then be:</p>
-<p><span class="math notranslate nohighlight">\(T_{Cloud} = T_{Surface} + \gamma \, z \)</span>,</p>
-<p>with <span class="math notranslate nohighlight">\(z\)</span> the cloud altitude (km) and <span class="math notranslate nohighlight">\(\gamma\)</span> the lapse-rate.</p>
-<p><strong>Q: compute the temperature (K) of a cloud at z = 5km, assuming a constant lapse rate and an average surface temperature of 288K:</strong></p>
+</section>
+<section id="toa-fluxes">
+<h2>TOA fluxes<a class="headerlink" href="#toa-fluxes" title="Permalink to this headline">#</a></h2>
+<p>Read the TOA dataset we used during the lesson. Do you remember all variables it contains?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -506,12 +546,9 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Now assume that the cloud absorbs all the IR radiation emited by the surface (a reasonable approximation), while emmitting IR directly back to space according to its own temperature. So the total energy change of the climate system in the longwave (LW) spectrum would be:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{LW} = LW_{ClrSky}\uparrow - LW_{Cloud}\uparrow\)</span></p>
-<p>So, according to Stefan-Boltzmann:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{LW} = \sigma T_{ClrSky}^4 - \sigma T_{Cloud}^4\)</span></p>
-<p>Where <span class="math notranslate nohighlight">\(T_{ClrSky}\)</span> is the radiation temperature of a clear sky atmosphere (here assumed to be 261 K).</p>
-<p><strong>Q: compute the approximate “average” altitude at which the clear sky atmosphere emits at 261 K (from the standard lapse rate). This will give the approximate minimum altitude at which the equation above is valid.</strong></p>
+<section id="albedo">
+<h3>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">#</a></h3>
+<p>Compute the climatological mean of clear-sky planetary albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{clr}}}\)</span> and plot it on a map. Analyse the plot.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -519,7 +556,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><strong>Q: compute the effect of a low cloud on the LW energy balance of the climate system. Is the cloud a LW energy loss or an energy gain for the system?</strong></p>
+<p>Repeat the operation with all-sky planetary albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{all}}}\)</span>. Where are the largest differences? Can you plot the difference between the two on a map, too?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -527,9 +564,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Now consider the shortwave effects of the cloud if it has an albedo of 0.5. The net difference for the climate system is simply the increased loss in solar energy because of an increased reflection:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{SW} = - S_0 / 4 \cdot (\alpha _{Cloud} - \alpha _{Earth} ) \)</span></p>
-<p><strong>Q: compute the effect of a low cloud on the shortwave (SW) energy balance of the climate system. Is the cloud a SW energy loss or an energy gain for the system?</strong></p>
+<p>Now plot the zonal, climatological means <span class="math notranslate nohighlight">\(\left[ \overline{\alpha_{P_{all}}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{\alpha_{P_{clr}}} \right]\)</span> on the same plot. Add a legend to it!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -537,9 +572,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Finally, the net energy difference for the climate system is:</p>
-<p><span class="math notranslate nohighlight">\(\Delta E_{TOT} = \Delta E_{SW} + \Delta E_{LW}\)</span></p>
-<p><strong>Q: compute the effect of a low cloud on the total (SW + LW) energy balance of the climate system. Is the low cloud a total energy loss or an energy gain for the system?</strong></p>
+<p>Compute the global average of <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{all}}}\)</span> and <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{clr}}}\)</span> (remember to weight according to latitude!). Compare the values you obtain with the ones we mentioned in the lecture.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -548,9 +581,9 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="effect-of-high-clouds-on-the-eb">
-<h2>Effect of high clouds on the EB<a class="headerlink" href="#effect-of-high-clouds-on-the-eb" title="Permalink to this headline">#</a></h2>
-<p><strong>Q: repeat the calculations above to compute the effect of a high cloud (z = 12km, albedo unchanged) on the total energy balance of the climate system. Is the high cloud a total energy loss or an energy gain for the system?</strong></p>
+<section id="longwave-outgoing-radiation">
+<h3>Longwave outgoing radiation<a class="headerlink" href="#longwave-outgoing-radiation" title="Permalink to this headline">#</a></h3>
+<p>Repeat the operations above with <span class="math notranslate nohighlight">\(LW_{all} \)</span> and  <span class="math notranslate nohighlight">\(LW_{clr}\)</span> (i.e.: maps of <span class="math notranslate nohighlight">\(\overline{LW_{all}}\)</span>, <span class="math notranslate nohighlight">\(\overline{LW_{clr}}\)</span>, line plots of <span class="math notranslate nohighlight">\(\left[ \overline{LW_{all}} \right]\)</span>, <span class="math notranslate nohighlight">\(\left[ \overline{LW_{clr}} \right]\)</span>). What is the global effect of clouds on outgoing longwave radiation?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -559,9 +592,10 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="and-now-automate-things-a-little-bit">
-<h2>And now automate things a little bit<a class="headerlink" href="#and-now-automate-things-a-little-bit" title="Permalink to this headline">#</a></h2>
-<p><strong>Q: repeat the calculations above for the whole range of altitudes between 4 and 12 km (see the previous lesson for how to do this). Plot the curve.</strong></p>
+</section>
+<section id="surface-fluxes">
+<h2>Surface fluxes<a class="headerlink" href="#surface-fluxes" title="Permalink to this headline">#</a></h2>
+<p>Now open the EBAF-Surface dataset, available for download from the <a class="reference external" href="https://fabienmaussion.info/climate_system/download.html">download page</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -569,7 +603,9 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><strong>Q: repeat the calculations above, for three values of the cloud albedo: 0.3, 0.5, 0.7. Plot the three curves on the same plot and add a legend to the plots (see the “Getting started” notebook for guidance).</strong></p>
+<section id="surface-albedo">
+<h3>Surface albedo<a class="headerlink" href="#surface-albedo" title="Permalink to this headline">#</a></h3>
+<p>Compute the all-sky surface albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{S_{all}}}\)</span>. Plot it on a map.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -577,10 +613,43 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><strong>Q: discuss the features of the plot, and the conditions necessary for a cloud to be an energy gain or an energy loss for the climate system. Now search for typical values of cloud albedos depending on their type, and come back to your plot for comparison.</strong></p>
-<p>If you complicate things a bit by noticing that high clouds have a low albedo and low clouds a high albedo while thick clouds have a high albedo but also a high cloud top you can imagine that the system becomes extremely sensitive.</p>
-<p><strong>The processes governing cloud albedo are extremely complex. The uncertainty about changes in the clouds frequency, altitude, and albedo are one of the highest uncertainty in the climate models.</strong></p>
-<p>More info on <a class="reference external" href="http://www.skepticalscience.com/clouds-negative-feedback-basic.htm">Skeptikal Science’s page on the topic</a> (basic and intermediate)</p>
+<p>Compute the global average of <span class="math notranslate nohighlight">\(\overline{\alpha_{s}}\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="surface-energy-balance">
+<h3>Surface energy balance<a class="headerlink" href="#surface-energy-balance" title="Permalink to this headline">#</a></h3>
+<p>Now compute the net surface energy intake <span class="math notranslate nohighlight">\(\overline{SEB} =  \overline{SW_{in}} - \overline{SW_{out}} + \overline{LW_{in}} - \overline{LW_{out}}\)</span>. Plot it on a map and analyse your results. Where does the surface gain most energy? Is the net radiative energy a gain or a loss for the surface of the globe?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Compute the global averages of each term and compare them to the values we discussed in the lecture (<a class="reference external" href="https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers/BAMSmarTrenberth.pdf">ref</a>). For reference, here is the figure again:</p>
+<a class="reference internal image-reference" href="http://www.skepticalscience.com/pics/Figure1.png"><img alt="http://www.skepticalscience.com/pics/Figure1.png" src="http://www.skepticalscience.com/pics/Figure1.png" style="width: 50%;" /></a>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Discuss the processes that will counterbalance this net radiative energy imbalance, in the oceans and on land! Also discuss the differences between your results and the plot above.</strong> (Careful literature search might lead you to more recent estimates of the budget if you are interested).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -597,7 +666,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_01"
+            path: "./week_02"
         },
         predefinedOutput: true
     }
@@ -611,19 +680,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="01_Assignment_Planetary_Energy_Balance.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="01_Lesson_NetCDF_Data.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Assignment 01: planetary energy balance</p>
+            <p class="prev-next-title">Lesson: working with netCDF data</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_02/01_Lesson_NetCDF_Data.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lesson: working with netCDF data</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
