@@ -12,3 +12,8 @@ parts:
     - file: week_01/primer
     - file: week_01/01_Assignment_Planetary_Energy_Balance
     - file: week_01/02_Assignment_Simple_cloud_effects
+
+  - caption: Week 02
+    chapters:
+    - file: week_02/01_Lesson_NetCDF_Data
+    - file: week_02/02_Assignment_CERES_data
