@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Final group projects: instructions &#8212; Physics of the Climate System</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Guided exercise: indices, composites, correlation maps" href="02_GuidedExercise_Composites.html" />
+    <link rel="prev" title="Assignment: Ekman Pumping" href="../week_05/02_Assignment_EkmanPumping.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-88391345-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Physics of the Climate System</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../getting_started.html">
+   Getting started with Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../howto.html">
+   How to use this website and prepare for each week
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../download.html">
+   Downloading the data
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 01
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_01/primer.html">
+   Lesson 01: Python and Jupyter: a primer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_01/01_Assignment_Planetary_Energy_Balance.html">
+   Assignment 01: planetary energy balance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_01/02_Assignment_Simple_cloud_effects.html">
+   Assignment 02: effect of clouds on the planetary energy balance
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 02
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">
+   Lesson: working with netCDF data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">
+   Assignment: CERES data
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 03
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_03/01_Lesson_MoreDataCrunching.html">
+   Lesson: more tools for statistical and climatological analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_03/02_Assignment_TemperaturePrecipitation.html">
+   Assignment: temperature and precipitation data
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 04
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
+   Lesson: wind flow, 4D data, numerical integrals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
+   Assignment: major features of the atmospheric circulation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 05
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_05/01_GuidedExercise_EnergyTransport.html">
+   Guided exercise: Energy Transport
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_05/02_Assignment_EkmanPumping.html">
+   Assignment: Ekman Pumping
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Final group projects: instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_GuidedExercise_Composites.html">
+   Guided exercise: indices, composites, correlation maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_Getting_started_RegionalPlots.html">
+   Regional PlateCarree projection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_Getting_started_Antarctica.html">
+   Polar stereographic projection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_Getting_started_NorthAmerica.html">
+   Lambert conformal projection
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/projects/01_FinalProjects.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/fmaussion/climate_system"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fprojects/01_FinalProjects.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/fmaussion/climate_system/edit/master/book/projects/01_FinalProjects.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/projects/01_FinalProjects.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#requirements">
+   Requirements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deadlines">
+     Deadlines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formal-requirements">
+     Formal requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-lecture-topics">
+   Example lecture topics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-el-nino-southern-oscillation-physical-processes-and-impacts-with-era5-data">
+     1. The El Nino Southern Oscillation: physical processes and impacts (with ERA5 data)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-north-atlantic-oscillation-description-and-impacts-with-era5-data">
+     2. The North Atlantic Oscillation: description and impacts (with ERA5 data)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#monsoons-with-era5-data">
+     3. Monsoons with ERA5 data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#polar-climates-with-era5-data">
+     4. Polar climates with ERA5 data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tropical-climates-with-era5-data">
+     5. Tropical climates with ERA5 data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performance-of-cmip6-climate-models">
+     6. Performance of CMIP6 climate models
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#past-and-future-climate-change-signal-in-cmip6-climate-models">
+     7. Past and future climate change signal in CMIP6 climate models
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-possible-topics">
+     8. Other possible topics
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Final group projects: instructions</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#requirements">
+   Requirements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deadlines">
+     Deadlines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formal-requirements">
+     Formal requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-lecture-topics">
+   Example lecture topics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-el-nino-southern-oscillation-physical-processes-and-impacts-with-era5-data">
+     1. The El Nino Southern Oscillation: physical processes and impacts (with ERA5 data)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-north-atlantic-oscillation-description-and-impacts-with-era5-data">
+     2. The North Atlantic Oscillation: description and impacts (with ERA5 data)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#monsoons-with-era5-data">
+     3. Monsoons with ERA5 data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#polar-climates-with-era5-data">
+     4. Polar climates with ERA5 data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tropical-climates-with-era5-data">
+     5. Tropical climates with ERA5 data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performance-of-cmip6-climate-models">
+     6. Performance of CMIP6 climate models
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#past-and-future-climate-change-signal-in-cmip6-climate-models">
+     7. Past and future climate change signal in CMIP6 climate models
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-possible-topics">
+     8. Other possible topics
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="final-group-projects-instructions">
+<h1>Final group projects: instructions<a class="headerlink" href="#final-group-projects-instructions" title="Permalink to this headline">#</a></h1>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">#</a></h2>
+<p>In this final project, you will apply the methods you learned over the past weeks to prepare a 20 to 25 minutes “lecture” that you will give to your fellow classmates.</p>
+<p>The main learning outcomes <strong>for the presenters</strong> are:</p>
+<ul class="simple">
+<li><p>independent formulation of one or more learning goals related to the topic of your choice</p></li>
+<li><p>application of the tools discovered in the lecture (Notebooks, xarray) to real-world applications</p></li>
+<li><p>group work and discussion: you will have to decide on responsibilities (who downloads the data, searches literature, writes up the results, etc.)</p></li>
+</ul>
+<p>The main learning outcomes for the <strong>listeners</strong> will be to learn about topics that we didn’t cover in the lecture (e.g. ENSO, NAO, Monsoons, etc.).</p>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
+<section id="deadlines">
+<h3>Deadlines<a class="headerlink" href="#deadlines" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Presentations: <strong>Tuesday 24.01.2021</strong> from 08:00 to 12:00 (usual time + programming time slot). Each group: ~ 20-25 min pres. + 5-10 min discussion, 5 groups in total.</p></li>
+<li><p>Final report submission deadline: 1 hour before the presentation date</p></li>
+</ul>
+</section>
+<section id="formal-requirements">
+<h3>Formal requirements<a class="headerlink" href="#formal-requirements" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>the main bulk of work will be to prepare the presentation</strong>. The presentation should contain a <strong>balanced mix between material taken from textbooks / research papers and your own analyses based on climate data</strong>.</p></li>
+<li><p>Each group will submit:</p>
+<ul>
+<li><p>one pdf containing the slides you’ll show on the presentation day</p></li>
+<li><p>the “speaker notes” (containing the main messages of each slide in bullet form) either in the same pdf as the slides or separately</p></li>
+<li><p>the jupyter notebook(s) used to prepare the plots shown in the presentation (as well as supplementary material if appropriate).</p></li>
+</ul>
+</li>
+<li><p><strong>each group member must contribute</strong> to the presentation. Personal contributions should be stated in the speaker notes and/or in the jupyter notebook.</p></li>
+<li><p>the notebook should be <strong>self-contained</strong> and must be <strong>structured</strong> around well defined sections / analyses / plots.</p></li>
+<li><p><strong>rigor</strong>: the plots must be as understandable as possible (title, units, x and y axis labels, appropriate colors and levels…).</p></li>
+<li><p><strong>no plagiarism</strong>: findings or assumptions must be supported by appropriate references if they are not derived from the figures, do not copy from previous years.</p></li>
+<li><p><strong>reproducible science</strong>: I should be able to run the code in the notebooks and understand it - be clear and structured!</p></li>
+</ul>
+</section>
+</section>
+<section id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
+<p>I will give one grade per project, according to the following table (total 20 points):</p>
+<ul class="simple">
+<li><p><strong>Oral presentation (7 points)</strong>: quality / readability of the slides, presentation quality, group work</p></li>
+<li><p><strong>Formalities (3 points)</strong>: formal requirements (structure, references, figure axes, legends, etc.)</p></li>
+<li><p><strong>Scientific content (10 points)</strong>: formulation of the learning goals, quality of the analyses and interpretation, complexity of the conducted analyses</p></li>
+<li><p><strong>Originality (up to 3 bonus points)</strong>: going beyond the project ideas listed below, independent research (papers, data, etc.)</p></li>
+</ul>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
+<p>See <a class="reference internal" href="../download.html"><span class="doc std std-doc">the data download page</span></a>. In addition to the data used during the lecture, you now have access to more ERA5 variables (surface and upper level variables, vertical integrals of water vapor transport) as well as new datasets (CRU for the past climate, CMIP5/CMIP6 for the future climate).</p>
+</section>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h2>
+<p>All the notebooks we have done so far are here to give you elements to get started with the coding. I recommend however to spend parts of the Christmas break to read about the topic you’d like to investigate, and agree with your group colleagues about the tasks before starting with the coding.</p>
+</section>
+<section id="example-lecture-topics">
+<h2>Example lecture topics<a class="headerlink" href="#example-lecture-topics" title="Permalink to this headline">#</a></h2>
+<p>Since the formulation of a learning goal is part of the fun, I’ll provide suggestions here that you will have to refine and adapt to your own interests!</p>
+<p>Again: the “lecture” should fit in 20 minutes (25 minutes max) and contain textbook material (example: “what are the basic features of NAO?”) as well as your own analyses (example: “what is the impact of NAO on Northern Europe snowfall?”).</p>
+<section id="the-el-nino-southern-oscillation-physical-processes-and-impacts-with-era5-data">
+<h3>1. The El Nino Southern Oscillation: physical processes and impacts (with ERA5 data)<a class="headerlink" href="#the-el-nino-southern-oscillation-physical-processes-and-impacts-with-era5-data" title="Permalink to this headline">#</a></h3>
+<p>You will prepare a lecture about ENSO and explain its basic mechanisms, what gave it its name, what are the main indices describing it. For the independent research, describe its the effects on Pacific (and/or) global climate.</p>
+<p><strong>Literature to get you started:</strong></p>
+<ul class="simple">
+<li><p>most climatology textbooks, e.g. Marshall and Plumb Chap. 2</p></li>
+<li><p><a class="reference external" href="https://www.meted.ucar.edu/tropical/textbook_2nd_edition/print_4.htm">https://www.meted.ucar.edu/tropical/textbook_2nd_edition/print_4.htm</a></p></li>
+</ul>
+</section>
+<section id="the-north-atlantic-oscillation-description-and-impacts-with-era5-data">
+<h3>2. The North Atlantic Oscillation: description and impacts (with ERA5 data)<a class="headerlink" href="#the-north-atlantic-oscillation-description-and-impacts-with-era5-data" title="Permalink to this headline">#</a></h3>
+<p>You will prepare a lecture about the NAO, mostly based on the paper by <a class="reference external" href="https://www.dropbox.com/s/d8zj5gsex08yybm/Hurrell%20et%20al.%20-%202003%20-%20An%20Overview%20of%20the%20North%20Atlantic%20Oscillation.pdf?dl=1">Hurrell et al., 2003</a>. You can reproduce a large number of the plots of the paper using only ERA5 data. You can choose to characterize NAO statistically, or you can choose to focus on the impacts instead, for example in Europe.</p>
+<p><strong>Literature to get you started:</strong> <a class="reference external" href="https://www.dropbox.com/s/d8zj5gsex08yybm/Hurrell%20et%20al.%20-%202003%20-%20An%20Overview%20of%20the%20North%20Atlantic%20Oscillation.pdf?dl=1">Hurrell et al., 2003</a>. You are invited to reproduce several of the plots in the paper, and chose a region of interest to study the impact of NAO in more detail.</p>
+</section>
+<section id="monsoons-with-era5-data">
+<h3>3. Monsoons with ERA5 data<a class="headerlink" href="#monsoons-with-era5-data" title="Permalink to this headline">#</a></h3>
+<p>With this topic, you will have a closer look at a fundamental aspect of the (sub-)tropical climate in Asia, West Africa, and South America. You can pick either all three regions and focus on the similarities / differences between them, or pick one in particular and study its monsoon system in more detail. For the theoretical part, you will focus of the mechanisms driving the monsoons and the seasonal processes.</p>
+<p><strong>Literature to get you started:</strong> <a class="reference external" href="https://www.dropbox.com/s/n0gu4egdxyjotb8/Webster_Fasullo__2002__MONSOON_Dynamical_Theory.pdf?dl=1">Monsoon Chapters</a> of the Encyclopedia of Atmospheric Sciences.</p>
+</section>
+<section id="polar-climates-with-era5-data">
+<h3>4. Polar climates with ERA5 data<a class="headerlink" href="#polar-climates-with-era5-data" title="Permalink to this headline">#</a></h3>
+<p><strong>Literature to get you started:</strong> <a class="reference external" href="https://www.dropbox.com/s/vwf3pbp23jiyubp/literature_regional_climate.zip?dl=1">chapters of the Encyclopedia of World Climatology</a> about regional climates. Full book available <a class="reference external" href="https://link.springer.com/referencework/10.1007/1-4020-3266-8">here</a>.</p>
+</section>
+<section id="tropical-climates-with-era5-data">
+<h3>5. Tropical climates with ERA5 data<a class="headerlink" href="#tropical-climates-with-era5-data" title="Permalink to this headline">#</a></h3>
+<p><strong>Literature to get you started:</strong> <a class="reference external" href="https://www.dropbox.com/s/vwf3pbp23jiyubp/literature_regional_climate.zip?dl=1">chapters of the Encyclopedia of World Climatology</a> about regional climates. Full book available <a class="reference external" href="https://link.springer.com/referencework/10.1007/1-4020-3266-8">here</a>.</p>
+</section>
+<section id="performance-of-cmip6-climate-models">
+<h3>6. Performance of CMIP6 climate models<a class="headerlink" href="#performance-of-cmip6-climate-models" title="Permalink to this headline">#</a></h3>
+<p>Provide an introduction to the CMIP6 ensemble. Compare the model ensemble values with ERA5 and describe their skill for temperature and precipitation, globally and regionally.</p>
+<p><strong>Literature to get you started</strong>: <a class="reference external" href="https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained">Carbon brief</a></p>
+</section>
+<section id="past-and-future-climate-change-signal-in-cmip6-climate-models">
+<h3>7. Past and future climate change signal in CMIP6 climate models<a class="headerlink" href="#past-and-future-climate-change-signal-in-cmip6-climate-models" title="Permalink to this headline">#</a></h3>
+<p>Provide an introduction to the CMIP6 ensemble and the various scenarios available. Describe the climate change signal for each climate scenario.</p>
+<p><strong>Literature to get you started</strong>: <a class="reference external" href="https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained">Carbon brief</a></p>
+</section>
+<section id="other-possible-topics">
+<h3>8. Other possible topics<a class="headerlink" href="#other-possible-topics" title="Permalink to this headline">#</a></h3>
+<p><strong>For example,</strong> Regional climatology with ERA5 data. Characterizing the surface climate of a specific region / continent and describe its climatological drivers.</p>
+<p>Example regions:</p>
+<ul class="simple">
+<li><p>South America</p></li>
+<li><p>Tibetan Plateau / High Mountain Asia</p></li>
+<li><p>East Asia</p></li>
+<li><p>Horn of Africa (regional)</p></li>
+<li><p>Antarctica or Polar climate</p></li>
+</ul>
+<p>Example drivers / plot ideas:</p>
+<ul class="simple">
+<li><p>seasonality of the variable (e.g. precipitation)</p></li>
+<li><p>850hPa/500hPa/200hPa seasonal circulation plots</p></li>
+<li><p>water vapor transport</p></li>
+<li><p>cloud cover</p></li>
+<li><p>surface energy balance</p></li>
+</ul>
+<p>With these topics you can focus on the average (mean) climate, but you can add extensions with e.g. the temporal variability and the effect of ENSO, NAO, or other indices.</p>
+<p><strong>Or more!</strong> Surface energy balance of Antarctica, circulation plots with CMIP6 models… There are so many topics you could pick!</p>
+<p><strong>Literature to get you started:</strong> <a class="reference external" href="https://www.dropbox.com/s/vwf3pbp23jiyubp/literature_regional_climate.zip?dl=1">chapters of the Encyclopedia of World Climatology</a> about regional climates. Full book available <a class="reference external" href="https://link.springer.com/referencework/10.1007/1-4020-3266-8">here</a>.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./projects"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../week_05/02_Assignment_EkmanPumping.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Assignment: Ekman Pumping</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="02_GuidedExercise_Composites.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Guided exercise: indices, composites, correlation maps</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Fabien Maussion<br/>
+  
+    <div class="extra_footer">
+      <p>
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+  <img align="right" class="margin" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" width="88px">
+</a>
+These lecture notes and exercises are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0) license</a>.
+<br>
+&copy; Copyright 2018-2020.
+</p>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

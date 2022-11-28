@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Assignment: major features of the atmospheric circulation &#8212; Physics of the Climate System</title>
+    <title>Assignment: Ekman Pumping &#8212; Physics of the Climate System</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Guided exercise: Energy Transport" href="../week_05/01_GuidedExercise_EnergyTransport.html" />
-    <link rel="prev" title="Lesson: wind flow, 4D data, numerical integrals" href="01_Lesson_Wind-Derivatives-Integrals.html" />
+    <link rel="next" title="Final group projects: instructions" href="../projects/01_FinalProjects.html" />
+    <link rel="prev" title="Guided exercise: Energy Transport" href="01_GuidedExercise_EnergyTransport.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -209,14 +209,14 @@ const thebe_selector_output = ".output, .cell_output"
   Week 04
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Lesson_Wind-Derivatives-Integrals.html">
+  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
    Lesson: wind flow, 4D data, numerical integrals
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
    Assignment: major features of the atmospheric circulation
   </a>
  </li>
@@ -226,14 +226,14 @@ const thebe_selector_output = ".output, .cell_output"
   Week 05
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_05/01_GuidedExercise_EnergyTransport.html">
+  <a class="reference internal" href="01_GuidedExercise_EnergyTransport.html">
    Guided exercise: Energy Transport
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_05/02_Assignment_EkmanPumping.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Assignment: Ekman Pumping
   </a>
  </li>
@@ -328,7 +328,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_04/02_Assignment_GeneralCirculation.ipynb"
+        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_05/02_Assignment_EkmanPumping.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -388,7 +388,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_04/02_Assignment_GeneralCirculation.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_05/02_Assignment_EkmanPumping.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -405,7 +405,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_system/edit/master/book/week_04/02_Assignment_GeneralCirculation.ipynb"
+        <a href="https://github.com/fmaussion/climate_system/edit/master/book/week_05/02_Assignment_EkmanPumping.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -433,7 +433,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/week_04/02_Assignment_GeneralCirculation.ipynb"
+        <a href="../_sources/week_05/02_Assignment_EkmanPumping.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -493,31 +493,29 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sea-level-pressure-and-surface-winds">
-   Sea-level pressure and surface winds
+  <a class="reference internal nav-link" href="#data">
+   Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-circulation-of-the-upper-atmopshere">
-   General circulation of the upper atmopshere
+  <a class="reference internal nav-link" href="#surface-wind-stress-on-the-oceans">
+   Surface wind stress on the oceans
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#geopotential-and-zonal-winds">
-     Geopotential and zonal winds
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#meridional-overturning-circulation">
-     Meridional overturning circulation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#stationary-waves-in-the-mid-and-upper-troposphere">
-     Stationary waves in the mid- and upper troposphere
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ekman-transport">
+   Ekman transport
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ekman-pumping">
+   Ekman pumping
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-go-further">
+   To go further
+  </a>
  </li>
 </ul>
 
@@ -528,7 +526,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Assignment: major features of the atmospheric circulation</h1>
+                <h1>Assignment: Ekman Pumping</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -539,31 +537,29 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sea-level-pressure-and-surface-winds">
-   Sea-level pressure and surface winds
+  <a class="reference internal nav-link" href="#data">
+   Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-circulation-of-the-upper-atmopshere">
-   General circulation of the upper atmopshere
+  <a class="reference internal nav-link" href="#surface-wind-stress-on-the-oceans">
+   Surface wind stress on the oceans
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#geopotential-and-zonal-winds">
-     Geopotential and zonal winds
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#meridional-overturning-circulation">
-     Meridional overturning circulation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#stationary-waves-in-the-mid-and-upper-troposphere">
-     Stationary waves in the mid- and upper troposphere
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ekman-transport">
+   Ekman transport
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ekman-pumping">
+   Ekman pumping
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-go-further">
+   To go further
+  </a>
  </li>
 </ul>
 
@@ -575,8 +571,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="assignment-major-features-of-the-atmospheric-circulation">
-<h1>Assignment: major features of the atmospheric circulation<a class="headerlink" href="#assignment-major-features-of-the-atmospheric-circulation" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="assignment-ekman-pumping">
+<h1>Assignment: Ekman Pumping<a class="headerlink" href="#assignment-ekman-pumping" title="Permalink to this headline">#</a></h1>
+<p>In this exercise we will apply the lesson learned about derivatives in Python to compute the Ekman transport in the ocean, and then compute the associated up- and downwelling.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
@@ -591,16 +588,26 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section id="sea-level-pressure-and-surface-winds">
-<h2>Sea-level pressure and surface winds<a class="headerlink" href="#sea-level-pressure-and-surface-winds" title="Permalink to this headline">#</a></h2>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
+<p>We are going to work again with the <code class="docutils literal notranslate"><span class="pre">ERA5_LowRes_MonthlyAvg_uvslp.nc</span></code> and the <code class="docutils literal notranslate"><span class="pre">ERA5_LowRes_Invariant.nc</span></code> files that you already downloaded for a previous unit:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_uvslp.nc&#39;</span><span class="p">)</span>
+<span class="n">dsi</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_Invariant.nc&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{SLP} \right]\)</span> (in hPa), and plot it. With the help of <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axhline">plt.axhline</a>, add the <a class="reference external" href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Standard_atmospheric">standard atmosphere pressure</a> line to the plot to emphasize high and low pressure regions.</strong></p>
+</section>
+<section id="surface-wind-stress-on-the-oceans">
+<h2>Surface wind stress on the oceans<a class="headerlink" href="#surface-wind-stress-on-the-oceans" title="Permalink to this headline">#</a></h2>
+<p>If you remember the lesson (<em>Oceans</em>), the stress exerted by surface winds on the ocean can be reasonably well approximated by the bulk formula (Marshall and Plumb, p198):</p>
+<div class="math notranslate nohighlight">
+\[(\tau_{wind_x}, \tau_{wind_y}) = \rho_{air} c_D ws_{10} (u_{10}, v_{10})\]</div>
+<p>Where <span class="math notranslate nohighlight">\(c_D\)</span> is a bulk transfer coefficient for momentum (here we use <span class="math notranslate nohighlight">\(c_D\)</span> = 1.5<span class="math notranslate nohighlight">\(\times\)</span>10<span class="math notranslate nohighlight">\(^{-3}\)</span>), <span class="math notranslate nohighlight">\(\rho_{air}\)</span> is the denisty of air at the surface (here we use <span class="math notranslate nohighlight">\(\rho_{air}\)</span> = 1.225 kg m<span class="math notranslate nohighlight">\(^3\)</span>), <span class="math notranslate nohighlight">\(ws\)</span> is the wind speed at 10 m, and <span class="math notranslate nohighlight">\(u_{10}\)</span> , <span class="math notranslate nohighlight">\(v_{10}\)</span> are the components of the wind vector at 10 m height.</p>
+<p><strong>Q: <span class="math notranslate nohighlight">\(\tau\)</span> is expressed in N m<span class="math notranslate nohighlight">\(^{-2}\)</span>. verify that <span class="math notranslate nohighlight">\(c_D\)</span> is a dimensionless quantity.</strong></p>
+<p><strong>E: compute <span class="math notranslate nohighlight">\(\overline{\tau_x}\)</span> and <span class="math notranslate nohighlight">\(\overline{\tau_y}\)</span>. This quantity only makes sense over the oceans. Read the invariant data and keep only the values of <span class="math notranslate nohighlight">\(\overline{\tau_x}\)</span> and <span class="math notranslate nohighlight">\(\overline{\tau_y}\)</span> over the oceans.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -608,31 +615,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><strong>Repeat with <span class="math notranslate nohighlight">\(\left[ \overline{u_{10}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{v_{10}} \right]\)</span> (in m/s) add a horizontal line at zero windspeed to the plot (to detect surface westerlies from easterlies for example). Analyse the three plots alltogether. How do they fit to the circulation we discussed in the lecture?</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Plot the annual <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> on a map. Choose adequate levels and colormap, so that low pressure and high pressure systems are visible. These are called “semi-permanent highs and lows”. Can you name most of them?</strong></p>
-<ul class="simple">
-<li><p>Icelandic Low</p></li>
-<li><p>Aleutian Low</p></li>
-<li><p>Subtropical highs: Bermuda High, South/North Pacific High…</p></li>
-<li><p>Siberian High</p></li>
-<li><p>Monsoon Low (or through)</p></li>
-<li><p>…</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Now use the same colors and levels as above, and plot <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> for the months of January and July. Compare the evolution of the major systems. When are they strongest? Weakest? Which systems disappear entirely?</strong></p>
+<p><strong>E: compute the total wind stress <span class="math notranslate nohighlight">\(\tau = \sqrt{\tau_x^2 + \tau_y^2}\)</span>. Plot it on a map using the colormap “Greens” (so that you can compare with the lecture). Add the (<span class="math notranslate nohighlight">\(\tau_x\)</span>, <span class="math notranslate nohighlight">\(\tau_y\)</span>) vectors as arrows on top.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -641,42 +624,26 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="general-circulation-of-the-upper-atmopshere">
-<h2>General circulation of the upper atmopshere<a class="headerlink" href="#general-circulation-of-the-upper-atmopshere" title="Permalink to this headline">#</a></h2>
+<section id="ekman-transport">
+<h2>Ekman transport<a class="headerlink" href="#ekman-transport" title="Permalink to this headline">#</a></h2>
+<p>The transport of water integrated over the Ekman layer is written (Marshall and Plumb, p200):</p>
+<div class="math notranslate nohighlight">
+\[M_{ek} = \frac{\tau_{wind} \times \hat{z}}{f}\]</div>
+<p>Or, in the component form:</p>
+<div class="math notranslate nohighlight">
+\[m_{ek_{x}} = \frac{\tau_{wind_y}}{f} \]</div>
+<div class="math notranslate nohighlight">
+\[m_{ek_{y}} = -\frac{\tau_{wind_x}}{f} \]</div>
+<p><strong>E: first, we need to compute the coriolis parameter <span class="math notranslate nohighlight">\(f\)</span>:</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_4D_zuvw.nc&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="mf">2.</span> <span class="o">*</span> <span class="mf">7.2921150e-5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">latitude</span><span class="p">))</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">where</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">latitude</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">latitude</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">87</span><span class="p">))</span>  <span class="c1"># Mask out the poles and equator regions</span>
 </pre></div>
 </div>
 </div>
 </div>
-<section id="geopotential-and-zonal-winds">
-<h3>Geopotential and zonal winds<a class="headerlink" href="#geopotential-and-zonal-winds" title="Permalink to this headline">#</a></h3>
-<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span>, where <span class="math notranslate nohighlight">\(z_h\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Geopotential_height">geopotential height</a> (unit: m). Plot it (you can use <code class="docutils literal notranslate"><span class="pre">.plot.contourf(levels=18,</span> <span class="pre">center=False)</span></code> for example). Don’t forget to put the y-axis in the right direction!</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>What is the approximate average height of the 200hPa level at the poles? At the tropics? Not that easy to see, right? Instead, you can try to compute the anomaly of <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span> with respect to <span class="math notranslate nohighlight">\(\left\{ \left[ \overline{z_h} \right] \right\}\)</span>, where <span class="math notranslate nohighlight">\(\left\{ \right\}\)</span> would represent the meridional average. Plot it (this time without the <code class="docutils literal notranslate"><span class="pre">center</span></code> keyword) and analyse the plot: what altitude difference is there at the 500hPa level between the equator and the poles? And at the 200hPa level? How does that fit into the thermal wind concept we discussed in the lecture?</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Repeat the operation with the month of January and July. Analyse the differences.</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Now plot the zonal temporal average of the zonal wind <span class="math notranslate nohighlight">\(\left[ \overline{u} \right]\)</span>, for the annual average and the months of January and July. Analyse the plot: when and where is the zonal wind speed highest? Where is the zonal wind negative?</strong></p>
+<p><strong>E: compute the components mek_x and mek_y. Plot the transport vectors on a map using the quiver() function. Discuss.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -685,9 +652,74 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="meridional-overturning-circulation">
-<h3>Meridional overturning circulation<a class="headerlink" href="#meridional-overturning-circulation" title="Permalink to this headline">#</a></h3>
-<p><strong>Compute the stream function of the meridional overturning circulation of the atmosphere for the annual average and the months of January, April, July, and October. Plot all five with the same colors and levels for comparison. Analyse what you see.</strong></p>
+<section id="ekman-pumping">
+<h2>Ekman pumping<a class="headerlink" href="#ekman-pumping" title="Permalink to this headline">#</a></h2>
+<p>The convergence (or divergence) of the Ekman transport fields generates a vertical motion at the bottom of the Ekman Layer called Ekman pumping. It is written as (Marshall and Plumb, p204):</p>
+<div class="math notranslate nohighlight">
+\[w_{ek} = \frac{1}{\rho_{0}} \left( \frac{\partial}{\partial x} \frac{\tau_{wind_{y}}}{f} - \frac{\partial}{\partial y} \frac{\tau_{wind_{x}}}{f} \right)\]</div>
+<p>with <span class="math notranslate nohighlight">\(\rho_{0}\)</span> the density of water at the ocean surface, here assumed to be 1000 kg m<span class="math notranslate nohighlight">\(^{-3}\)</span>.</p>
+<p>As discussed in the lesson, we shouldn’t forget that we are using data defined in spherical coordinates. The partial derivatives in (x, y) are computed from spherical coordinates as:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial}{\partial x} = \frac{1}{R \cos \varphi}\frac{\partial}{\partial\lambda}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{\partial}{\partial y} = \frac{1}{R}\frac{\partial}{\partial\varphi}\]</div>
+<p><strong>E: compute the partial derivatives <span class="math notranslate nohighlight">\(\frac{\partial}{\partial \lambda} \frac{\tau_{wind_{y}}}{f}\)</span> and <span class="math notranslate nohighlight">\(-\frac{\partial}{\partial \varphi} \frac{\tau_{wind_{x}}}{f}\)</span> out of tau_x and tau_y, and store them in the variables dlambda and dphi.</strong> Hint: you will need <em>two</em> calls to <code class="docutils literal notranslate"><span class="pre">np.gradient()</span></code> to do this computation, each call returning one variable that you will need and another that you won’t need. This second useless variable can be called “tmp” in each call for example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">dlambda</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">tau_y</span> <span class="o">/</span> <span class="n">f</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">))</span>
+<span class="n">dphi</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">tau_x</span> <span class="o">/</span> <span class="n">f</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">/tmp/ipykernel_15451/1181974712.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">_</span><span class="p">,</span> <span class="n">dlambda</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">tau_y</span> <span class="o">/</span> <span class="n">f</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">dphi</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">tau_x</span> <span class="o">/</span> <span class="n">f</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">0.75</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;tau_y&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we will convert these numpy arrays back to xarray DataArrays:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dlambda</span> <span class="o">=</span> <span class="n">mek_x</span><span class="o">*</span><span class="mi">0</span> <span class="o">+</span> <span class="n">dlambda</span>
+<span class="n">dphi</span> <span class="o">=</span> <span class="n">mek_x</span><span class="o">*</span><span class="mi">0</span> <span class="o">+</span> <span class="n">dphi</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">/tmp/ipykernel_15451/2576805713.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">dlambda</span> <span class="o">=</span> <span class="n">mek_x</span><span class="o">*</span><span class="mi">0</span> <span class="o">+</span> <span class="n">dlambda</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">dphi</span> <span class="o">=</span> <span class="n">mek_x</span><span class="o">*</span><span class="mi">0</span> <span class="o">+</span> <span class="n">dphi</span>
+
+<span class="ne">NameError</span>: name &#39;mek_x&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>E: compute the factor fx = <span class="math notranslate nohighlight">\(\frac{1}{R \cos \varphi}\)</span> and fy = <span class="math notranslate nohighlight">\(\frac{1}{R}\)</span>, with an Earth radius of 6371000 m.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>E: you now have all elements to compute the Ekmann pumping “wek”. What is its unit? Convert it to m yr<span class="math notranslate nohighlight">\(^{-1}\)</span>.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>E: plot wek on a map. Set vmin and vmax to -50 and +50 and use another colormap (for example “BrBG”). Compare your plot with the one computed by Marshall and Plumb (p205). Discuss the major features of the plot. Where is upwelling taking place? Downwelling? Can you explain the location and strength of these features?</strong> (click <a class="reference external" href="https://www.dropbox.com/s/rrhtivvh7bf8ns4/pumping_map.png?dl=0">here</a> to see the plot by Marshall and Plumb)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
@@ -696,18 +728,9 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="stationary-waves-in-the-mid-and-upper-troposphere">
-<h3>Stationary waves in the mid- and upper troposphere<a class="headerlink" href="#stationary-waves-in-the-mid-and-upper-troposphere" title="Permalink to this headline">#</a></h3>
-<p>“Stationary waves” or “stationary eddies” are circulations which are absent from the zonal mean, but visible in the temporal average of the wind field (see lecture). A nice way to visualize stationary waves is simply to plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> (with <span class="math notranslate nohighlight">\(z\)</span> the geopotential). Remember what this is? We computed this anomaly in the “temperature and precipitation data” assignment last week.</p>
-<p><strong>Select data in one hemisphere (NH is a bit stronger), for one pressure level and for one month, and plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> on a map.</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
+<section id="to-go-further">
+<h2>To go further<a class="headerlink" href="#to-go-further" title="Permalink to this headline">#</a></h2>
+<p>Read the few pages of chapter 10.3 in the book of Marshall and Plumb (available on OLAT). In particular, we are interested in their Fig. 10.21 and equation 10.20. Can you think about a strategy to realize the same plot with our data? Without implementing it (unless you really really want to!), describe the steps needed to come to this result.</p>
 </section>
 </section>
 
@@ -724,7 +747,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_04"
+            path: "./week_05"
         },
         predefinedOutput: true
     }
@@ -738,17 +761,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="01_Lesson_Wind-Derivatives-Integrals.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="01_GuidedExercise_EnergyTransport.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Lesson: wind flow, 4D data, numerical integrals</p>
+            <p class="prev-next-title">Guided exercise: Energy Transport</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../week_05/01_GuidedExercise_EnergyTransport.html" title="next page">
+    <a class='right-next' id="next-link" href="../projects/01_FinalProjects.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guided exercise: Energy Transport</p>
+        <p class="prev-next-title">Final group projects: instructions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

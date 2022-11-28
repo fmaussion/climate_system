@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Assignment: major features of the atmospheric circulation &#8212; Physics of the Climate System</title>
+    <title>Lambert conformal projection &#8212; Physics of the Climate System</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,12 +51,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Guided exercise: Energy Transport" href="../week_05/01_GuidedExercise_EnergyTransport.html" />
-    <link rel="prev" title="Lesson: wind flow, 4D data, numerical integrals" href="01_Lesson_Wind-Derivatives-Integrals.html" />
+    <link rel="prev" title="Polar stereographic projection" href="04_Getting_started_Antarctica.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -209,14 +206,14 @@ const thebe_selector_output = ".output, .cell_output"
   Week 04
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Lesson_Wind-Derivatives-Integrals.html">
+  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
    Lesson: wind flow, 4D data, numerical integrals
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
    Assignment: major features of the atmospheric circulation
   </a>
  </li>
@@ -243,29 +240,29 @@ const thebe_selector_output = ".output, .cell_output"
   Projects
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../projects/01_FinalProjects.html">
+  <a class="reference internal" href="01_FinalProjects.html">
    Final group projects: instructions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../projects/02_GuidedExercise_Composites.html">
+  <a class="reference internal" href="02_GuidedExercise_Composites.html">
    Guided exercise: indices, composites, correlation maps
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../projects/03_Getting_started_RegionalPlots.html">
+  <a class="reference internal" href="03_Getting_started_RegionalPlots.html">
    Regional PlateCarree projection
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../projects/04_Getting_started_Antarctica.html">
+  <a class="reference internal" href="04_Getting_started_Antarctica.html">
    Polar stereographic projection
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/05_Getting_started_NorthAmerica.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Lambert conformal projection
   </a>
  </li>
@@ -328,7 +325,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_04/02_Assignment_GeneralCirculation.ipynb"
+        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/projects/05_Getting_started_NorthAmerica.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -388,7 +385,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_04/02_Assignment_GeneralCirculation.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fprojects/05_Getting_started_NorthAmerica.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -405,7 +402,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_system/edit/master/book/week_04/02_Assignment_GeneralCirculation.ipynb"
+        <a href="https://github.com/fmaussion/climate_system/edit/master/book/projects/05_Getting_started_NorthAmerica.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -433,7 +430,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/week_04/02_Assignment_GeneralCirculation.ipynb"
+        <a href="../_sources/projects/05_Getting_started_NorthAmerica.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -493,31 +490,29 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sea-level-pressure-and-surface-winds">
-   Sea-level pressure and surface winds
+  <a class="reference internal nav-link" href="#read-and-select-the-regional-data">
+   Read and select the regional data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-circulation-of-the-upper-atmopshere">
-   General circulation of the upper atmopshere
+  <a class="reference internal nav-link" href="#define-the-projection">
+   Define the projection
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#geopotential-and-zonal-winds">
-     Geopotential and zonal winds
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#meridional-overturning-circulation">
-     Meridional overturning circulation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#stationary-waves-in-the-mid-and-upper-troposphere">
-     Stationary waves in the mid- and upper troposphere
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-a-plot">
+   Make a plot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tired-of-writing-so-many-lines">
+   Tired of writing so many lines?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#need-to-save-the-plot-for-your-presentation">
+   Need to save the plot for your presentation?
+  </a>
  </li>
 </ul>
 
@@ -528,7 +523,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Assignment: major features of the atmospheric circulation</h1>
+                <h1>Lambert conformal projection</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -539,31 +534,29 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sea-level-pressure-and-surface-winds">
-   Sea-level pressure and surface winds
+  <a class="reference internal nav-link" href="#read-and-select-the-regional-data">
+   Read and select the regional data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-circulation-of-the-upper-atmopshere">
-   General circulation of the upper atmopshere
+  <a class="reference internal nav-link" href="#define-the-projection">
+   Define the projection
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#geopotential-and-zonal-winds">
-     Geopotential and zonal winds
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#meridional-overturning-circulation">
-     Meridional overturning circulation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#stationary-waves-in-the-mid-and-upper-troposphere">
-     Stationary waves in the mid- and upper troposphere
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-a-plot">
+   Make a plot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tired-of-writing-so-many-lines">
+   Tired of writing so many lines?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#need-to-save-the-plot-for-your-presentation">
+   Need to save the plot for your presentation?
+  </a>
  </li>
 </ul>
 
@@ -575,8 +568,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="assignment-major-features-of-the-atmospheric-circulation">
-<h1>Assignment: major features of the atmospheric circulation<a class="headerlink" href="#assignment-major-features-of-the-atmospheric-circulation" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="lambert-conformal-projection">
+<h1>Lambert conformal projection<a class="headerlink" href="#lambert-conformal-projection" title="Permalink to this headline">#</a></h1>
+<p>High-latitude areas should rather be plotted on an area-conserving projection. In the few lines of code below you find some examples to get you started.</p>
+<p>First, the imports. They are the same as always, but I removed the figure size defaults:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
@@ -585,129 +580,150 @@ title="Print to PDF"
 <span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>  <span class="c1"># netCDF library</span>
 <span class="kn">import</span> <span class="nn">cartopy</span>  <span class="c1"># Map projections libary</span>
 <span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>  <span class="c1"># Projections list</span>
-<span class="c1"># Some defaults:</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Default plot size</span>
 </pre></div>
 </div>
 </div>
 </div>
-<section id="sea-level-pressure-and-surface-winds">
-<h2>Sea-level pressure and surface winds<a class="headerlink" href="#sea-level-pressure-and-surface-winds" title="Permalink to this headline">#</a></h2>
+<section id="read-and-select-the-regional-data">
+<h2>Read and select the regional data<a class="headerlink" href="#read-and-select-the-regional-data" title="Permalink to this headline">#</a></h2>
+<p>Reading the data works as always:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_uvslp.nc&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_Invariant.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{SLP} \right]\)</span> (in hPa), and plot it. With the help of <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axhline">plt.axhline</a>, add the <a class="reference external" href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Standard_atmospheric">standard atmosphere pressure</a> line to the plot to emphasize high and low pressure regions.</strong></p>
+<p>To select the data for a specific region, we will use xray’s <code class="docutils literal notranslate"><span class="pre">sel</span></code> function as we learned in the exercises. I’ve made a pre-selection for you but you are free to make the domain bigger/smaller if you find it useful for your analyses! Just <strong>uncomment the two lines relevant for your case</strong>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># North-America -- note that I have to make the domain much larger in order to &quot;fill&quot; the plot below</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">longitude</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Repeat with <span class="math notranslate nohighlight">\(\left[ \overline{u_{10}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{v_{10}} \right]\)</span> (in m/s) add a horizontal line at zero windspeed to the plot (to detect surface westerlies from easterlies for example). Analyse the three plots alltogether. How do they fit to the circulation we discussed in the lecture?</strong></p>
+<p>Note that I set the standard figure size for each region. You can always change those, and also make plots of any size later on (examples below).</p>
+<p>Now we read the variable:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Plot the annual <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> on a map. Choose adequate levels and colormap, so that low pressure and high pressure systems are visible. These are called “semi-permanent highs and lows”. Can you name most of them?</strong></p>
-<ul class="simple">
-<li><p>Icelandic Low</p></li>
-<li><p>Aleutian Low</p></li>
-<li><p>Subtropical highs: Bermuda High, South/North Pacific High…</p></li>
-<li><p>Siberian High</p></li>
-<li><p>Monsoon Low (or through)</p></li>
-<li><p>…</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Now use the same colors and levels as above, and plot <span class="math notranslate nohighlight">\(\overline{SLP}\)</span> for the months of January and July. Compare the evolution of the major systems. When are they strongest? Weakest? Which systems disappear entirely?</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">z</span> <span class="o">/</span> <span class="mf">9.81</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="general-circulation-of-the-upper-atmopshere">
-<h2>General circulation of the upper atmopshere<a class="headerlink" href="#general-circulation-of-the-upper-atmopshere" title="Permalink to this headline">#</a></h2>
+<section id="define-the-projection">
+<h2>Define the projection<a class="headerlink" href="#define-the-projection" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_4D_zuvw.nc&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">([</span><span class="o">-</span><span class="mi">140</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">75</span><span class="p">],</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">Geodetic</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">();</span> <span class="n">ax</span><span class="o">.</span><span class="n">gridlines</span><span class="p">();</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cartopy</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">BORDERS</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/05_Getting_started_NorthAmerica_12_0.png" src="../_images/05_Getting_started_NorthAmerica_12_0.png" />
 </div>
-<section id="geopotential-and-zonal-winds">
-<h3>Geopotential and zonal winds<a class="headerlink" href="#geopotential-and-zonal-winds" title="Permalink to this headline">#</a></h3>
-<p><strong>Compute <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span>, where <span class="math notranslate nohighlight">\(z_h\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Geopotential_height">geopotential height</a> (unit: m). Plot it (you can use <code class="docutils literal notranslate"><span class="pre">.plot.contourf(levels=18,</span> <span class="pre">center=False)</span></code> for example). Don’t forget to put the y-axis in the right direction!</strong></p>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">LambertConformal</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">([</span><span class="o">-</span><span class="mi">140</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">75</span><span class="p">],</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">Geodetic</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">();</span> <span class="n">ax</span><span class="o">.</span><span class="n">gridlines</span><span class="p">();</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cartopy</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">BORDERS</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
-</div>
-<p><strong>What is the approximate average height of the 200hPa level at the poles? At the tropics? Not that easy to see, right? Instead, you can try to compute the anomaly of <span class="math notranslate nohighlight">\(\left[ \overline{z_h} \right]\)</span> with respect to <span class="math notranslate nohighlight">\(\left\{ \left[ \overline{z_h} \right] \right\}\)</span>, where <span class="math notranslate nohighlight">\(\left\{ \right\}\)</span> would represent the meridional average. Plot it (this time without the <code class="docutils literal notranslate"><span class="pre">center</span></code> keyword) and analyse the plot: what altitude difference is there at the 500hPa level between the equator and the poles? And at the 200hPa level? How does that fit into the thermal wind concept we discussed in the lecture?</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Repeat the operation with the month of January and July. Analyse the differences.</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Now plot the zonal temporal average of the zonal wind <span class="math notranslate nohighlight">\(\left[ \overline{u} \right]\)</span>, for the annual average and the months of January and July. Analyse the plot: when and where is the zonal wind speed highest? Where is the zonal wind negative?</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
+<div class="cell_output docutils container">
+<img alt="../_images/05_Getting_started_NorthAmerica_13_0.png" src="../_images/05_Getting_started_NorthAmerica_13_0.png" />
 </div>
 </div>
 </section>
-<section id="meridional-overturning-circulation">
-<h3>Meridional overturning circulation<a class="headerlink" href="#meridional-overturning-circulation" title="Permalink to this headline">#</a></h3>
-<p><strong>Compute the stream function of the meridional overturning circulation of the atmosphere for the annual average and the months of January, April, July, and October. Plot all five with the same colors and levels for comparison. Analyse what you see.</strong></p>
+<section id="make-a-plot">
+<h2>Make a plot<a class="headerlink" href="#make-a-plot" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">LambertConformal</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">([</span><span class="o">-</span><span class="mi">140</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">75</span><span class="p">],</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">();</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">gridlines</span><span class="p">();</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cartopy</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">BORDERS</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">);</span>
+<span class="n">z</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;terrain&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/05_Getting_started_NorthAmerica_15_0.png" src="../_images/05_Getting_started_NorthAmerica_15_0.png" />
+</div>
+</div>
+<p><strong>OK, you should be good now!</strong></p>
+</section>
+<section id="tired-of-writing-so-many-lines">
+<h2>Tired of writing so many lines?<a class="headerlink" href="#tired-of-writing-so-many-lines" title="Permalink to this headline">#</a></h2>
+<p>Note that it is possible to simplify your plotting commands by writing a <strong>function</strong>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">prepare_plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This function returns prepared axes for the regional plot.</span>
+<span class="sd">    </span>
+<span class="sd">    Usage:</span>
+<span class="sd">        fig, ax = prepare_plot()</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">LambertConformal</span><span class="p">())</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">([</span><span class="o">-</span><span class="mi">140</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">75</span><span class="p">],</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">();</span> <span class="n">ax</span><span class="o">.</span><span class="n">gridlines</span><span class="p">();</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cartopy</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">BORDERS</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="stationary-waves-in-the-mid-and-upper-troposphere">
-<h3>Stationary waves in the mid- and upper troposphere<a class="headerlink" href="#stationary-waves-in-the-mid-and-upper-troposphere" title="Permalink to this headline">#</a></h3>
-<p>“Stationary waves” or “stationary eddies” are circulations which are absent from the zonal mean, but visible in the temporal average of the wind field (see lecture). A nice way to visualize stationary waves is simply to plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> (with <span class="math notranslate nohighlight">\(z\)</span> the geopotential). Remember what this is? We computed this anomaly in the “temperature and precipitation data” assignment last week.</p>
-<p><strong>Select data in one hemisphere (NH is a bit stronger), for one pressure level and for one month, and plot <span class="math notranslate nohighlight">\(\overline{z^{*}}\)</span> on a map.</strong></p>
+<p>Now, making a plot has become even easier:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">prepare_plot</span><span class="p">()</span>
+<span class="n">z</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;terrain&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/05_Getting_started_NorthAmerica_21_0.png" src="../_images/05_Getting_started_NorthAmerica_21_0.png" />
+</div>
 </div>
 </section>
+<section id="need-to-save-the-plot-for-your-presentation">
+<h2>Need to save the plot for your presentation?<a class="headerlink" href="#need-to-save-the-plot-for-your-presentation" title="Permalink to this headline">#</a></h2>
+<p><strong>The easiest way is to use “right-click -&gt; save as” on the image in the notebook.</strong></p>
+<p>Also, you can save the plot as pdf or png quite easily (examples below). But this might look quite different as the picture on screen sometimes…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">prepare_plot</span><span class="p">()</span>
+<span class="n">z</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;terrain&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;topo.pdf&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/05_Getting_started_NorthAmerica_24_0.png" src="../_images/05_Getting_started_NorthAmerica_24_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">prepare_plot</span><span class="p">()</span>
+<span class="n">z</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;terrain&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;topo.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/05_Getting_started_NorthAmerica_25_0.png" src="../_images/05_Getting_started_NorthAmerica_25_0.png" />
+</div>
+</div>
 </section>
 </section>
 
@@ -724,7 +740,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_04"
+            path: "./projects"
         },
         predefinedOutput: true
     }
@@ -738,19 +754,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="01_Lesson_Wind-Derivatives-Integrals.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="04_Getting_started_Antarctica.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Lesson: wind flow, 4D data, numerical integrals</p>
+            <p class="prev-next-title">Polar stereographic projection</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_05/01_GuidedExercise_EnergyTransport.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guided exercise: Energy Transport</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
