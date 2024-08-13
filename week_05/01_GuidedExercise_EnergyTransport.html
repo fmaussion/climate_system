@@ -1,123 +1,194 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Guided exercise: Energy Transport &#8212; Physics of the Climate System</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-5BGML8VW02"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-5BGML8VW02');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-5BGML8VW02');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_05/01_GuidedExercise_EnergyTransport';</script>
+    <script data-domain="fabienmaussion.info" defer="defer" src="https://plausible.oggm.org/js/script.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Assignment: Ekman Pumping" href="02_Assignment_EkmanPumping.html" />
     <link rel="prev" title="Assignment: major features of the atmospheric circulation" href="../week_04/02_Assignment_GeneralCirculation.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-88391345-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Aug 13, 2024"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../welcome.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Physics of the Climate System</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Physics of the Climate System - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Physics of the Climate System - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -126,483 +197,309 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../getting_started.html">
-   Getting started with Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../howto.html">
-   How to use this website and prepare for each week
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../download.html">
-   Downloading the data
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started with Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto.html">How to use this website and prepare for each week</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../download.html">Downloading the data</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 01
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 01</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_01/primer.html">
-   Lesson 01: Python and Jupyter: a primer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_01/01_Assignment_Planetary_Energy_Balance.html">
-   Assignment 01: planetary energy balance
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_01/02_Assignment_Simple_cloud_effects.html">
-   Assignment 02: effect of clouds on the planetary energy balance
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../week_01/primer.html">Lesson 01: Python and Jupyter: a primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_01/01_Assignment_Planetary_Energy_Balance.html">Assignment 01: planetary energy balance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_01/02_Assignment_Simple_cloud_effects.html">Assignment 02: effect of clouds on the planetary energy balance</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 02
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 02</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">
-   Lesson: working with netCDF data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">
-   Assignment: CERES data
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">Lesson: working with netCDF data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">Assignment: CERES data</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 03
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 03</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_03/01_Lesson_MoreDataCrunching.html">
-   Lesson: more tools for statistical and climatological analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_03/02_Assignment_TemperaturePrecipitation.html">
-   Assignment: temperature and precipitation data
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../week_03/01_Lesson_MoreDataCrunching.html">Lesson: more tools for statistical and climatological analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_03/02_Assignment_TemperaturePrecipitation.html">Assignment: temperature and precipitation data</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 04
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 04</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">
-   Lesson: wind flow, 4D data, numerical integrals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">
-   Assignment: major features of the atmospheric circulation
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../week_04/01_Lesson_Wind-Derivatives-Integrals.html">Lesson: wind flow, 4D data, numerical integrals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_04/02_Assignment_GeneralCirculation.html">Assignment: major features of the atmospheric circulation</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 05
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 05</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Guided exercise: Energy Transport
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_Assignment_EkmanPumping.html">
-   Assignment: Ekman Pumping
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Guided exercise: Energy Transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_Assignment_EkmanPumping.html">Assignment: Ekman Pumping</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Projects
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/01_FinalProjects.html">
-   Final group projects: instructions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/02_GuidedExercise_Composites.html">
-   Guided exercise: indices, composites, correlation maps
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/03_Getting_started_RegionalPlots.html">
-   Regional PlateCarree projection
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/04_Getting_started_Antarctica.html">
-   Polar stereographic projection
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/05_Getting_started_NorthAmerica.html">
-   Lambert conformal projection
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/01_FinalProjects.html">Final group projects: instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/02_GuidedExercise_Composites.html">Guided exercise: indices, composites, correlation maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/03_Getting_started_RegionalPlots.html">Regional PlateCarree projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/04_Getting_started_Antarctica.html">Polar stereographic projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/05_Getting_started_NorthAmerica.html">Lambert conformal projection</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_05/01_GuidedExercise_EnergyTransport.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/fmaussion/climate_system/master?urlpath=lab/tree/book/week_05/01_GuidedExercise_EnergyTransport.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
 </div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/fmaussion/climate_system" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/fmaussion/climate_system/edit/master/book/week_05/01_GuidedExercise_EnergyTransport.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_05/01_GuidedExercise_EnergyTransport.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_05/01_GuidedExercise_EnergyTransport.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/fmaussion/climate_system"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/fmaussion/climate_system/issues/new?title=Issue%20on%20page%20%2Fweek_05/01_GuidedExercise_EnergyTransport.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/fmaussion/climate_system/edit/master/book/week_05/01_GuidedExercise_EnergyTransport.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/week_05/01_GuidedExercise_EnergyTransport.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </button>
-
-      </li>
+</div></div>
       
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
+    </div>
   
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data">
-   Data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-balance-at-the-toa">
-   Energy balance at the TOA
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-transport-from-the-toa-energy-balance">
-   Energy transport from the TOA Energy Balance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-balance-at-the-surface">
-   Energy balance at the surface
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-balance-of-the-atmosphere">
-   Energy balance of the atmosphere
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-transport-of-the-atmosphere-and-the-oceans">
-   Energy transport of the atmosphere and the oceans
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#add-on-same-with-ceres-data">
-   Add-on: same with CERES data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#to-go-further">
-   To go further
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Guided exercise: Energy Transport</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data">
-   Data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-balance-at-the-toa">
-   Energy balance at the TOA
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-transport-from-the-toa-energy-balance">
-   Energy transport from the TOA Energy Balance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-balance-at-the-surface">
-   Energy balance at the surface
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-balance-of-the-atmosphere">
-   Energy balance of the atmosphere
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-transport-of-the-atmosphere-and-the-oceans">
-   Energy transport of the atmosphere and the oceans
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#add-on-same-with-ceres-data">
-   Add-on: same with CERES data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#to-go-further">
-   To go further
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Guided exercise: Energy Transport</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-balance-at-the-toa">Energy balance at the TOA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-transport-from-the-toa-energy-balance">Energy transport from the TOA Energy Balance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-balance-at-the-surface">Energy balance at the surface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-balance-of-the-atmosphere">Energy balance of the atmosphere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-transport-of-the-atmosphere-and-the-oceans">Energy transport of the atmosphere and the oceans</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-on-same-with-ceres-data">Add-on: same with CERES data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#to-go-further">To go further</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="guided-exercise-energy-transport">
-<h1>Guided exercise: Energy Transport<a class="headerlink" href="#guided-exercise-energy-transport" title="Permalink to this headline">#</a></h1>
+<h1>Guided exercise: Energy Transport<a class="headerlink" href="#guided-exercise-energy-transport" title="Link to this heading">#</a></h1>
 <p>In this guided exercise we will revisit the energy balance, this time with ERA5 data instead of CERES. The main novelty of this lesson is <strong>the computation of the meridional energy transport</strong> from the TOA, using the numerical methods we learned last week. The code is on me, the questions are on you! Like always, I recommend to download this notebook and run it by yourself instead of reading it online.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -619,7 +516,7 @@ title="Print to PDF"
 </div>
 </div>
 <section id="data">
-<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
+<h2>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h2>
 <p>We are going to work with a new file: <a class="reference external" href="https://cluster.klima.uni-bremen.de/~fmaussion/teaching/climate/ERA5_LowRes_AnnualAvg_eb.nc">ERA5_LowRes_AnnualAvg_eb.nc</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -897,6 +794,11 @@ body.vscode-dark {
   grid-column: 4;
 }
 
+.xr-index-preview {
+  grid-column: 2 / 5;
+  color: var(--xr-font-color2);
+}
+
 .xr-var-name,
 .xr-var-dims,
 .xr-var-dtype,
@@ -918,14 +820,16 @@ body.vscode-dark {
 }
 
 .xr-var-attrs,
-.xr-var-data {
+.xr-var-data,
+.xr-index-data {
   display: none;
   background-color: var(--xr-background-color) !important;
   padding-bottom: 5px !important;
 }
 
 .xr-var-attrs-in:checked ~ .xr-var-attrs,
-.xr-var-data-in:checked ~ .xr-var-data {
+.xr-var-data-in:checked ~ .xr-var-data,
+.xr-index-data-in:checked ~ .xr-index-data {
   display: block;
 }
 
@@ -935,13 +839,16 @@ body.vscode-dark {
 
 .xr-var-name span,
 .xr-var-data,
+.xr-index-name div,
+.xr-index-data,
 .xr-attrs {
   padding-left: 25px !important;
 }
 
 .xr-attrs,
 .xr-var-attrs,
-.xr-var-data {
+.xr-var-data,
+.xr-index-data {
   grid-column: 1 / -1;
 }
 
@@ -979,7 +886,8 @@ dl.xr-attrs {
 }
 
 .xr-icon-database,
-.xr-icon-file-text2 {
+.xr-icon-file-text2,
+.xr-no-icon {
   display: inline-block;
   vertical-align: middle;
   width: 1em;
@@ -988,26 +896,36 @@ dl.xr-attrs {
   stroke: currentColor;
   fill: currentColor;
 }
-</style><pre class='xr-text-repr-fallback'>&lt;xarray.Dataset&gt;
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.Dataset&gt; Size: 8MB
 Dimensions:    (longitude: 480, latitude: 241)
 Coordinates:
-  * longitude  (longitude) float32 -179.6 -178.9 -178.1 ... 178.1 178.9 179.6
-  * latitude   (latitude) float32 90.0 89.25 88.5 87.75 ... -88.5 -89.25 -90.0
+  * longitude  (longitude) float32 2kB -179.6 -178.9 -178.1 ... 178.9 179.6
+  * latitude   (latitude) float32 964B 90.0 89.25 88.5 ... -88.5 -89.25 -90.0
 Data variables:
-    slhf       (latitude, longitude) float64 ...
-    sshf       (latitude, longitude) float64 ...
-    ssr        (latitude, longitude) float64 ...
-    str        (latitude, longitude) float64 ...
-    ssrd       (latitude, longitude) float64 ...
-    strd       (latitude, longitude) float64 ...
-    tisr       (latitude, longitude) float64 ...
-    tsr        (latitude, longitude) float64 ...
-    ttr        (latitude, longitude) float64 ...</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-417f7075-8536-4b4c-bb7d-21239f1ccbf7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-417f7075-8536-4b4c-bb7d-21239f1ccbf7' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>longitude</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-222c2f0d-b780-4be2-907b-a5f8728aa5e2' class='xr-section-summary-in' type='checkbox'  checked><label for='section-222c2f0d-b780-4be2-907b-a5f8728aa5e2' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.6 -178.9 ... 178.9 179.6</div><input id='attrs-638c608d-bf9c-40c6-b3ef-84b9da4cc0fa' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-638c608d-bf9c-40c6-b3ef-84b9da4cc0fa' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-584d5b4c-7550-404f-818f-823b2a02d8c0' class='xr-var-data-in' type='checkbox'><label for='data-584d5b4c-7550-404f-818f-823b2a02d8c0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
-      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-5ed9b85d-c330-43b1-a440-6925df6ef83c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-5ed9b85d-c330-43b1-a440-6925df6ef83c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c855f727-801e-4d71-ba71-46e7e8f37e10' class='xr-var-data-in' type='checkbox'><label for='data-c855f727-801e-4d71-ba71-46e7e8f37e10' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-449b9aa3-d619-4aa2-b8d4-5a61787a33d1' class='xr-section-summary-in' type='checkbox'  checked><label for='section-449b9aa3-d619-4aa2-b8d4-5a61787a33d1' class='xr-section-summary' >Data variables: <span>(9)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>slhf</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-50a913ad-3358-4fd9-89f7-ec53bbaf400c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-50a913ad-3358-4fd9-89f7-ec53bbaf400c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0a0f840d-2d0d-4420-bb22-7049d5e438ee' class='xr-var-data-in' type='checkbox'><label for='data-0a0f840d-2d0d-4420-bb22-7049d5e438ee' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface latent heat flux</dd><dt><span>standard_name :</span></dt><dd>surface_upward_latent_heat_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>sshf</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-1cd26c07-707a-4a17-afb8-70c2cfcd0210' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1cd26c07-707a-4a17-afb8-70c2cfcd0210' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-32844900-a357-42a8-b4ab-3368591489c2' class='xr-var-data-in' type='checkbox'><label for='data-32844900-a357-42a8-b4ab-3368591489c2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface sensible heat flux</dd><dt><span>standard_name :</span></dt><dd>surface_upward_sensible_heat_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>ssr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-e167dad2-bad8-422a-9f71-b86ed3555ea9' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e167dad2-bad8-422a-9f71-b86ed3555ea9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b6dd5ae3-ad7e-4c56-8e14-8b17ed85c54b' class='xr-var-data-in' type='checkbox'><label for='data-b6dd5ae3-ad7e-4c56-8e14-8b17ed85c54b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface net solar radiation</dd><dt><span>standard_name :</span></dt><dd>surface_net_downward_shortwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>str</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-d26bb5b6-a8f4-4b0e-9b16-a0b5d5a2fd9c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d26bb5b6-a8f4-4b0e-9b16-a0b5d5a2fd9c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-2fd50a3d-0241-4044-a91d-8759051f4401' class='xr-var-data-in' type='checkbox'><label for='data-2fd50a3d-0241-4044-a91d-8759051f4401' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface net thermal radiation</dd><dt><span>standard_name :</span></dt><dd>surface_net_upward_longwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>ssrd</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a9ec50be-a3df-4db6-8bae-2ad8a13ae1be' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a9ec50be-a3df-4db6-8bae-2ad8a13ae1be' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b297959b-3f79-47f7-b3d4-96d50f1c2e4a' class='xr-var-data-in' type='checkbox'><label for='data-b297959b-3f79-47f7-b3d4-96d50f1c2e4a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface solar radiation downwards</dd><dt><span>standard_name :</span></dt><dd>surface_downwelling_shortwave_flux_in_air</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>strd</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-40c61358-2688-47a2-bd7d-181f4680e6d4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-40c61358-2688-47a2-bd7d-181f4680e6d4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0cbed40b-053d-4acc-ae99-823e93aa6f9d' class='xr-var-data-in' type='checkbox'><label for='data-0cbed40b-053d-4acc-ae99-823e93aa6f9d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface thermal radiation downwards</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>tisr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-ff6ba0d8-2c0b-4785-a8ed-fe485791a934' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ff6ba0d8-2c0b-4785-a8ed-fe485791a934' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7be20f92-49dc-45f0-86c7-4d0a46d43b29' class='xr-var-data-in' type='checkbox'><label for='data-7be20f92-49dc-45f0-86c7-4d0a46d43b29' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>TOA incident solar radiation</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>tsr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-4f24751f-14d4-429e-994c-68acf238cd1b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-4f24751f-14d4-429e-994c-68acf238cd1b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ecc4d72a-b7f4-488a-b420-8964ed92ab63' class='xr-var-data-in' type='checkbox'><label for='data-ecc4d72a-b7f4-488a-b420-8964ed92ab63' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Top net solar radiation</dd><dt><span>standard_name :</span></dt><dd>toa_net_upward_shortwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>ttr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a9934923-b1d4-4b82-979d-875c8f6ea1b4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a9934923-b1d4-4b82-979d-875c8f6ea1b4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b26e3210-83d2-425f-926f-49f06bde2a4e' class='xr-var-data-in' type='checkbox'><label for='data-b26e3210-83d2-425f-926f-49f06bde2a4e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Top net thermal radiation</dd><dt><span>standard_name :</span></dt><dd>toa_outgoing_longwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-7a962991-e8b8-4297-b920-2bd0232f0a51' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7a962991-e8b8-4297-b920-2bd0232f0a51' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
+    slhf       (latitude, longitude) float64 925kB ...
+    sshf       (latitude, longitude) float64 925kB ...
+    ssr        (latitude, longitude) float64 925kB ...
+    str        (latitude, longitude) float64 925kB ...
+    ssrd       (latitude, longitude) float64 925kB ...
+    strd       (latitude, longitude) float64 925kB ...
+    tisr       (latitude, longitude) float64 925kB ...
+    tsr        (latitude, longitude) float64 925kB ...
+    ttr        (latitude, longitude) float64 925kB ...</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-c001cc72-ec9f-4448-87c3-6d6b73efec85' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c001cc72-ec9f-4448-87c3-6d6b73efec85' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>longitude</span>: 480</li><li><span class='xr-has-index'>latitude</span>: 241</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-54773518-cf99-4294-8e97-14d5f1792f22' class='xr-section-summary-in' type='checkbox'  checked><label for='section-54773518-cf99-4294-8e97-14d5f1792f22' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-179.6 -178.9 ... 178.9 179.6</div><input id='attrs-ae452aeb-1ecc-4cd9-b5c2-1c749a0e0c5b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ae452aeb-1ecc-4cd9-b5c2-1c749a0e0c5b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-80cdb5a7-8e6e-4f50-9b0c-d62606499e18' class='xr-var-data-in' type='checkbox'><label for='data-80cdb5a7-8e6e-4f50-9b0c-d62606499e18' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([-179.625, -178.875, -178.125, ...,  178.125,  178.875,  179.625],
+      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>90.0 89.25 88.5 ... -89.25 -90.0</div><input id='attrs-4e207e9e-de3b-4bd5-bd8d-de5f39cd2568' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-4e207e9e-de3b-4bd5-bd8d-de5f39cd2568' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-66267565-a24e-41a8-9129-bb39b3054fc8' class='xr-var-data-in' type='checkbox'><label for='data-66267565-a24e-41a8-9129-bb39b3054fc8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>latitude</dd></dl></div><div class='xr-var-data'><pre>array([ 90.  ,  89.25,  88.5 , ..., -88.5 , -89.25, -90.  ], dtype=float32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-1356ed0f-bcb6-44f3-88df-760f77f7c770' class='xr-section-summary-in' type='checkbox'  checked><label for='section-1356ed0f-bcb6-44f3-88df-760f77f7c770' class='xr-section-summary' >Data variables: <span>(9)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>slhf</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-aa26c1e0-4e94-42ac-868a-7f427db8f2b1' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-aa26c1e0-4e94-42ac-868a-7f427db8f2b1' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5e2603d6-d25a-420b-8efd-20e327678ca6' class='xr-var-data-in' type='checkbox'><label for='data-5e2603d6-d25a-420b-8efd-20e327678ca6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface latent heat flux</dd><dt><span>standard_name :</span></dt><dd>surface_upward_latent_heat_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>sshf</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-b9ea46df-d83f-4d43-beff-0de7aa44824b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b9ea46df-d83f-4d43-beff-0de7aa44824b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-aeb8d2df-c449-4321-8ef4-d10fba981917' class='xr-var-data-in' type='checkbox'><label for='data-aeb8d2df-c449-4321-8ef4-d10fba981917' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface sensible heat flux</dd><dt><span>standard_name :</span></dt><dd>surface_upward_sensible_heat_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>ssr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-7f2fbe42-c814-436a-bde8-220e6c083bb8' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-7f2fbe42-c814-436a-bde8-220e6c083bb8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-20ee24c2-416c-4cfd-8f01-d32c99062046' class='xr-var-data-in' type='checkbox'><label for='data-20ee24c2-416c-4cfd-8f01-d32c99062046' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface net solar radiation</dd><dt><span>standard_name :</span></dt><dd>surface_net_downward_shortwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>str</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-99864d60-ef50-4277-bbe3-deed981ac7a3' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-99864d60-ef50-4277-bbe3-deed981ac7a3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f82beebb-c903-428a-b695-3a8f0307d75c' class='xr-var-data-in' type='checkbox'><label for='data-f82beebb-c903-428a-b695-3a8f0307d75c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface net thermal radiation</dd><dt><span>standard_name :</span></dt><dd>surface_net_upward_longwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>ssrd</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-af23ccf3-2a0e-4e8c-8916-3ed81d2c8b46' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-af23ccf3-2a0e-4e8c-8916-3ed81d2c8b46' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a0e2704d-67de-456b-8959-05dd1569cc9b' class='xr-var-data-in' type='checkbox'><label for='data-a0e2704d-67de-456b-8959-05dd1569cc9b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface solar radiation downwards</dd><dt><span>standard_name :</span></dt><dd>surface_downwelling_shortwave_flux_in_air</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>strd</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-b6417b6e-46a5-42e4-869c-b041a07bf3f4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b6417b6e-46a5-42e4-869c-b041a07bf3f4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6932893c-f0f5-4ab5-910c-60e5fe60172e' class='xr-var-data-in' type='checkbox'><label for='data-6932893c-f0f5-4ab5-910c-60e5fe60172e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Surface thermal radiation downwards</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>tisr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-4609ca20-6806-4c42-a0dc-204425e643c3' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-4609ca20-6806-4c42-a0dc-204425e643c3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-2e6cb0b5-006b-4fc4-a10c-a20fa0002d37' class='xr-var-data-in' type='checkbox'><label for='data-2e6cb0b5-006b-4fc4-a10c-a20fa0002d37' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>TOA incident solar radiation</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>tsr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a7a98725-e352-4fe3-b467-3ef5bfcd7e4a' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a7a98725-e352-4fe3-b467-3ef5bfcd7e4a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-39fa6ac7-5620-48e3-b024-4c45916013a0' class='xr-var-data-in' type='checkbox'><label for='data-39fa6ac7-5620-48e3-b024-4c45916013a0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Top net solar radiation</dd><dt><span>standard_name :</span></dt><dd>toa_net_upward_shortwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>ttr</span></div><div class='xr-var-dims'>(latitude, longitude)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-02ef9898-2f6c-4b62-8729-031cd3ced879' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-02ef9898-2f6c-4b62-8729-031cd3ced879' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a8a83f09-ca28-49ce-adec-d78fcc2b746f' class='xr-var-data-in' type='checkbox'><label for='data-a8a83f09-ca28-49ce-adec-d78fcc2b746f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>W m**-2</dd><dt><span>long_name :</span></dt><dd>Top net thermal radiation</dd><dt><span>standard_name :</span></dt><dd>toa_outgoing_longwave_flux</dd></dl></div><div class='xr-var-data'><pre>[115680 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-d2a5058e-1724-4ef8-bcce-033772c16063' class='xr-section-summary-in' type='checkbox'  ><label for='section-d2a5058e-1724-4ef8-bcce-033772c16063' class='xr-section-summary' >Indexes: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>longitude</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-3db57875-f65d-498b-8f69-7a1d5d9209e9' class='xr-index-data-in' type='checkbox'/><label for='index-3db57875-f65d-498b-8f69-7a1d5d9209e9' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([-179.625, -178.875, -178.125, -177.375, -176.625, -175.875, -175.125,
+       -174.375, -173.625, -172.875,
+       ...
+        172.875,  173.625,  174.375,  175.125,  175.875,  176.625,  177.375,
+        178.125,  178.875,  179.625],
+      dtype=&#x27;float32&#x27;, name=&#x27;longitude&#x27;, length=480))</pre></div></li><li class='xr-var-item'><div class='xr-index-name'><div>latitude</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-816a5291-bbc0-4fee-a2b1-9de452cd7a2e' class='xr-index-data-in' type='checkbox'/><label for='index-816a5291-bbc0-4fee-a2b1-9de452cd7a2e' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(Index([  90.0,  89.25,   88.5,  87.75,   87.0,  86.25,   85.5,  84.75,   84.0,
+        83.25,
+       ...
+       -83.25,  -84.0, -84.75,  -85.5, -86.25,  -87.0, -87.75,  -88.5, -89.25,
+        -90.0],
+      dtype=&#x27;float32&#x27;, name=&#x27;latitude&#x27;, length=241))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-7228e5a5-6fd4-4da8-b070-5f9178149f94' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7228e5a5-6fd4-4da8-b070-5f9178149f94' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
 </section>
 <section id="energy-balance-at-the-toa">
-<h2>Energy balance at the TOA<a class="headerlink" href="#energy-balance-at-the-toa" title="Permalink to this headline">#</a></h2>
+<h2>Energy balance at the TOA<a class="headerlink" href="#energy-balance-at-the-toa" title="Link to this heading">#</a></h2>
 <p>We’ll now compute the energy balance <span class="math notranslate nohighlight">\(E_{TOA}\)</span> at the top of the atmosphere (TOA), as well as its global average:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1037,7 +955,7 @@ Data variables:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_12_0.png" src="../_images/01_GuidedExercise_EnergyTransport_12_0.png" />
+<img alt="../_images/13b17fa9c5e56981671b06e5f610ec26678ef39b1ffb3eabd3714eb7cd81a3eb.png" src="../_images/13b17fa9c5e56981671b06e5f610ec26678ef39b1ffb3eabd3714eb7cd81a3eb.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1058,7 +976,7 @@ Average E TOA: 0.44 W m-2
 <p><em>Note: both datasets are in accordance with the current range of estimates of the Earth Energy Imbalance which ranges between 0.4 and 1 W m<span class="math notranslate nohighlight">\(^{-2}\)</span> (<a class="reference external" href="https://journals.ametsoc.org/jcli/article/27/9/3129/35180/Earth-s-Energy-Imbalance">s1</a>, <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fmars.2019.00432/full">s2</a>)</em></p>
 </section>
 <section id="energy-transport-from-the-toa-energy-balance">
-<h2>Energy transport from the TOA Energy Balance<a class="headerlink" href="#energy-transport-from-the-toa-energy-balance" title="Permalink to this headline">#</a></h2>
+<h2>Energy transport from the TOA Energy Balance<a class="headerlink" href="#energy-transport-from-the-toa-energy-balance" title="Link to this heading">#</a></h2>
 <p>From the lecture, we remember that the total energy transport implied by the energy imbalance between the Equator and the Poles can be computed as:</p>
 <div class="math notranslate nohighlight">
 \[ ET(\varphi)=\int\limits^{\varphi}_{-\pi/2}\int\limits^{2\pi}_{0} E_{TOA} R^2\cos\varphi'd\lambda d\varphi' \]</div>
@@ -1097,13 +1015,13 @@ Average E TOA: 0.44 W m-2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_22_0.png" src="../_images/01_GuidedExercise_EnergyTransport_22_0.png" />
+<img alt="../_images/9ad0320d3f8f3476798cf3aa3fe582ceecd21869c7d220ac6edecaba4737c21f.png" src="../_images/9ad0320d3f8f3476798cf3aa3fe582ceecd21869c7d220ac6edecaba4737c21f.png" />
 </div>
 </div>
 <p><strong>Q: Note that the transport is not zero at the North Pole. Can you guess why? Is this bad?</strong></p>
 </section>
 <section id="energy-balance-at-the-surface">
-<h2>Energy balance at the surface<a class="headerlink" href="#energy-balance-at-the-surface" title="Permalink to this headline">#</a></h2>
+<h2>Energy balance at the surface<a class="headerlink" href="#energy-balance-at-the-surface" title="Link to this heading">#</a></h2>
 <p>Now let’s compute the energy balance at the surface <span class="math notranslate nohighlight">\(E_{Surf}\)</span> as well as its average. Unlike with CERES data, we now have the opportunity to compute all fluxes at the surface (not only the radiative ones):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1116,7 +1034,7 @@ Average E TOA: 0.44 W m-2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_26_0.png" src="../_images/01_GuidedExercise_EnergyTransport_26_0.png" />
+<img alt="../_images/bc5e9fe9a0fb7af75a0b266f6c8b244d52e591e026347490448f435b796bd263.png" src="../_images/bc5e9fe9a0fb7af75a0b266f6c8b244d52e591e026347490448f435b796bd263.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1148,7 +1066,7 @@ Average EB Surface: 6 W m-2
 <p><em>Note: errors in reanalysis data are aknowledged and discussed. See for example <a class="reference external" href="http://onlinelibrary.wiley.com/doi/10.1002/qj.864/pdf">this paper</a> for a discussion with ERA-Interim, the dataset prior to ERA5.</em></p>
 </section>
 <section id="energy-balance-of-the-atmosphere">
-<h2>Energy balance of the atmosphere<a class="headerlink" href="#energy-balance-of-the-atmosphere" title="Permalink to this headline">#</a></h2>
+<h2>Energy balance of the atmosphere<a class="headerlink" href="#energy-balance-of-the-atmosphere" title="Link to this heading">#</a></h2>
 <p>I’ll now compute the energy balance of the atmosphere <span class="math notranslate nohighlight">\(E_{Atm}\)</span> as the residual of the energy balance at the surface and at the top of the atmosphere (note: this assumes that the entire residual of the surface EB is also taken from the atmosphere):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1161,7 +1079,7 @@ Average EB Surface: 6 W m-2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_32_0.png" src="../_images/01_GuidedExercise_EnergyTransport_32_0.png" />
+<img alt="../_images/4133cf334cd4a797a6ce80ab961deb95d1d3bb3ec83a22fde143a98772ee735d.png" src="../_images/4133cf334cd4a797a6ce80ab961deb95d1d3bb3ec83a22fde143a98772ee735d.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1200,13 +1118,13 @@ Average EB Surface: 6 W m-2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_37_0.png" src="../_images/01_GuidedExercise_EnergyTransport_37_0.png" />
+<img alt="../_images/f3ca32f8557e5201736a35d07ab4599407939d7ef5fd88e81e25bc1f3dacf066.png" src="../_images/f3ca32f8557e5201736a35d07ab4599407939d7ef5fd88e81e25bc1f3dacf066.png" />
 </div>
 </div>
 <p><strong>Q Are you satisfied with the results? What are the major issues with this plot?</strong></p>
 </section>
 <section id="energy-transport-of-the-atmosphere-and-the-oceans">
-<h2>Energy transport of the atmosphere and the oceans<a class="headerlink" href="#energy-transport-of-the-atmosphere-and-the-oceans" title="Permalink to this headline">#</a></h2>
+<h2>Energy transport of the atmosphere and the oceans<a class="headerlink" href="#energy-transport-of-the-atmosphere-and-the-oceans" title="Link to this heading">#</a></h2>
 <p>To compute the theoretical energy transport, we have to aknowledge that the energy budget has to be closed for the integration to work.</p>
 <p>We now apply a bias correction to <span class="math notranslate nohighlight">\(E_{TOA}\)</span> and <span class="math notranslate nohighlight">\(E_{Atm}\)</span> by substracting the residual of the energy balance closure (so that the budget is balanced):</p>
 <div class="cell docutils container">
@@ -1243,14 +1161,14 @@ Average EB Surface: 6 W m-2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_44_0.png" src="../_images/01_GuidedExercise_EnergyTransport_44_0.png" />
+<img alt="../_images/1d0585a525abf0d83361471601d41ad0917f1580eec89a2b99c6699269a06c08.png" src="../_images/1d0585a525abf0d83361471601d41ad0917f1580eec89a2b99c6699269a06c08.png" />
 </div>
 </div>
 <p><strong>Q: compare it to the plot by Fasullo and Trenberth (2008) that we analysed during the lecture.</strong></p>
 <a class="reference internal image-reference" href="https://www.dropbox.com/s/2oym6udq1c7x0ns/fasullo_trenberth_2008.png?dl=1"><img alt="https://www.dropbox.com/s/2oym6udq1c7x0ns/fasullo_trenberth_2008.png?dl=1" src="https://www.dropbox.com/s/2oym6udq1c7x0ns/fasullo_trenberth_2008.png?dl=1" style="width: 50%;" /></a>
 </section>
 <section id="add-on-same-with-ceres-data">
-<h2>Add-on: same with CERES data<a class="headerlink" href="#add-on-same-with-ceres-data" title="Permalink to this headline">#</a></h2>
+<h2>Add-on: same with CERES data<a class="headerlink" href="#add-on-same-with-ceres-data" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/CERES_EBAF-TOA_Ed4.1_Clim-2005-2015.nc&#39;</span><span class="p">)</span>
@@ -1282,12 +1200,12 @@ Average EB Surface: 6 W m-2
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/01_GuidedExercise_EnergyTransport_48_0.png" src="../_images/01_GuidedExercise_EnergyTransport_48_0.png" />
+<img alt="../_images/20d9c4abfee6dec7bc05e85252c668ec1019439f41a6f1fdfd398039e2f61fa0.png" src="../_images/20d9c4abfee6dec7bc05e85252c668ec1019439f41a6f1fdfd398039e2f61fa0.png" />
 </div>
 </div>
 </section>
 <section id="to-go-further">
-<h2>To go further<a class="headerlink" href="#to-go-further" title="Permalink to this headline">#</a></h2>
+<h2>To go further<a class="headerlink" href="#to-go-further" title="Link to this heading">#</a></h2>
 <p>If you are interested, I recommend you have a look at the various terms of the TOA and surface energy balances and see if you can understand most of the patterns you observe. You can also plot their zonal average and analyse their respective importance according to latitude.</p>
 </section>
 </section>
@@ -1304,7 +1222,7 @@ Average EB Surface: 6 W m-2
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./week_05"
         },
         predefinedOutput: true
@@ -1312,60 +1230,117 @@ Average EB Surface: 6 W m-2
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../week_04/02_Assignment_GeneralCirculation.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Assignment: major features of the atmospheric circulation</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../week_04/02_Assignment_GeneralCirculation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Assignment: major features of the atmospheric circulation</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="02_Assignment_EkmanPumping.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="02_Assignment_EkmanPumping.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Assignment: Ekman Pumping</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-balance-at-the-toa">Energy balance at the TOA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-transport-from-the-toa-energy-balance">Energy transport from the TOA Energy Balance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-balance-at-the-surface">Energy balance at the surface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-balance-of-the-atmosphere">Energy balance of the atmosphere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-transport-of-the-atmosphere-and-the-oceans">Energy transport of the atmosphere and the oceans</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-on-same-with-ceres-data">Add-on: same with CERES data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#to-go-further">To go further</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Fabien Maussion<br/>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Fabien Maussion
+</p>
+
+  </div>
   
-    <div class="extra_footer">
-      <p>
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on Aug 13, 2024.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
   <img align="right" class="margin" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" width="88px">
 </a>
 These lecture notes and exercises are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0) license</a>.
 <br>
-&copy; Copyright 2018-2020.
+&copy; Copyright 2018-2024.
 </p>
 
-    </div>
-</p>
-        </footer>
-    </div>
-    
 </div>
+  </div>
+  
+</div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
